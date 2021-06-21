@@ -23,17 +23,13 @@
     pkgs.du-dust
     pkgs.efibootmgr
     pkgs.electrum
-    pkgs.exa
     pkgs.fd
-    pkgs.firefox-devedition-bin
     pkgs.flameshot
-    pkgs.gh
     pkgs.gitkraken
     pkgs.google-chrome
     pkgs.grex
     pkgs.handbrake
     pkgs.hyperfine
-    pkgs.i3status-rust
     pkgs.imagemagick
     pkgs.insomnia
     pkgs.jdk
@@ -41,7 +37,6 @@
     pkgs.lxappearance
     pkgs.neofetch
     pkgs.notion
-    pkgs.obs-studio
     pkgs.p7zip
     pkgs.procs
     pkgs.qbittorrent
@@ -53,23 +48,29 @@
     pkgs.slack
     pkgs.speedtest-cli
     pkgs.spotify
-    pkgs.starship
     pkgs.tealdeer
     pkgs.teams
     pkgs.teamviewer
     pkgs.tdesktop
     pkgs.virtualbox
 #    pkgs.virtualboxExtpack
-    pkgs.vscode
     pkgs.viu
     pkgs.vlc
     pkgs.youtube-dl
     pkgs.zoom
-    pkgs.zsh
   ];
 
   # Temp
   programs.bat.enable = true;
+  programs.exa.enable = true;
+  programs.firefox.enable = true;
+  programs.firefox.package = pkgs.firefox-devedition-bin;
+  programs.gh.enable = true;
+  programs.i3status-rust.enable = true;
+  programs.obs-studio.enable = true;
+  programs.starship.enable = true;
+  programs.vscode.enable = true;
+  programs.zsh.enable = true;
   # programs.cheese.enable = true;
   
   home.stateVersion = "21.05";
