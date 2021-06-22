@@ -1,5 +1,5 @@
 { ... }: 
 
 {
-  allowUnfree = true;
+	allowUnfree = true;
 }
