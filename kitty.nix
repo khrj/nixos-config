@@ -3,10 +3,11 @@
 {
 	programs.kitty = {
 		enable = true;
-		# font = {
-		#  name = "SFMono Nerd Font Mono";
-		#  package = 
-		# }
+		
+		font = {
+			name = "FiraCode Nerd Font Mono";
+		};
+
 		settings = {
 			# Cursor
 			cursor_shape = "beam";
