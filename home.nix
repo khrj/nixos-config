@@ -6,10 +6,13 @@
   home.homeDirectory = "/home/khushraj";
 
   imports = [
-    ./git.nix
     ./chromium.nix
+    ./fish.nix
+    ./git.nix
+    ./i3status-rust.nix
     ./kitty.nix
     ./rofi.nix
+    ./starship.nix
   ];
 
   home.packages = [
@@ -34,6 +37,7 @@
     pkgs.insomnia
     pkgs.jdk
     pkgs.libreoffice
+    pkgs.lm_sensors
     pkgs.lxappearance
     pkgs.neofetch
     pkgs.notion
@@ -66,11 +70,8 @@
   programs.firefox.enable = true;
   programs.firefox.package = pkgs.firefox-devedition-bin;
   programs.gh.enable = true;
-  programs.i3status-rust.enable = true;
   programs.obs-studio.enable = true;
-  programs.starship.enable = true;
   programs.vscode.enable = true;
-  programs.zsh.enable = true;
   # programs.cheese.enable = true;
   
   home.stateVersion = "21.05";
