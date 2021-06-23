@@ -6,13 +6,13 @@
 	home.homeDirectory = "/home/khushraj";
 
 	imports = [
-		./chromium.nix            # Web browser
-		./fish.nix                # Shell
-		./git.nix                 # Version control
-		./i3status-rust.nix       # Statusbar information
-		./kitty.nix               # Terminal emulator
-		./rofi.nix                # Application launcher
-		./starship.nix            # Shell prompt
+		./programs/chromium.nix            # Web browser
+		./programs/fish.nix                # Shell
+		./programs/git.nix                 # Version control
+		./programs/i3status-rust.nix       # Statusbar information
+		./programs/kitty.nix               # Terminal emulator
+		./programs/rofi.nix                # Application launcher
+		./programs/starship.nix            # Shell prompt
 	];
 
 	home.packages = [

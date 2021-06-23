@@ -3,6 +3,6 @@
 {
 	programs.rofi = {
 		enable = true;
-		theme = "~/nixos-config/rofi-config.rasi";
+		theme = "~/nixos-config/external/rofi-config.rasi";
 	};
 }
