@@ -41,6 +41,7 @@
 		pkgs.libreoffice             # Office suite
 		pkgs.lm_sensors              # Hardware sensors. Required for i3status-rust
 		pkgs.lxappearance            # GTK theme editor
+		pkgs.gnome.nautilus          # File system explorer
 		pkgs.neofetch                # Terminal-based system-info viewer
 		pkgs.notion                  # Document manager / Collaboration
 		pkgs.p7zip                   # Compression tool
