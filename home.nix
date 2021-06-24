@@ -12,6 +12,7 @@
 		./programs/git.nix           # Version control
 		./programs/i3status-rust.nix # Statusbar information
 		./programs/kitty.nix         # Terminal emulator
+		./programs/picom.nix         # Display compositor
 		./programs/rofi.nix          # Application launcher
 		./programs/starship.nix      # Shell prompt
 	];
