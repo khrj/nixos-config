@@ -7,6 +7,7 @@
 
 	imports = [
 		./programs/chromium.nix      # Web browser
+		./programs/dunst.nix         # Notifications daemon
 		./programs/fish.nix          # Shell
 		./programs/git.nix           # Version control
 		./programs/i3status-rust.nix # Statusbar information
@@ -22,7 +23,6 @@
 		pkgs.bottom                  # Terminal-based task viewer
 		pkgs.calibre                 # Ebook library
 		pkgs.discord                 # Communications app
-		pkgs.dunst                   # Notifications daemon
 		pkgs.du-dust                 # Terminal-based storage space viewer
 		pkgs.efibootmgr              # EFI boot entry manager
 		pkgs.electrum                # Bitcoin wallet
