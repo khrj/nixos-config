@@ -37,7 +37,8 @@
 	services.xserver.enable = true;
 	services.xserver.windowManager.i3.enable = true;
 	services.xserver.windowManager.i3.package = pkgs.i3-gaps;
-	services.xserver.libinput.mouse.naturalScrolling = true;
+	services.xserver.windowManager.i3.configFile = ./external/i3-config;
+	services.xserver.libinput.mouse.naturalScrolling = true; #FIXME
 	services.gnome.gnome-keyring.enable = true;
 
 	# Configure keymap in X11
