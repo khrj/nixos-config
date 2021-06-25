@@ -17,53 +17,53 @@
 		./programs/starship.nix      # Shell prompt
 	];
 
-	home.packages = [
+	home.packages = with pkgs; [
 		# Two-factor authentication app
-		(pkgs.authy.overrideAttrs (oa: { meta = oa.meta // { priority = 6; }; }))
-		pkgs.etcher                  # Disk image flasher
-		pkgs.bitwarden               # Password manager
-		pkgs.bottom                  # Terminal-based task viewer
-		pkgs.calibre                 # Ebook library
-		pkgs.discord                 # Communications app
-		pkgs.du-dust                 # Terminal-based storage space viewer
-		pkgs.efibootmgr              # EFI boot entry manager
-		pkgs.electrum                # Bitcoin wallet
-		pkgs.fd                      # File finder
-		pkgs.flameshot               # Screenshot tool
-		pkgs.gitkraken               # Git GUI client
-		pkgs.gnome.cheese            # Image viewer
-		pkgs.google-chrome           # Browser
-		pkgs.grex                    # Regex maker
-		pkgs.handbrake               # Audio-video encoder
-		pkgs.hyperfine               # Benchmarking tool
-		pkgs.imagemagick             # Terminal-based photo modifier
-		pkgs.insomnia                # REST client
-		pkgs.jdk                     # Java development kit 
-		pkgs.libreoffice             # Office suite
-		pkgs.lm_sensors              # Hardware sensors. Required for i3status-rust
-		pkgs.lxappearance            # GTK theme editor
-		pkgs.gnome.nautilus          # File system explorer
-		pkgs.neofetch                # Terminal-based system-info viewer
-		pkgs.notion                  # Document manager / Collaboration
-		pkgs.p7zip                   # Compression tool
-		pkgs.procs                   # Terminal job viewer
-		pkgs.qbittorrent             # Torrent client
-		pkgs.ripgrep                 # File-content searcher
-		pkgs.rustup                  # Rust toolchain manager
-		pkgs.sd                      # stdin filterer
-		pkgs.signal-desktop          # Communications app
-		pkgs.simplescreenrecorder    # Screen recorder
-		pkgs.slack                   # Communications app
-		pkgs.speedtest-cli           # Network speed measurer
-		pkgs.spotify                 # Music app
-		pkgs.tealdeer                # Manual summarizer
-		pkgs.teams                   # Video call app
-		pkgs.teamviewer              # Remote desktop app
-		pkgs.tdesktop                # Communications app
-		pkgs.viu                     # Terminal image viewer
-		pkgs.vlc                     # Audio/video player
-		pkgs.youtube-dl              # Multimedia scraper
-		pkgs.zoom                    # Video call app
+		(authy.overrideAttrs (oa: { meta = oa.meta // { priority = 6; }; }))
+		etcher                  # Disk image flasher
+		bitwarden               # Password manager
+		bottom                  # Terminal-based task viewer
+		calibre                 # Ebook library
+		discord                 # Communications app
+		du-dust                 # Terminal-based storage space viewer
+		efibootmgr              # EFI boot entry manager
+		electrum                # Bitcoin wallet
+		fd                      # File finder
+		flameshot               # Screenshot tool
+		gitkraken               # Git GUI client
+		gnome.cheese            # Image viewer
+		google-chrome           # Browser
+		grex                    # Regex maker
+		handbrake               # Audio-video encoder
+		hyperfine               # Benchmarking tool
+		imagemagick             # Terminal-based photo modifier
+		insomnia                # REST client
+		jdk                     # Java development kit 
+		libreoffice             # Office suite
+		lm_sensors              # Hardware sensors. Required for i3status-rust
+		lxappearance            # GTK theme editor
+		gnome.nautilus          # File system explorer
+		neofetch                # Terminal-based system-info viewer
+		notion                  # Document manager / Collaboration
+		p7zip                   # Compression tool
+		procs                   # Terminal job viewer
+		qbittorrent             # Torrent client
+		ripgrep                 # File-content searcher
+		rustup                  # Rust toolchain manager
+		sd                      # stdin filterer
+		signal-desktop          # Communications app
+		simplescreenrecorder    # Screen recorder
+		slack                   # Communications app
+		speedtest-cli           # Network speed measurer
+		spotify                 # Music app
+		tealdeer                # Manual summarizer
+		teams                   # Video call app
+		teamviewer              # Remote desktop app
+		tdesktop                # Communications app
+		viu                     # Terminal image viewer
+		vlc                     # Audio/video player
+		youtube-dl              # Multimedia scraper
+		zoom                    # Video call app
 	];
 
 	# Temp
