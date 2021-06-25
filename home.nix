@@ -18,7 +18,7 @@
 	];
 
 	home.packages = [
-#    pkgs.authy
+#		pkgs.authy                   # Two-factor authentication app
 		pkgs.etcher                  # Disk image flasher
 		pkgs.bitwarden               # Password manager
 		pkgs.bottom                  # Terminal-based task viewer
@@ -59,8 +59,6 @@
 		pkgs.teams                   # Video call app
 		pkgs.teamviewer              # Remote desktop app
 		pkgs.tdesktop                # Communications app
-		pkgs.virtualbox              # Hardware virtualizer
-#    pkgs.virtualboxExtpack
 		pkgs.viu                     # Terminal image viewer
 		pkgs.vlc                     # Audio/video player
 		pkgs.youtube-dl              # Multimedia scraper
