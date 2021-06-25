@@ -18,7 +18,8 @@
 	];
 
 	home.packages = [
-#		pkgs.authy                   # Two-factor authentication app
+		# Two-factor authentication app
+		(pkgs.authy.overrideAttrs (oa: { meta = oa.meta // { priority = 6; }; }))
 		pkgs.etcher                  # Disk image flasher
 		pkgs.bitwarden               # Password manager
 		pkgs.bottom                  # Terminal-based task viewer
