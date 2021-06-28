@@ -26,6 +26,7 @@
 	services.xserver.windowManager.i3.package = pkgs.i3-gaps;
 	services.xserver.windowManager.i3.configFile = ./external/i3-config;
 	services.xserver.libinput.mouse.naturalScrolling = true; #FIXME
+	programs.dconf.enable = true;
 
 	# Printing
 	services.printing.enable = true;
@@ -63,7 +64,7 @@
 	virtualisation.virtualbox.host.enable = true;
 	virtualisation.virtualbox.host.enableExtensionPack = true;
 	users.extraGroups.vboxusers.members = [ "khushraj" ];
-	
+
 	# environment.systemPackages = with pkgs; [];
 
 	# Fonts

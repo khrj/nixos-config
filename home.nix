@@ -10,6 +10,7 @@
 		./programs/dunst.nix         # Notifications daemon
 		./programs/fish.nix          # Shell
 		./programs/git.nix           # Version control
+		./programs/gtk.nix           # GTK Configuration
 		./programs/i3status-rust.nix # Statusbar information
 		./programs/kitty.nix         # Terminal emulator
 		./programs/picom.nix         # Display compositor
@@ -41,7 +42,6 @@
 		jdk                     # Java development kit 
 		libreoffice             # Office suite
 		lm_sensors              # Hardware sensors. Required for i3status-rust
-		lxappearance            # GTK theme editor
 		gnome.nautilus          # File system explorer
 		neofetch                # Terminal-based system-info viewer
 		notion                  # Document manager / Collaboration
@@ -62,6 +62,7 @@
 		tdesktop                # Communications app
 		viu                     # Terminal image viewer
 		vlc                     # Audio/video player
+		yaru-theme              # GTK Theme
 		youtube-dl              # Multimedia scraper
 		zoom                    # Video call app
 	];
