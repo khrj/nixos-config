@@ -9,6 +9,7 @@ mkdir -p ~/.config/nixpkgs
 sudo ln -s $SOURCE/configuration.nix /etc/nixos/configuration.nix
 ln -s $SOURCE/home.nix ~/.config/nixpkgs/home.nix
 ln -s $SOURCE/config.nix ~/.config/nixpkgs/config.nix
+ln -s $SOURCE/programs/sway-config ~/.config/sway/config
 
 read -sp "Create a user password: " PASSWORD
 echo

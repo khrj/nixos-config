@@ -13,9 +13,9 @@
 		./programs/gtk.nix           # GTK Configuration
 		./programs/i3status-rust.nix # Statusbar information
 		./programs/kitty.nix         # Terminal emulator
-		./programs/picom.nix         # Display compositor
 		./programs/rofi.nix          # Application launcher
 		./programs/starship.nix      # Shell prompt
+		./programs/sway.nix          # Display protocol
 	];
 
 	home.packages = with pkgs; [

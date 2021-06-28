@@ -21,12 +21,10 @@
 	services.openssh.enable = true;
 
 	# X11
-	services.xserver.enable = true;
-	services.xserver.windowManager.i3.enable = true;
-	services.xserver.windowManager.i3.package = pkgs.i3-gaps;
-	services.xserver.windowManager.i3.configFile = ./external/i3-config;
-	services.xserver.libinput.mouse.naturalScrolling = true; #FIXME
 	programs.dconf.enable = true;
+
+	# Wayland
+	programs.sway.enable = true;
 
 	# Printing
 	services.printing.enable = true;
