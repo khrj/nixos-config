@@ -31,6 +31,7 @@
 		electrum                # Bitcoin wallet
 		fd                      # File finder
 		flameshot               # Screenshot tool
+		gcc                     # Compiler
 		gitkraken               # Git GUI client
 		gnome.cheese            # Image viewer
 		google-chrome           # Browser
