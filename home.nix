@@ -9,7 +9,7 @@
 		./programs/chromium.nix      # Web browser
 		./programs/dunst.nix         # Notifications daemon
 		./programs/fish.nix          # Shell
-		./programs/git.nix           # Version control
+		./programs/git.nix           # Veqrsion control
 		./programs/gtk.nix           # GTK Configuration
 		./programs/i3status-rust.nix # Statusbar information
 		./programs/kitty.nix         # Terminal emulator
@@ -18,10 +18,16 @@
 		./programs/starship.nix      # Shell prompt
 	];
 
+	# TODO
+	# - Fix: chromium-widevine
+	# - Add: android-sdk-platform-tools, bootstrap-studio, docker,
+	#   docker-compose, dprint, howdy, polkit, prisma-studio, run-js
+	# - Make: grub-silent, possibly with plymouth (?)
 	home.packages = with pkgs; [
 		# Two-factor authentication app
 		(authy.overrideAttrs (oa: { meta = oa.meta // { priority = 6; }; }))
 		etcher                  # Disk image flasher
+		b3sum                   # BLAKE3 hashing tool 
 		bitwarden               # Password manager
 		bottom                  # Terminal-based task viewer
 		calibre                 # Ebook library
@@ -65,7 +71,7 @@
 		vlc                     # Audio/video player
 		yaru-theme              # GTK Theme
 		youtube-dl              # Multimedia scraper
-		zoom                    # Video call app
+		zoom-us                 # Video call app
 	];
 
 	# Temp
