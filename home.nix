@@ -39,7 +39,8 @@
 		flameshot               # Screenshot tool
 		gcc                     # Compiler
 		gitkraken               # Git GUI client
-		gnome.cheese            # Image viewer
+		gnome.cheese            # Camera application
+		gnome.geary             # Email client
 		google-chrome           # Browser
 		grex                    # Regex maker
 		handbrake               # Audio-video encoder
