@@ -41,6 +41,7 @@
 		gitkraken               # Git GUI client
 		gnome.cheese            # Camera application
 		gnome.geary             # Email client
+		gnome.nautilus          # File system explorer
 		google-chrome           # Browser
 		grex                    # Regex maker
 		handbrake               # Audio-video encoder
@@ -50,9 +51,9 @@
 		jdk                     # Java development kit 
 		libreoffice             # Office suite
 		lm_sensors              # Hardware sensors. Required for i3status-rust
-		gnome.nautilus          # File system explorer
 		neofetch                # Terminal-based system-info viewer
 		notion                  # Document manager / Collaboration
+		obsidian                # Document organiser
 		p7zip                   # Compression tool
 		procs                   # Terminal job viewer
 		qbittorrent             # Torrent client
