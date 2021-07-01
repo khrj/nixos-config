@@ -9,7 +9,6 @@
 	# Boot
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
-	boot.loader.grub.useOSProber = true;
 
 	# Time
 	time.timeZone = "Asia/Kolkata";
