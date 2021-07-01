@@ -7,7 +7,12 @@
 	];
 
 	# Boot
-	boot.loader.systemd-boot.enable = true;
+	boot.loader.grub = {
+		enable = true;
+		copyKernels = true;
+		device = "nodev";
+		efiSupport = true;
+	};
 	boot.loader.efi.canTouchEfiVariables = true;
 
 	# Time
