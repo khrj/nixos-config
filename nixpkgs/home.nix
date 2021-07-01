@@ -57,6 +57,7 @@
 		p7zip                   # Compression tool
 		procs                   # Terminal job viewer
 		qbittorrent             # Torrent client
+		rclone                  # Cloud sync tool
 		ripgrep                 # File-content searcher
 		rustup                  # Rust toolchain manager
 		sd                      # stdin filterer
