@@ -7,31 +7,39 @@
 	];
 
 	# Boot
-	boot.loader.grub = {
-		enable = true;
-		copyKernels = true;
-		device = "nodev";
-		efiSupport = true;
-		useOSProber = true;
+	boot.loader = {
+		grub = {
+			enable = true;
+			copyKernels = true;
+			device = "nodev";
+			efiSupport = true;
+			useOSProber = true;
+		};
+		efi.canTouchEfiVariables = true;
 	};
-	boot.loader.efi.canTouchEfiVariables = true;
 
 	# Time
 	time.timeZone = "Asia/Kolkata";
 
 	# Network
-	networking.useDHCP = false;
-	networking.interfaces.enp4s0.useDHCP = true;
-	networking.hostName = "btw-khushraj-uses-nix";
+	networking = {
+		useDHCP = false;
+		interfaces.enp4s0.useDHCP = true;
+		hostName = "btw-khushraj-uses-nix";
+	};
 	services.openssh.enable = true;
 
 	# X11
-	services.xserver.enable = true;
-	services.xserver.windowManager.i3.enable = true;
-	services.xserver.windowManager.i3.package = pkgs.i3-gaps;
-	services.xserver.windowManager.i3.configFile = ./external/i3-config;
-	services.xserver.windowManager.i3.extraPackages = with pkgs; [];
-	services.xserver.libinput.mouse.naturalScrolling = true; #FIXME
+	services.xserver = {
+		enable = true;
+		windowManager.i3 = {
+			enable = true;
+			package = pkgs.i3-gaps;
+			configFile = ./external/i3-config;
+			extraPackages = with pkgs; [];
+		};
+		libinput.mouse.naturalScrolling = true; #FIXME
+	};
 	programs.dconf.enable = true;
 
 	# Printing
@@ -46,13 +54,15 @@
 	};
 
 	# Accounts
-	users.mutableUsers = false;
-	users.users.khushraj = {
-		isNormalUser = true;
-		home = "/home/khushraj";
-		description = "Khushraj Rathod";
-		extraGroups = [ "wheel" ];
-		shell = pkgs.fish;
+	users = {
+		mutableUsers = false;
+		users.khushraj = {
+			isNormalUser = true;
+			home = "/home/khushraj";
+			description = "Khushraj Rathod";
+			extraGroups = [ "wheel" ];
+			shell = pkgs.fish;
+		};	
 	};
 	security.sudo.wheelNeedsPassword = false;
 
@@ -71,14 +81,17 @@
 	programs.seahorse.enable = true;
 	
 	## Virtualbox
-	virtualisation.virtualbox.host.enable = true;
-	virtualisation.virtualbox.host.enableExtensionPack = true;
+	virtualisation.virtualbox.host = {
+		enable = true;
+		enableExtensionPack = true;
+	};
 	users.extraGroups.vboxusers.members = [ "khushraj" ];
 
 	## PostgreSQL
-	services.postgresql.enable = true;
-	services.postgresql.package = pkgs.postgresql_13;
-
+	services.postgresql = {
+		enable = true;
+		package = pkgs.postgresql_13;
+	};
 	# environment.systemPackages = with pkgs; [];
 
 	# Fonts
