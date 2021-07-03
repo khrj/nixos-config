@@ -21,7 +21,7 @@
 	# TODO
 	# - Fix: chromium-widevine
 	# - Add: android-sdk-platform-tools, bootstrap-studio, docker,
-	#   docker-compose, dprint, howdy, polkit, prisma-studio, run-js
+	#   docker-compose, dprint, howdy, polkit, prisma-studio, run-js, notion
 	# - Make: grub-silent, possibly with plymouth (?)
 	home.packages = with pkgs; [
 		# Two-factor authentication app
@@ -54,7 +54,6 @@
 		lm_sensors              # Hardware sensors. Required for i3status-rust
 		neofetch                # Terminal-based system-info viewer
 		ngrok                   # Localhost proxy-tunnel
-		notion                  # Document manager / Collaboration
 		obsidian                # Document organiser
 		p7zip                   # Compression tool
 		procs                   # Terminal job viewer
