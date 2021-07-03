@@ -38,6 +38,7 @@
 		fd                      # File finder
 		flameshot               # Screenshot tool
 		gcc                     # Compiler
+		gimp                    # Image editor
 		gitkraken               # Git GUI client
 		gnome.cheese            # Camera application
 		gnome.geary             # Email client
