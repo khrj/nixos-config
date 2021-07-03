@@ -30,6 +30,7 @@
 	services.xserver.windowManager.i3.enable = true;
 	services.xserver.windowManager.i3.package = pkgs.i3-gaps;
 	services.xserver.windowManager.i3.configFile = ./external/i3-config;
+	services.xserver.windowManager.i3.extraPackages = with pkgs; [];
 	services.xserver.libinput.mouse.naturalScrolling = true; #FIXME
 	programs.dconf.enable = true;
 
