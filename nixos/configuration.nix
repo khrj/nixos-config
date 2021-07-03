@@ -12,6 +12,7 @@
 		copyKernels = true;
 		device = "nodev";
 		efiSupport = true;
+		useOSProber = true;
 	};
 	boot.loader.efi.canTouchEfiVariables = true;
 
@@ -37,7 +38,11 @@
 
 	# Sound
 	sound.enable = true;
-	hardware.pulseaudio.enable = true;
+	services.pipewire = {
+		enable = true;
+		alsa.enable = true;
+		pulse.enable = true;	
+	};
 
 	# Accounts
 	users.mutableUsers = false;
@@ -69,6 +74,10 @@
 	virtualisation.virtualbox.host.enableExtensionPack = true;
 	users.extraGroups.vboxusers.members = [ "khushraj" ];
 
+	## PostgreSQL
+	services.postgresql.enable = true;
+	services.postgresql.package = pkgs.postgresql_13;
+
 	# environment.systemPackages = with pkgs; [];
 
 	# Fonts
@@ -84,4 +93,3 @@
 	# State version, do not change with OS upgrade
 	system.stateVersion = "21.05";
 }
-
