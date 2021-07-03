@@ -8,6 +8,7 @@
 
 	# Boot
 	boot.loader = {
+		efi.canTouchEfiVariables = true;
 		grub = {
 			enable = true;
 			copyKernels = true;
@@ -15,32 +16,31 @@
 			efiSupport = true;
 			useOSProber = true;
 		};
-		efi.canTouchEfiVariables = true;
 	};
 
 	# Time
 	time.timeZone = "Asia/Kolkata";
 
 	# Network
+	services.openssh.enable = true;
 	networking = {
 		useDHCP = false;
 		interfaces.enp4s0.useDHCP = true;
 		hostName = "btw-khushraj-uses-nix";
 	};
-	services.openssh.enable = true;
 
 	# X11
+	programs.dconf.enable = true;
 	services.xserver = {
 		enable = true;
+		libinput.mouse.naturalScrolling = true; #FIXME
 		windowManager.i3 = {
 			enable = true;
 			package = pkgs.i3-gaps;
 			configFile = ./external/i3-config;
 			extraPackages = with pkgs; [];
 		};
-		libinput.mouse.naturalScrolling = true; #FIXME
 	};
-	programs.dconf.enable = true;
 
 	# Printing
 	services.printing.enable = true;
@@ -54,6 +54,7 @@
 	};
 
 	# Accounts
+	security.sudo.wheelNeedsPassword = false;
 	users = {
 		mutableUsers = false;
 		users.khushraj = {
@@ -64,7 +65,6 @@
 			shell = pkgs.fish;
 		};	
 	};
-	security.sudo.wheelNeedsPassword = false;
 
 	# Programs
 	nixpkgs.config.allowUnfree = true;
@@ -81,17 +81,18 @@
 	programs.seahorse.enable = true;
 	
 	## Virtualbox
+	users.extraGroups.vboxusers.members = [ "khushraj" ];
 	virtualisation.virtualbox.host = {
 		enable = true;
 		enableExtensionPack = true;
 	};
-	users.extraGroups.vboxusers.members = [ "khushraj" ];
 
 	## PostgreSQL
 	services.postgresql = {
 		enable = true;
 		package = pkgs.postgresql_13;
 	};
+
 	# environment.systemPackages = with pkgs; [];
 
 	# Fonts
