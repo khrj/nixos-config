@@ -105,6 +105,8 @@
 		(nerdfonts.override { fonts = [ "FiraCode" ]; })
 	];
 
-	# State version, do not change with OS upgrade
+	# Misc
+	nix.autoOptimiseStore = true;
+	## State version, do not change with OS upgrade
 	system.stateVersion = "21.05";
 }
