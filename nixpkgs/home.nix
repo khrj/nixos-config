@@ -53,6 +53,7 @@
 		libreoffice             # Office suite
 		lm_sensors              # Hardware sensors. Required for i3status-rust
 		neofetch                # Terminal-based system-info viewer
+		ngrok                   # Localhost proxy-tunnel
 		notion                  # Document manager / Collaboration
 		obsidian                # Document organiser
 		p7zip                   # Compression tool
