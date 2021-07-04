@@ -6,18 +6,24 @@
 	home.homeDirectory = "/home/khushraj";
 
 	imports = [
+		./programs/bat.nix           # File contents viewer
+		./programs/exa.nix           # File lister
 		./programs/chromium.nix      # Web browser
 		./programs/dunst.nix         # Notifications daemon
+		./programs/firefox.nix       # Web browser
 		./programs/fish.nix          # Shell
-		./programs/git.nix           # Veqrsion control
+		./programs/gh.nix            # GitHub client
+		./programs/git.nix           # Version control
 		./programs/gtk.nix           # GTK Configuration
 		./programs/i3status-rust.nix # Statusbar information
 		./programs/kitty.nix         # Terminal emulator
+		./programs/obs-studio.nix    # Advanced screen recorder
 		./programs/picom.nix         # Display compositor
 		./programs/rofi.nix          # Application launcher
 		./programs/starship.nix      # Shell prompt
+		./programs/vscode.nix        # Code editor
 	];
-
+	
 	# TODO
 	# - Fix: chromium-widevine
 	# - Add: android-sdk-platform-tools, bootstrap-studio, docker,
@@ -77,15 +83,6 @@
 		youtube-dl              # Multimedia scraper
 		zoom-us                 # Video call app
 	];
-
-	# Temp
-	programs.bat.enable = true; # File contents viewer
-	programs.exa.enable = true; # File lister
-	programs.firefox.enable = true; # Web browser
-	programs.firefox.package = pkgs.firefox-devedition-bin;
-	programs.gh.enable = true; # GitHub client
-	programs.obs-studio.enable = true; # Advanced screen recorder
-	programs.vscode.enable = true; # Code editor
 	
 	home.stateVersion = "21.05";
 }
