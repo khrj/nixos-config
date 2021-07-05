@@ -33,13 +33,19 @@
 	programs.dconf.enable = true;
 	services.xserver = {
 		enable = true;
-		libinput.mouse.naturalScrolling = true; #FIXME
-		windowManager.i3 = {
+		libinput = {
 			enable = true;
-			package = pkgs.i3-gaps;
-			configFile = ./external/i3-config;
-			extraPackages = with pkgs; [];
+			mouse.naturalScrolling = true;
 		};
+		desktopManager.session = [
+			{
+				name = "home-manager";
+				start = ''
+					${pkgs.runtimeShell} $HOME/.xsession &
+					waitPID=$!
+				'';
+			}
+		];
 	};
 
 	# Printing
@@ -77,7 +83,7 @@
 	
 	## Keyring
 	services.gnome.gnome-keyring.enable = true;
-	security.pam.services.lightdm.enableGnomeKeyring = true;
+	security.pam.services.lightdm.enableGnomeKeyring = true; #FIXME auto unlock
 	programs.seahorse.enable = true;
 	
 	## Virtualbox

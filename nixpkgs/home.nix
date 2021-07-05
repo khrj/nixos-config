@@ -22,6 +22,7 @@
 		./programs/rofi.nix          # Application launcher
 		./programs/starship.nix      # Shell prompt
 		./programs/vscode.nix        # Code editor
+		./programs/x.nix             # Display protocol
 	];
 	
 	# TODO
@@ -52,6 +53,7 @@
 		google-chrome           # Browser
 		grex                    # Regex maker
 		handbrake               # Audio-video encoder
+		hsetroot                # Wallpaper setter
 		hyperfine               # Benchmarking tool
 		imagemagick             # Terminal-based photo modifier
 		insomnia                # REST client
