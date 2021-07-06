@@ -42,6 +42,7 @@
 		du-dust                 # Terminal-based storage space viewer
 		efibootmgr              # EFI boot entry manager
 		electrum                # Bitcoin wallet
+		element-desktop         # Matrix Chat Client
 		fd                      # File finder
 		flameshot               # Screenshot tool
 		gcc                     # Compiler
