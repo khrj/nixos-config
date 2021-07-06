@@ -14,6 +14,7 @@
 				focus.followMouse = false;
 				gaps.inner = 15;
 				terminal = "kitty";
+				defaultWorkspace = "workspace number 1";
 				startup = [{ command = "hsetroot -cover ~/.background-image"; notification = false; }];
 				bars = [
 					{
