@@ -67,7 +67,6 @@
 			home = "/home/khushraj";
 			description = "Khushraj Rathod";
 			extraGroups = [ "wheel" ];
-			shell = pkgs.fish;
 		};	
 	};
 

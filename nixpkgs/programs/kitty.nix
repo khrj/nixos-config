@@ -9,6 +9,9 @@
 		};
 
 		settings = {
+			# Shell
+			shell = "fish";
+
 			# Cursor
 			cursor_shape = "beam";
 
