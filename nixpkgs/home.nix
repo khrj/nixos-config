@@ -23,14 +23,15 @@
 
 	imports = [
 		./programs/bat.nix           # File contents viewer
-		./programs/exa.nix           # File lister
 		./programs/chromium.nix      # Web browser
 		./programs/dunst.nix         # Notifications daemon
+		./programs/exa.nix           # File lister
 		./programs/firefox.nix       # Web browser
 		./programs/fish.nix          # Shell
 		./programs/flameshot.nix     # Screenshot tool
 		./programs/gh.nix            # GitHub client
 		./programs/git.nix           # Version control
+		./programs/gpg.nix           # Encryption tool
 		./programs/gtk.nix           # GTK Configuration
 		./programs/i3status-rust.nix # Statusbar information
 		./programs/kitty.nix         # Terminal emulator

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
 	imports = [
@@ -83,13 +83,9 @@
 	};
 
 	# Programs
-	nixpkgs.config.allowUnfree = true;
-	
-	## GPG
-	programs.gnupg.agent = {
-		enable = true;
-		enableSSHSupport = true;
-	};
+	nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+		"Oracle_VM_VirtualBox_Extension_Pack"
+	];
 	
 	## Keyring
 	services.gnome.gnome-keyring.enable = true;
