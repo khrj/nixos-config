@@ -90,6 +90,7 @@
 		ngrok                   # Localhost proxy-tunnel
 		obsidian                # Document organiser
 		p7zip                   # Compression tool
+		pavucontrol             # Audio configuration helper
 		procs                   # Terminal job viewer
 		qbittorrent             # Torrent client
 		rclone                  # Cloud sync tool

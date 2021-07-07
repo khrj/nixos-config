@@ -62,7 +62,6 @@
 	services.printing.enable = true;
 
 	# Sound
-	sound.enable = true;
 	services.pipewire = {
 		enable = true;
 		alsa.enable = true;
@@ -103,6 +102,5 @@
 
 	# Misc
 	nix.autoOptimiseStore = true;
-	## State version, do not change with OS upgrade
-	system.stateVersion = "21.05";
+	system.stateVersion = "21.05"; 	# State version, do not change with OS upgrade
 }
