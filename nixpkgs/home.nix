@@ -12,6 +12,7 @@
 		./programs/dunst.nix         # Notifications daemon
 		./programs/firefox.nix       # Web browser
 		./programs/fish.nix          # Shell
+		./programs/flameshot.nix     # Screenshot tool
 		./programs/gh.nix            # GitHub client
 		./programs/git.nix           # Version control
 		./programs/gtk.nix           # GTK Configuration
@@ -44,7 +45,6 @@
 		electrum                # Bitcoin wallet
 		element-desktop         # Matrix Chat Client
 		fd                      # File finder
-		flameshot               # Screenshot tool
 		gcc                     # Compiler
 		gimp                    # Image editor
 		gitkraken               # Git GUI client
