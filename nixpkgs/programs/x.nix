@@ -49,7 +49,8 @@
 					"${mod}+space" = ''exec "${menu}"'';
 				  	"${mod}+shift+s" = "focus mode_toggle";
 					"${mod}+d" = "focus child";
-				  };
+					"${mod}+shift+x" = ''exec "flameshot gui"'';  
+				};
 			};
 		};
 	};
