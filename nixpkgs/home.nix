@@ -22,25 +22,30 @@
 	];
 
 	imports = [
+		# Programs
 		./programs/bat.nix           # File contents viewer
 		./programs/chromium.nix      # Web browser
-		./programs/dunst.nix         # Notifications daemon
 		./programs/exa.nix           # File lister
 		./programs/firefox.nix       # Web browser
 		./programs/fish.nix          # Shell
-		./programs/flameshot.nix     # Screenshot tool
 		./programs/gh.nix            # GitHub client
 		./programs/git.nix           # Version control
-		./programs/gpg.nix           # Encryption tool
-		./programs/gtk.nix           # GTK Configuration
 		./programs/i3status-rust.nix # Statusbar information
 		./programs/kitty.nix         # Terminal emulator
 		./programs/obs-studio.nix    # Advanced screen recorder
-		./programs/picom.nix         # Display compositor
 		./programs/rofi.nix          # Application launcher
 		./programs/starship.nix      # Shell prompt
 		./programs/vscode.nix        # Code editor
-		./programs/x.nix             # Display protocol
+
+		# Services
+		./services/dunst.nix         # Notifications daemon
+		./services/flameshot.nix     # Screenshot tool
+		./services/gpg.nix           # Encryption tool
+		./services/picom.nix         # Display compositor
+
+		# Other
+		./other/gtk.nix              # GTK Configuration
+		./other/x.nix                # Display protocol
 	];
 
 	# TODO
