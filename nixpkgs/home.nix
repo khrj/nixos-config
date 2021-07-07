@@ -1,9 +1,25 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
 	programs.home-manager.enable = true;
 	home.username = "khushraj";
 	home.homeDirectory = "/home/khushraj";
+	
+	nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+		"authy"
+		"discord"
+		"firefox-devedition-bin" "firefox-devedition-bin-unwrapped"
+		"gitkraken"
+		"google-chrome"
+		"ngrok"
+		"obsidian"
+		"slack"
+		"spotify" "spotify-unwrapped"
+		"teams"
+		"teamviewer"
+		"vscode"
+		"zoom"
+	];
 
 	imports = [
 		./programs/bat.nix           # File contents viewer
