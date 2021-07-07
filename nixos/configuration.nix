@@ -29,7 +29,6 @@
 	};
 
 	# X11
-	programs.dconf.enable = true;
 	services.xserver = {
 		enable = true;
 		libinput = {
