@@ -86,12 +86,7 @@
 	nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
 		"Oracle_VM_VirtualBox_Extension_Pack"
 	];
-	
-	## Keyring
-	services.gnome.gnome-keyring.enable = true;
-	security.pam.services.lightdm.enableGnomeKeyring = true; #FIXME auto unlock
-	programs.seahorse.enable = true;
-	
+
 	## Virtualbox
 	users.extraGroups.vboxusers.members = [ "khushraj" ];
 	virtualisation.virtualbox.host = {

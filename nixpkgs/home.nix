@@ -40,6 +40,7 @@
 		# Services
 		./services/dunst.nix         # Notifications daemon
 		./services/flameshot.nix     # Screenshot tool
+		./services/gnome-keyring.nix # Keychain daemon
 		./services/gpg.nix           # Encryption tool
 		./services/picom.nix         # Display compositor
 
@@ -73,6 +74,7 @@
 		gnome.cheese            # Camera application
 		gnome.geary             # Email client
 		gnome.nautilus          # File system explorer
+		gnome.seahorse          # Keychain viewer
 		google-chrome           # Browser
 		grex                    # Regex maker
 		handbrake               # Audio-video encoder
