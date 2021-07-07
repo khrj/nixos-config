@@ -1,7 +1,5 @@
 { ... }:
 
 {
-	programs.exa = {
-		enable = true;
-	};
+	programs.exa.enable = true;
 }

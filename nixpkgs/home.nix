@@ -24,7 +24,7 @@
 		./programs/vscode.nix        # Code editor
 		./programs/x.nix             # Display protocol
 	];
-	
+
 	# TODO
 	# - Fix: chromium-widevine
 	# - Add: android-sdk-platform-tools, bootstrap-studio, docker,
@@ -76,16 +76,16 @@
 		slack                   # Communications app
 		speedtest-cli           # Network speed measurer
 		spotify                 # Music app
+		tdesktop                # Communications app
 		tealdeer                # Manual summarizer
 		teams                   # Video call app
 		teamviewer              # Remote desktop app
-		tdesktop                # Communications app
 		viu                     # Terminal image viewer
 		vlc                     # Audio/video player
 		yaru-theme              # GTK Theme
 		youtube-dl              # Multimedia scraper
 		zoom-us                 # Video call app
 	];
-	
+
 	home.stateVersion = "21.05";
 }
