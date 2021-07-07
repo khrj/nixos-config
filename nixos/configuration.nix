@@ -102,16 +102,6 @@
 
 	# environment.systemPackages = with pkgs; [];
 
-	# Fonts
-	fonts.fonts = with pkgs; [
-		noto-fonts
-		noto-fonts-cjk
-		noto-fonts-extra
-		noto-fonts-emoji
-		font-awesome
-		(nerdfonts.override { fonts = [ "FiraCode" ]; })
-	];
-
 	# Misc
 	nix.autoOptimiseStore = true;
 	## State version, do not change with OS upgrade

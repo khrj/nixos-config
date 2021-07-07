@@ -45,6 +45,7 @@
 		./services/picom.nix         # Display compositor
 
 		# Other
+		./other/fonts.nix            # Fonts
 		./other/gtk.nix              # GTK Configuration
 		./other/x.nix                # Display protocol
 	];
