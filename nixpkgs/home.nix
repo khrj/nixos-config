@@ -48,6 +48,7 @@
 		./other/fonts.nix            # Fonts
 		./other/gtk.nix              # GTK Configuration
 		./other/x.nix                # Display protocol
+		./other/cache.nix            # Declarative nix cache
 	];
 
 	# TODO
@@ -93,6 +94,7 @@
 		p7zip                   # Compression tool
 		pavucontrol             # Audio configuration helper
 		procs                   # Terminal job viewer
+		protonvpn-cli           # Virtual Private Network
 		qbittorrent             # Torrent client
 		rclone                  # Cloud sync tool
 		ripgrep                 # File-content searcher
