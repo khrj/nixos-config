@@ -79,6 +79,7 @@
 		gnome.nautilus          # File system explorer
 		gnome.seahorse          # Keychain viewer
 		google-chrome           # Browser
+		gparted                 # Partition manager
 		grex                    # Regex maker
 		handbrake               # Audio-video encoder
 		hsetroot                # Wallpaper setter
@@ -93,6 +94,7 @@
 		obsidian                # Document organiser
 		p7zip                   # Compression tool
 		pavucontrol             # Audio configuration helper
+		polkit_gnome            # Policy Kit Agent
 		procs                   # Terminal job viewer
 		protonvpn-cli           # Virtual Private Network
 		qbittorrent             # Torrent client

@@ -5,6 +5,8 @@
 		"Oracle_VM_VirtualBox_Extension_Pack"
 	];
 
+	programs.dconf.enable = true;
+	nix.trustedUsers = [ "khushraj" ];
 	nix.autoOptimiseStore = true;
 	system.stateVersion = "21.05"; 	# State version, do not change with OS upgrade
 
