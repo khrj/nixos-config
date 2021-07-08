@@ -53,7 +53,7 @@
 	# TODO
 	# - Fix: chromium-widevine
 	# - Add: android-sdk-platform-tools, bootstrap-studio, docker,
-	#   docker-compose, dprint, howdy, polkit, prisma-studio, run-js, notion
+	#   docker-compose, howdy, polkit, prisma-studio, run-js, notion
 	# - Make: grub-silent, possibly with plymouth (?)
 	home.packages = with pkgs; [
 		# Two-factor authentication app
@@ -64,6 +64,7 @@
 		bottom                  # Terminal-based task viewer
 		calibre                 # Ebook library
 		discord                 # Communications app
+		dprint                  # Code formatter - Installed globally for one-off uses
 		du-dust                 # Terminal-based storage space viewer
 		efibootmgr              # EFI boot entry manager
 		electrum                # Bitcoin wallet
