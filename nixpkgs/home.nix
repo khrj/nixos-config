@@ -43,6 +43,7 @@
 		./services/gnome-keyring.nix # Keychain daemon
 		./services/gpg.nix           # Encryption tool
 		./services/picom.nix         # Display compositor
+		./services/polkit.nix        # Policy kit graphical agent
 
 		# Other
 		./other/fonts.nix            # Fonts
