@@ -1,4 +1,10 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, config, ... }:
+
+let
+	unstable = import
+		(builtins.fetchTarball https://github.com/nixos/nixpkgs/tarball/nixos-unstable)
+		{ config = config.nixpkgs.config; };
+in
 
 {
 	programs.home-manager.enable = true;
@@ -66,7 +72,7 @@
 		bottom                  # Terminal-based task viewer
 		calibre                 # Ebook library
 		discord                 # Communications app
-		dprint                  # Code formatter - Installed globally for one-off uses
+		unstable.dprint         # Code formatter - Installed globally for one-off uses
 		du-dust                 # Terminal-based storage space viewer
 		efibootmgr              # EFI boot entry manager
 		electrum                # Bitcoin wallet
@@ -76,6 +82,7 @@
 		gimp                    # Image editor
 		gitkraken               # Git GUI client
 		gnome.cheese            # Camera application
+		gnome.gnome-font-viewer # Font viewer
 		gnome.geary             # Email client
 		gnome.nautilus          # File system explorer
 		gnome.seahorse          # Keychain viewer
