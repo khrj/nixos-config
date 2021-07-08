@@ -46,8 +46,6 @@ in
 		# Services
 		./services/dunst.nix         # Notifications daemon
 		./services/flameshot.nix     # Screenshot tool
-		./services/gnome-keyring.nix # Keychain daemon
-		./services/gpg.nix           # Encryption tool
 		./services/picom.nix         # Display compositor
 		./services/polkit.nix        # Policy kit graphical agent
 

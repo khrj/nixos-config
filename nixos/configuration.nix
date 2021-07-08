@@ -21,8 +21,10 @@
 		./components/xserver.nix
 
 		# Programs
-		./components/programs/postgres.nix
-		./components/programs/virtualbox.nix
+		./components/programs/gnome-keyring.nix # Keychain daemon
+		./components/programs/gpg.nix           # Encryption tool
+		./components/programs/postgres.nix      # Database server
+		./components/programs/virtualbox.nix    # Hardware virtualizer
 
 		# Generated
 		./auth.nix
