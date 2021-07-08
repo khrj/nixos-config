@@ -105,11 +105,11 @@ in
 		protonvpn-cli           # Virtual Private Network
 		qbittorrent             # Torrent client
 		rclone                  # Cloud sync tool
+		recapp                  # Screen Recorder
 		ripgrep                 # File-content searcher
 		rustup                  # Rust toolchain manager
 		sd                      # stdin filterer
 		signal-desktop          # Communications app
-		simplescreenrecorder    # Screen recorder
 		slack                   # Communications app
 		speedtest-cli           # Network speed measurer
 		spotify                 # Music app
