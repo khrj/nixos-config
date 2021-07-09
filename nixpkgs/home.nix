@@ -48,6 +48,7 @@ in
 		./services/flameshot.nix     # Screenshot tool
 		./services/picom.nix         # Display compositor
 		./services/polkit.nix        # Policy kit graphical agent
+		./services/rclone.nix        # Cloud sync daemon
 
 		# Other
 		./other/fonts.nix            # Fonts
