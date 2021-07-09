@@ -8,7 +8,7 @@
 				Install.WantedBy = [ "multi-user.target" ];
 				Service = {
 					Type = "simple";
-					ExecStart = "${pkgs.rclone}/bin/rclone mount google-drive: /home/khushraj/google-drive/ --vfs-cache-mode full";
+					ExecStart = "${pkgs.rclone}/bin/rclone mount google-drive: /home/khushraj/Google-Drive/ --vfs-cache-mode full";
 					Environment = "PATH=/run/wrappers/bin/:$PATH";
 					Restart = "always";
 					RestartSec = 1;
