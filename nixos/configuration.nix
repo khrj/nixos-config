@@ -19,6 +19,7 @@
 		./components/sound.nix
 		./components/time.nix
 		./components/xserver.nix
+		./components/file-system.nix
 
 		# Programs
 		./components/programs/gnome-keyring.nix # Keychain daemon
