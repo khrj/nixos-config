@@ -119,8 +119,10 @@ in
 		tealdeer                # Manual summarizer
 		teams                   # Video call app
 		teamviewer              # Remote desktop app
+		unzip                   # File unzipper
 		viu                     # Terminal image viewer
 		vlc                     # Audio/video player
+		wget                    # File downloader
 		yaru-theme              # GTK Theme
 		youtube-dl              # Multimedia scraper
 		zoom-us                 # Video call app
