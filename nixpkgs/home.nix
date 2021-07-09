@@ -51,10 +51,11 @@ in
 		./services/rclone.nix        # Cloud sync daemon
 
 		# Other
+		./other/cache.nix            # Declarative nix cache
 		./other/fonts.nix            # Fonts
 		./other/gtk.nix              # GTK Configuration
 		./other/x.nix                # Display protocol
-		./other/cache.nix            # Declarative nix cache
+		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
 	];
 
 	# TODO
