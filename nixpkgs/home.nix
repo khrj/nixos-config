@@ -61,7 +61,7 @@ in
 	# TODO
 	# - Fix: chromium-widevine
 	# - Add: android-sdk-platform-tools, bootstrap-studio, docker,
-	#   docker-compose, howdy, polkit, prisma-studio, run-js, notion
+	#   docker-compose, howdy, prisma-studio, run-js, notion
 	# - Make: grub-silent, possibly with plymouth (?)
 	home.packages = with pkgs; [
 		# Two-factor authentication app
