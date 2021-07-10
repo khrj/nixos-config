@@ -9,7 +9,7 @@ in
 		createDirectories = true;
 		desktop     = disable;
 		documents   = disable;
-		download    = "/home/khushraj/downloads";
+		download    = "/home/khushraj/Downloads";
 		music       = disable;
 		pictures    = disable;
 		publicShare = disable;
