@@ -72,6 +72,7 @@ in
 		bottom                  # Terminal-based task viewer
 		calibre                 # Ebook library
 		discord                 # Communications app
+		dmg2img                 # Disk image converter
 		unstable.dprint         # Code formatter - Installed globally for one-off uses
 		du-dust                 # Terminal-based storage space viewer
 		efibootmgr              # EFI boot entry manager
@@ -83,7 +84,6 @@ in
 		gitkraken               # Git GUI client
 		gnome.cheese            # Camera application
 		gnome.gnome-font-viewer # Font viewer
-		gnome.geary             # Email client
 		gnome.nautilus          # File system explorer
 		gnome.seahorse          # Keychain viewer
 		google-chrome           # Browser
@@ -97,6 +97,7 @@ in
 		jdk                     # Java development kit 
 		libreoffice             # Office suite
 		lm_sensors              # Hardware sensors. Required for i3status-rust
+		mailspring              # Email client
 		neofetch                # Terminal-based system-info viewer
 		ngrok                   # Localhost proxy-tunnel
 		obsidian                # Document organiser
@@ -120,6 +121,7 @@ in
 		teams                   # Video call app
 		teamviewer              # Remote desktop app
 		unzip                   # File unzipper
+		vim                     # Advanced text editor
 		viu                     # Terminal image viewer
 		vlc                     # Audio/video player
 		wget                    # File downloader
