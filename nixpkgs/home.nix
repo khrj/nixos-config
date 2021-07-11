@@ -79,6 +79,7 @@ in
 		electrum                # Bitcoin wallet
 		element-desktop         # Matrix Chat Client
 		fd                      # File finder
+		fritzing                # Hardware design tool
 		gcc                     # Compiler
 		gimp                    # Image editor
 		gitkraken               # Git GUI client
