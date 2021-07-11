@@ -66,7 +66,6 @@ in
 	home.packages = with pkgs; [
 		# Two-factor authentication app
 		(authy.overrideAttrs (oa: { meta = oa.meta // { priority = 6; }; }))
-		etcher                  # Disk image flasher
 		b3sum                   # BLAKE3 hashing tool 
 		bitwarden               # Password manager
 		bottom                  # Terminal-based task viewer
@@ -78,6 +77,7 @@ in
 		efibootmgr              # EFI boot entry manager
 		electrum                # Bitcoin wallet
 		element-desktop         # Matrix Chat Client
+		etcher                  # Disk image flasher
 		fd                      # File finder
 		fritzing                # Hardware design tool
 		gcc                     # Compiler
