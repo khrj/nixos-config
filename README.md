@@ -1,2 +1,2 @@
 # nixos-config
-@KhushrajRathod's NixOS dotfiles
+@khrj's NixOS dotfiles
