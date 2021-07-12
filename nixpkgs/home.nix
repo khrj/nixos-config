@@ -34,7 +34,6 @@ in
 		./programs/exa.nix           # File lister
 		./programs/firefox.nix       # Web browser
 		./programs/fish.nix          # Shell
-		./programs/gh.nix            # GitHub client
 		./programs/git.nix           # Version control
 		./programs/i3status-rust.nix # Statusbar information
 		./programs/kitty.nix         # Terminal emulator
@@ -81,6 +80,7 @@ in
 		fd                      # File finder
 		fritzing                # Hardware design tool
 		gcc                     # Compiler
+		gh                      # GitHub client
 		gimp                    # Image editor
 		gitkraken               # Git GUI client
 		gnome.cheese            # Camera application
