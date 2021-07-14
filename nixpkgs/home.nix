@@ -17,6 +17,7 @@ in
 		"firefox-devedition-bin" "firefox-devedition-bin-unwrapped"
 		"gitkraken"
 		"google-chrome"
+		"idea-ultimate"
 		"ngrok"
 		"obsidian"
 		"slack"
@@ -95,7 +96,8 @@ in
 		hyperfine               # Benchmarking tool
 		imagemagick             # Terminal-based photo modifier
 		insomnia                # REST client
-		jdk                     # Java development kit 
+		jetbrains.idea-ultimate # Java IDE
+		jetbrains.jdk           # Java development kit 
 		libreoffice             # Office suite
 		lm_sensors              # Hardware sensors. Required for i3status-rust
 		mailspring              # Email client
