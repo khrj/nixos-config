@@ -8,7 +8,6 @@
 			{ id = "nngceckbapebfimnlniiiahkandclblb"; } # Bitwarden
 			{ id = "lckanjgmijmafbedllaakclkaicjfmnk"; } # ClearURLs
 			{ id = "fkbfebkcoelajmhanocgppanfoojcdmg"; } # CodeCopy
-			{ id = "fhcgjolkccmbidfldomjliifgaodjagh"; } # Cookie AutoDelete
 			{ id = "ldpochfccmkkmhdbclfhpagapcfdljkj"; } # Decentraleyes
 			{ id = "cekfddagaicikmgoheekchngpadahmlf"; } # Google search link fix
 			{ id = "nkbihfbeogaeaoehlefnkodbefgpgknn"; } # MetaMask
