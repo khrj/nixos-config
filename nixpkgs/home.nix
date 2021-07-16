@@ -12,12 +12,12 @@ in
 	home.homeDirectory = "/home/khushraj";
 	
 	nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+		"android-studio-stable"
 		"authy"
 		"discord"
 		"firefox-devedition-bin" "firefox-devedition-bin-unwrapped"
 		"gitkraken"
 		"google-chrome"
-		"idea-ultimate"
 		"ngrok"
 		"obsidian"
 		"slack"
@@ -66,6 +66,7 @@ in
 	home.packages = with pkgs; [
 		# Two-factor authentication app
 		(authy.overrideAttrs (oa: { meta = oa.meta // { priority = 6; }; }))
+		android-studio          # Official IDE for Android
 		b3sum                   # BLAKE3 hashing tool 
 		bitwarden               # Password manager
 		bottom                  # Terminal-based task viewer
@@ -96,8 +97,7 @@ in
 		hyperfine               # Benchmarking tool
 		imagemagick             # Terminal-based photo modifier
 		insomnia                # REST client
-		jetbrains.idea-ultimate # Java IDE
-		jetbrains.jdk           # Java development kit 
+		jdk8                    # Java Development Kit
 		libreoffice             # Office suite
 		lm_sensors              # Hardware sensors. Required for i3status-rust
 		mailspring              # Email client
