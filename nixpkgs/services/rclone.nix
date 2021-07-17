@@ -5,7 +5,7 @@
 		services = {
 			rclone-mount = {
 				Unit.Description = "Backup and sync daemon [MOUNT]";
-				Install.WantedBy = [ "multi-user.target" ];
+				Install.WantedBy = [ "default.target" ];
 				Service = {
 					Type = "simple";
 					ExecStart = "${pkgs.rclone}/bin/rclone mount google-drive: /home/khushraj/Google-Drive/ --vfs-cache-mode full";
@@ -15,7 +15,7 @@
 				};
 			};
 			rclone-sync = {
-				Install.WantedBy = [ "multi-user.target" ];
+				Install.WantedBy = [ "default.target" ];
 				Service.ExecStart = "${pkgs.rclone}/bin/rclone sync google-drive: .google-drive-backup/";
 				Unit = {
 					Description = "Backup and sync daemon [SYNC]";

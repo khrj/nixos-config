@@ -101,6 +101,7 @@ in
 		libreoffice             # Office suite
 		lm_sensors              # Hardware sensors. Required for i3status-rust
 		mailspring              # Email client
+		mysql-workbench         # Database query tool
 		neofetch                # Terminal-based system-info viewer
 		ngrok                   # Localhost proxy-tunnel
 		obsidian                # Document organiser
