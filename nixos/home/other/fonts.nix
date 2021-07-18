@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
-    fonts.fontconfig.enable = true;
-    home.packages = with pkgs; [
+	fonts.fontconfig.enable = lib.mkForce true;
+	home.packages = with pkgs; [
 		noto-fonts
 		noto-fonts-cjk
 		noto-fonts-extra
