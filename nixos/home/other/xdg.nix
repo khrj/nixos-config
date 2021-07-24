@@ -5,6 +5,7 @@ let
 in
 {
 	xdg = {
+		configFile."mimeapps.list".force = true; # Overwrite mimeapps.list without prompting
 		userDirs = {
 			enable = true;
 			createDirectories = true;
