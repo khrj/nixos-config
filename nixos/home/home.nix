@@ -69,6 +69,7 @@ in
 		android-studio          # Official IDE for Android
 		b3sum                   # BLAKE3 hashing tool 
 		bitwarden               # Password manager
+		bitwarden-cli           # Password manager CLI
 		bottom                  # Terminal-based task viewer
 		calibre                 # Ebook library
 		discord                 # Communications app
