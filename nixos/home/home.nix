@@ -104,6 +104,7 @@
 		teams                   # Video call app
 		teamviewer              # Remote desktop app
 		unzip                   # File unzipper
+		v4l-utils               # Video input adjuster
 		vim                     # Advanced text editor
 		viu                     # Terminal image viewer
 		vlc                     # Audio/video player
