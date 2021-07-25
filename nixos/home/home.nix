@@ -1,32 +1,11 @@
-{ pkgs, lib, config, ... }:
-
-let
-	unstable = import
-		(builtins.fetchTarball https://github.com/nixos/nixpkgs/tarball/nixos-unstable)
-		{ config = config.nixpkgs.config; };
-in
+{ pkgs, unstable, lib, config, ... }:
 
 {
 	programs.home-manager.enable = true;
-	home.username = "khushraj";
-	home.homeDirectory = "/home/khushraj";
-	
-	nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-		"android-studio-stable"
-		"authy"
-		"discord"
-		"firefox-devedition-bin" "firefox-devedition-bin-unwrapped"
-		"gitkraken"
-		"google-chrome"
-		"ngrok"
-		"obsidian"
-		"slack"
-		"spotify" "spotify-unwrapped"
-		"teams"
-		"teamviewer"
-		"vscode"
-		"zoom"
-	];
+	home = {
+		username = "khushraj";
+		homeDirectory = "/home/khushraj";
+	};
 
 	imports = [
 		# Programs
@@ -51,7 +30,6 @@ in
 		./services/rclone.nix        # Cloud sync daemon
 
 		# Other
-		./other/cache.nix            # Declarative nix cache
 		./other/fonts.nix            # Fonts
 		./other/gtk.nix              # GTK Configuration
 		./other/x.nix                # Display protocol

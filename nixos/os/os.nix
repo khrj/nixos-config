@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ pkgs, unstable, config, lib, ... }:
 
 {	
 	imports = [
@@ -21,12 +21,32 @@
 		./components/programs/dconf.nix         # Gnome configuration
 
 		# Generated
-		./auth.nix
 		./hardware-configuration.nix
 	];
 
+	nix = {
+		package = pkgs.nixUnstable;
+		extraOptions = ''
+			experimental-features = nix-command flakes
+		'';
+	};
+
 	nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+		"android-studio-stable"
+		"authy"
+		"discord"
+		"firefox-devedition-bin" "firefox-devedition-bin-unwrapped"
+		"gitkraken"
+		"google-chrome"
+		"ngrok"
+		"obsidian"
 		"Oracle_VM_VirtualBox_Extension_Pack"
+		"slack"
+		"spotify" "spotify-unwrapped"
+		"teams"
+		"teamviewer"
+		"vscode"
+		"zoom"
 	];
 
 	nix.trustedUsers = [ "khushraj" ];

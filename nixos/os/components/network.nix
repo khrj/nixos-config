@@ -5,6 +5,6 @@
 	networking = {
 		useDHCP = false;
 		interfaces.enp4s0.useDHCP = true;
-		hostName = "btw-khushraj-uses-nix";
+		hostName = "khushrajs-desktop";
 	};
 }

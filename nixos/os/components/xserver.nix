@@ -9,7 +9,7 @@
 		};
 		displayManager.lightdm = {
 			enable = true;
-			background = builtins.path { name = "background-image"; path = /home/khushraj/.background-image; };
+			background = "/home/khushraj/.background-image";
 			greeters.enso = {
 				enable = true;
 				blur = true;
