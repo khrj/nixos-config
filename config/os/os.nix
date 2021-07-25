@@ -34,6 +34,7 @@
 	nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
 		"android-studio-stable"
 		"authy"
+		"code"
 		"discord"
 		"firefox-devedition-bin" "firefox-devedition-bin-unwrapped"
 		"gitkraken"
