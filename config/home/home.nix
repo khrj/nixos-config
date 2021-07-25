@@ -50,6 +50,7 @@
 		bitwarden-cli           # Password manager CLI
 		bottom                  # Terminal-based task viewer
 		calibre                 # Ebook library
+		cargo-edit              # Rust: Cargo helper commands
 		discord                 # Communications app
 		dmg2img                 # Disk image converter
 		unstable.dprint         # Code formatter - Installed globally for one-off uses
