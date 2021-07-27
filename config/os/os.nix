@@ -25,6 +25,8 @@
 	];
 
 	nix = {
+		trustedUsers = [ "khushraj" ];
+		autoOptimiseStore = true;
 		package = pkgs.nixUnstable;
 		extraOptions = ''
 			experimental-features = nix-command flakes
@@ -50,7 +52,5 @@
 		"zoom"
 	];
 
-	nix.trustedUsers = [ "khushraj" ];
-	nix.autoOptimiseStore = true;
 	system.stateVersion = "21.05"; 	# State version, do not change with OS upgrade
 }
