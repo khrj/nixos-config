@@ -44,7 +44,6 @@
 	home.packages = with pkgs; [
 		# Two-factor authentication app
 		(authy.overrideAttrs (oa: { meta = oa.meta // { priority = 6; }; }))
-		android-studio          # Official IDE for Android
 		b3sum                   # BLAKE3 hashing tool 
 		bitwarden               # Password manager
 		bitwarden-cli           # Password manager CLI
