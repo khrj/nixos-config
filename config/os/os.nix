@@ -14,6 +14,7 @@
 		./components/xserver.nix
 
 		# Programs
+		./components/programs/disable.nix       # Disabled programs
 		./components/programs/gnome-keyring.nix # Keychain daemon
 		./components/programs/gpg.nix           # Encryption tool
 		./components/programs/mysql.nix         # Database server

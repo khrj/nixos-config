@@ -17,6 +17,7 @@
 		./programs/git.nix           # Version control
 		./programs/i3status-rust.nix # Statusbar information
 		./programs/kitty.nix         # Terminal emulator
+		./programs/nix-index.nix     # command-not-found replacement
 		./programs/obs-studio.nix    # Advanced screen recorder
 		./programs/rofi.nix          # Application launcher
 		./programs/starship.nix      # Shell prompt
