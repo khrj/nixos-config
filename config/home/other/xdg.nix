@@ -22,12 +22,12 @@ in
 			enable = true;
 			defaultApplications = {
 				# Links
-				"x-scheme-handler/http" = "chromium-browser.desktop";
-				"x-scheme-handler/https" = "chromium-browser.desktop";
+				"x-scheme-handler/http" = "google-chrome.desktop";
+				"x-scheme-handler/https" = "google-chrome.desktop";
 				"x-scheme-handler/mailspring" = "Mailspring.desktop";
 
 				# Application
-				"application/pdf" = "chromium-browser.desktop";
+				"application/pdf" = "google-chrome.desktop";
 
 				# Text
 				"text/html" = "code.desktop";
