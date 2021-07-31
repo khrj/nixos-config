@@ -35,13 +35,13 @@
 	};
 
 	nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-		"android-studio-stable"
 		"authy"
 		"code"
 		"discord"
 		"firefox-devedition-bin" "firefox-devedition-bin-unwrapped"
 		"gitkraken"
 		"google-chrome"
+		"idea-ultimate"
 		"ngrok"
 		"obsidian"
 		"Oracle_VM_VirtualBox_Extension_Pack"

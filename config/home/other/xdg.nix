@@ -30,9 +30,9 @@ in
 				"application/pdf" = "google-chrome.desktop";
 
 				# Text
-				"text/html" = "code.desktop";
-				"text/markdown" = "code.desktop";
-				"text/plain" = "code.desktop";
+				"text/html" = "idea-ultimate.desktop";
+				"text/markdown" = "idea-ultimate.desktop";
+				"text/plain" = "idea-ultimate.desktop";
 			};
 		};
 	};

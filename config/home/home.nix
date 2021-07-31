@@ -75,7 +75,8 @@
 		hyperfine               # Benchmarking tool
 		imagemagick             # Terminal-based photo modifier
 		insomnia                # REST client
-		jdk8                    # Java Development Kit
+		jetbrains.idea-ultimate # Integrated Development Environment
+		jetbrains.jdk           # Java Development Kit
 		libreoffice             # Office suite
 		lm_sensors              # Hardware sensors. Required for i3status-rust
 		mailspring              # Email client
