@@ -50,6 +50,7 @@
 		"teams"
 		"teamviewer"
 		"vscode"
+		"vscode-extension-ms-vsliveshare-vsliveshare"
 		"zoom"
 	];
 
