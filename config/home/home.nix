@@ -10,6 +10,7 @@
 	imports = [
 		# Programs
 		./programs/bat.nix           # File contents viewer
+		./programs/direnv.nix        # Automatic flake loader
 		./programs/exa.nix           # File lister
 		./programs/firefox.nix       # Web browser
 		./programs/fish.nix          # Shell
