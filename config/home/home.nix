@@ -95,7 +95,6 @@
 		rclone                  # Cloud sync tool
 		recapp                  # Screen Recorder
 		ripgrep                 # File-content searcher
-		rustup                  # Rust toolchain manager
 		sd                      # stdin filterer
 		signal-desktop          # Communications app
 		slack                   # Communications app
