@@ -1,4 +1,4 @@
-{ pkgs, unstable, lib, config, ... }:
+{ pkgs, stable, lib, config, ... }:
 
 {
 	programs.home-manager.enable = true;
@@ -53,7 +53,7 @@
 		deja-dup                # Backup tool
 		discord                 # Communications app
 		dmg2img                 # Disk image converter
-		unstable.dprint         # Code formatter - Installed globally for one-off uses
+		dprint                  # Code formatter - Installed globally for one-off uses
 		du-dust                 # Terminal-based storage space viewer
 		efibootmgr              # EFI boot entry manager
 		electrum                # Bitcoin wallet
@@ -82,7 +82,7 @@
 		libreoffice             # Office suite
 		lm_sensors              # Hardware sensors. Required for i3status-rust
 		mailspring              # Email client
-		mysql-workbench         # Database query tool
+		# mysql-workbench         # Database query tool
 		neofetch                # Terminal-based system-info viewer
 		ngrok                   # Localhost proxy-tunnel
 		obsidian                # Document organiser

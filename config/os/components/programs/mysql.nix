@@ -1,8 +1,8 @@
-{ unstable, ... }:
+{ pkgs, ... }:
 
 {
 	services.mysql = {
 		enable = true;
-		package = unstable.mysql80;
+		package = pkgs.mysql80;
 	};
 }
