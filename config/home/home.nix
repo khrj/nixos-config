@@ -36,11 +36,9 @@
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
 	];
 
-	# TODO
-	# - Fix: chromium-widevine
-	# - Add: android-sdk-platform-tools, bootstrap-studio, docker,
-	#   docker-compose, howdy, prisma-studio, run-js, notion
-	# - Make: grub-silent, possibly with plymouth (?)
+	# TODO 
+	# Add: android-sdk-platform-tools, bootstrap-studio,
+	# prisma-studio, run-js, notion, howdy
 	home.packages = with pkgs; [
 		# Two-factor authentication app
 		(authy.overrideAttrs (oa: { meta = oa.meta // { priority = 6; }; }))
