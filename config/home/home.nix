@@ -32,7 +32,7 @@
 		# Other
 		./other/fonts.nix            # Fonts
 		./other/gtk.nix              # GTK Configuration
-		./other/x.nix                # Display protocol
+		./other/i3.nix               # Window manager
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
 	];
 

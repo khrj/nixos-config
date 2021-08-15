@@ -6,12 +6,12 @@
 		./components/accounts.nix
 		./components/bluetooth.nix
 		./components/boot.nix
+		./components/display-manager.nix
 		./components/file-system.nix
 		./components/network.nix
 		./components/printing.nix
 		./components/sound.nix
 		./components/time.nix
-		./components/xserver.nix
 
 		# Programs
 		./components/programs/gnome-keyring.nix # Keychain daemon
