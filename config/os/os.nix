@@ -8,7 +8,9 @@
 		./components/boot.nix
 		./components/display.nix
 		./components/file-system.nix
+#		./components/gnome.nix
 		./components/network.nix
+		./components/pantheon.nix
 		./components/printing.nix
 		./components/sound.nix
 		./components/time.nix
