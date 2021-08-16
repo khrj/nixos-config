@@ -6,7 +6,7 @@
 		./components/accounts.nix
 		./components/bluetooth.nix
 		./components/boot.nix
-		./components/display-manager.nix
+		./components/display.nix
 		./components/file-system.nix
 		./components/network.nix
 		./components/printing.nix
