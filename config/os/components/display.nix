@@ -21,9 +21,9 @@
 		};
 		desktopManager.session = [
 			{
-				name = "home-manager";
+				name = "i3";
 				start = ''
-					${pkgs.runtimeShell} $HOME/.xsession &
+					${pkgs.runtimeShell} $HOME/.hm-xsession &
 					waitPID=$!
 				'';
 			}
