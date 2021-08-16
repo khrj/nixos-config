@@ -7,18 +7,6 @@
 			enable = true;
 			mouse.naturalScrolling = true;
 		};
-		displayManager.lightdm = {
-			enable = true;
-			background = "/home/khushraj/.background-image";
-			greeters.enso = {
-				enable = true;
-				blur = true;
-				cursorTheme = {
-					name = "Yaru";
-					package = pkgs.yaru-theme;
-				};
-			};
-		};
 		desktopManager.session = [
 			{
 				name = "i3";
