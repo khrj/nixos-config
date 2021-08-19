@@ -40,77 +40,85 @@
 	# Add: android-sdk-platform-tools, bootstrap-studio,
 	# prisma-studio, run-js, notion, howdy
 	home.packages = with pkgs; [
-		# Two-factor authentication app
-		(authy.overrideAttrs (oa: { meta = oa.meta // { priority = 6; }; }))
-		b3sum                   # BLAKE3 hashing tool 
-		bitwarden               # Password manager
-		bitwarden-cli           # Password manager CLI
-		bottom                  # Terminal-based task viewer
-		calibre                 # Ebook library
+		# Code
 		cargo-edit              # Rust: Cargo helper commands
-		deja-dup                # Backup tool
-		discord                 # Communications app
-		dmg2img                 # Disk image converter
 		dprint                  # Code formatter - Installed globally for one-off uses
-		du-dust                 # Terminal-based storage space viewer
-		efibootmgr              # EFI boot entry manager
+		gcc                     # Compiler
+		gh                      # GitHub client
+		gitkraken               # Git GUI client
+		insomnia                # REST client
+		jetbrains.idea-ultimate # Integrated Development Environment
+		jetbrains.jdk           # Java Development Kit
+		vim                     # Advanced text editor
+
+		# Apps
+		(authy.overrideAttrs 
+			(oa: { meta = oa.meta // { priority = 6; }; })
+		)                       # Two-factor authentication app
+		bitwarden               # Password manager
+		calibre                 # Ebook library
+		discord                 # Communications app
 		electrum                # Bitcoin wallet
 		element-desktop         # Matrix Chat Client
 		etcher                  # Disk image flasher
-		fd                      # File finder
 		fritzing                # Hardware design tool
-		gcc                     # Compiler
-		gh                      # GitHub client
 		gimp                    # Image editor
-		gitkraken               # Git GUI client
+		google-chrome           # Browser
+		handbrake               # Audio-video encoder
+		mailspring              # Email client
+		libreoffice             # Office suite
+		stable.mysql-workbench  # Database query tool
+		obsidian                # Document organiser
+		qbittorrent             # Torrent client
+		recapp                  # Screen Recorder
+		signal-desktop          # Communications app
+		slack                   # Communications app
+		spotify                 # Music app
+		tdesktop                # Communications app
+		teams                   # Video call app
+		teamviewer              # Remote desktop app
+		vlc                     # Audio/video player
+		zoom-us                 # Video call app
+
+		# CLI Tools
+		b3sum                   # BLAKE3 hashing tool 
+		bitwarden-cli           # Password manager CLI
+		bottom                  # Terminal-based task viewer
+		dmg2img                 # Disk image converter
+		du-dust                 # Terminal-based storage space viewer
+		fd                      # File finder
+		grex                    # Regex maker
+		hyperfine               # Benchmarking tool
+		imagemagick             # Terminal-based photo modifier
+		neofetch                # Terminal-based system-info viewer
+		ngrok                   # Localhost proxy-tunnel
+		p7zip                   # Compression tool
+		procs                   # Terminal job viewer
+		protonvpn-cli           # Virtual Private Network
+		rclone                  # Cloud sync tool
+		ripgrep                 # File-content searcher
+		sd                      # stdin filterer
+		speedtest-cli           # Network speed measurer
+		tealdeer                # Manual summarizer
+		unzip                   # File unzipper
+		viu                     # Terminal image viewer
+		wget                    # File downloader
+		youtube-dl              # Multimedia scraper
+
+		# System
+		deja-dup                # Backup tool
+		efibootmgr              # EFI boot entry manager
 		gnome.cheese            # Camera application
 		gnome.gnome-font-viewer # Font viewer
 		gnome.nautilus          # File system explorer
 		gnome.seahorse          # Keychain viewer
-		google-chrome           # Browser
 		gparted                 # Partition manager
-		grex                    # Regex maker
-		handbrake               # Audio-video encoder
 		hsetroot                # Wallpaper setter
-		hyperfine               # Benchmarking tool
-		imagemagick             # Terminal-based photo modifier
-		insomnia                # REST client
-		jetbrains.idea-ultimate # Integrated Development Environment
-		jetbrains.jdk           # Java Development Kit
-		libreoffice             # Office suite
 		lm_sensors              # Hardware sensors. Required for i3status-rust
-		mailspring              # Email client
-		stable.mysql-workbench  # Database query tool
-		neofetch                # Terminal-based system-info viewer
-		ngrok                   # Localhost proxy-tunnel
-		obsidian                # Document organiser
-		p7zip                   # Compression tool
 		pavucontrol             # Audio configuration helper
 		polkit_gnome            # Policy Kit Agent
-		procs                   # Terminal job viewer
-		protonvpn-cli           # Virtual Private Network
-		qbittorrent             # Torrent client
-		rclone                  # Cloud sync tool
-		recapp                  # Screen Recorder
-		ripgrep                 # File-content searcher
-		sd                      # stdin filterer
-		signal-desktop          # Communications app
-		slack                   # Communications app
-		speedtest-cli           # Network speed measurer
-		spotify                 # Music app
-		tdesktop                # Communications app
-		tealdeer                # Manual summarizer
-		teams                   # Video call app
-		teamviewer              # Remote desktop app
-		unzip                   # File unzipper
 		v4l-utils               # Video input adjuster
-		vim                     # Advanced text editor
-		viu                     # Terminal image viewer
-		vlc                     # Audio/video player
-		wget                    # File downloader
 		yaru-theme              # GTK Theme
-		youtube-dl              # Multimedia scraper
-		zoom-us                 # Video call app
 	];
 
 	home.stateVersion = "21.05";
