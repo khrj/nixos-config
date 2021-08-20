@@ -63,6 +63,7 @@
 		(authy.overrideAttrs 
 			(oa: { meta = oa.meta // { priority = 6; }; })
 		)                       # Two-factor authentication app
+		betterdiscordctl        # Discord enhancer
 		bitwarden               # Password manager
 		calibre                 # Ebook library
 		discord                 # Communications app
