@@ -47,9 +47,17 @@
 		gh                      # GitHub client
 		gitkraken               # Git GUI client
 		insomnia                # REST client
-		jetbrains.idea-ultimate # Integrated Development Environment
-		jetbrains.jdk           # Java Development Kit
 		vim                     # Advanced text editor
+
+		# Jetbrains
+		android-studio                 # Android
+		jetbrains.idea-ultimate        # Java
+		jetbrains.pycharm-professional # Python
+		jetbrains.clion                # Rust
+		jetbrains.goland               # Go
+		jetbrains.webstorm             # JS/TS + HTML/CSS
+		jetbrains.datagrip             # SQL
+		jetbrains.jdk                  # Java Development Kit
 
 		# Apps
 		(authy.overrideAttrs 

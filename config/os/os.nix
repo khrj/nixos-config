@@ -38,25 +38,7 @@
 		'';
 	};
 
-	nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-		"authy"
-		"code"
-		"discord"
-		"firefox-devedition-bin" "firefox-devedition-bin-unwrapped"
-		"gitkraken"
-		"google-chrome"
-		"idea-ultimate"
-		"ngrok"
-		"obsidian"
-		"Oracle_VM_VirtualBox_Extension_Pack"
-		"slack"
-		"spotify" "spotify-unwrapped"
-		"teams"
-		"teamviewer"
-		"vscode"
-		"vscode-extension-ms-vsliveshare-vsliveshare"
-		"zoom"
-	];
+	nixpkgs.config.allowUnfree = true;
 
 	system.stateVersion = "21.05"; 	# State version, do not change with OS upgrade
 }
