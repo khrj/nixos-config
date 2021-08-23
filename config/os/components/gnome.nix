@@ -8,6 +8,12 @@
 			wayland = false;
 		};
 	};
+
+	environment.systemPackages = with pkgs.gnomeExtensions; [
+		blur-my-shell
+		transparent-top-bar-adjustable-transparency
+	];
+
 	environment.gnome.excludePackages = with pkgs.gnome; [
 		baobab
 		cheese
