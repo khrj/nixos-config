@@ -3,7 +3,10 @@
 {
 	services.xserver = {
 		desktopManager.gnome.enable = true;
-		displayManager.gdm.enable = true;
+		displayManager.gdm = {
+			enable = true;
+			wayland = false;
+		};
 	};
 	environment.gnome.excludePackages = with pkgs.gnome; [
 		baobab
