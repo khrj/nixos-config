@@ -3,8 +3,16 @@
 {
 	gtk = {
 		enable = true;
-		iconTheme.name = "elementary";
-		theme.name = "elementary";
-		gtk3.extraConfig.gtk-cursor-theme-name = "elementary";
+		iconTheme.name = "Yaru";
+		theme.name = "Yaru";
+		gtk3 = {
+			extraConfig.gtk-cursor-theme-name = "Yaru";
+			extraCss = ''
+				.background decoration {
+					padding: 0px;
+					border: 0px;
+				}
+			'';
+		};
 	};
 }
