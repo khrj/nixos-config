@@ -36,9 +36,7 @@
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
 	];
 
-	# TODO 
-	# Add: android-sdk-platform-tools, bootstrap-studio,
-	# prisma-studio, run-js, notion, howdy
+	# TODO Add: bootstrap-studio, prisma-studio, run-js, notion, howdy
 	home.packages = with pkgs; [
 		# Code
 		cargo-edit              # Rust: Cargo helper commands
