@@ -15,6 +15,7 @@
 			[
 				cachix.nixosModules.declarative-cachix
 				({ pkgs, ... }: {
+					_module.args.nixpkgs-ref = nixpkgs;
 					_module.args.stable = import nixpkgs-stable { inherit (pkgs.stdenv.targetPlatform) system; };
 					imports = [ ./os/os.nix ];
 				})

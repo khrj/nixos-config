@@ -1,4 +1,4 @@
-{ pkgs, stable, config, lib, ... }:
+{ pkgs, stable, nixpkgs-ref, config, lib, ... }:
 
 {	
 	imports = [
@@ -30,6 +30,9 @@
 		trustedUsers = [ "khushraj" ];
 		autoOptimiseStore = true;
 		package = pkgs.nixUnstable;
+		# Use system nixpkgs for vvvvvvv
+		#             "nix shell nixpkgs#<pkgname>"
+		registry.nixpkgs.flake = nixpkgs-ref;
 		extraOptions = ''
 			experimental-features = nix-command flakes
 			keep-outputs = true
