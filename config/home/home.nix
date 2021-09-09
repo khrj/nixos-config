@@ -73,6 +73,7 @@
 		google-chrome           # Browser
 		handbrake               # Audio-video encoder
 		mailspring              # Email client
+		minecraft               # Sandbox game
 		libreoffice             # Office suite
 		stable.mysql-workbench  # Database query tool
 		obsidian                # Document organiser
