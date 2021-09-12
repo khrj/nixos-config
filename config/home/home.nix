@@ -15,6 +15,7 @@
 		./programs/firefox.nix       # Web browser
 		./programs/fish.nix          # Shell
 		./programs/git.nix           # Version control
+		./programs/go.nix            # Golang
 		./programs/i3status-rust.nix # Statusbar information
 		./programs/kitty.nix         # Terminal emulator
 		./programs/obs-studio.nix    # Advanced screen recorder
