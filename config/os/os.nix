@@ -4,6 +4,7 @@
 	imports = [
 		# Components
 		./components/accounts.nix
+		./components/auto-upgrade.nix
 		./components/bluetooth.nix
 		./components/boot.nix
 		./components/display.nix
