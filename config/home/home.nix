@@ -113,6 +113,7 @@
 		tealdeer                # Manual summarizer
 		unzip                   # File unzipper
 		viu                     # Terminal image viewer
+		websocat                # WebSocket client
 		wget                    # File downloader
 		youtube-dl              # Multimedia scraper
 
