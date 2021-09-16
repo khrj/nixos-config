@@ -46,6 +46,7 @@
 		gh                      # GitHub client
 		gitkraken               # Git GUI client
 		insomnia                # REST client
+		rustup                  # Rust toolchain installer
 		vim                     # Advanced text editor
 
 		# Jetbrains
