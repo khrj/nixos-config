@@ -23,8 +23,6 @@
 				display-drun:                   "";
 				drun-display-format:            "{name}";
 				disable-history:                false;
-				fullscreen:                     true;
-				hide-scrollbar:                 true;
 				sidebar-mode:                   false;
 			}
 
@@ -43,6 +41,8 @@
 				border:                         0px;
 				border-color:                   @border;
 				border-radius:                  0px;
+				width:                          100%;
+				height:                         100%;
 			}
 
 			prompt {
@@ -105,11 +105,17 @@
 			}
 
 			element-icon {
+				background-color:               @background-alt;
+				text-color:                     inherit;
+				horizontal-align:               0.5;
+				vertical-align:                 0.5;
 				size:                           81px;
 				border:                         0px;
 			}
 
 			element-text {
+				background-color:               @background-alt;
+				text-color:                     inherit;
 				expand:                         true;
 				horizontal-align:               0.5;
 				vertical-align:                 0.5;
