@@ -121,6 +121,7 @@
 		deja-dup                # Backup tool
 		efibootmgr              # EFI boot entry manager
 		gnome.cheese            # Camera application
+		gnome.gedit             # Text editor
 		gnome.gnome-font-viewer # Font viewer
 		gnome.nautilus          # File system explorer
 		gnome.seahorse          # Keychain viewer
