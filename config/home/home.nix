@@ -101,6 +101,7 @@
 		grex                    # Regex maker
 		hyperfine               # Benchmarking tool
 		imagemagick             # Terminal-based photo modifier
+		jq                      # JSON processor
 		neofetch                # Terminal-based system-info viewer
 		ngrok                   # Localhost proxy-tunnel
 		p7zip                   # Compression tool
