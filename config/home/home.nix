@@ -131,6 +131,7 @@
 		lm_sensors              # Hardware sensors. Required for i3status-rust
 		pavucontrol             # Audio configuration helper
 		polkit_gnome            # Policy Kit Agent
+		shotwell                # Image viewer
 		v4l-utils               # Video input adjuster
 		yaru-theme              # GTK Theme
 	];
