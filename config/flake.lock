@@ -83,7 +83,6 @@
         "cachix": "cachix",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2",
-        "nixpkgs-dev": "nixpkgs-dev",
         "nixpkgs-stable": "nixpkgs-stable"
       }
     }
