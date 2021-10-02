@@ -46,6 +46,17 @@
         "type": "indirect"
       }
     },
+    "nixpkgs-dev": {
+      "locked": {
+        "narHash": "sha256-tipH9nZ8iY92AC+cup1VM2GOCsyOvJSUeaOC7YBJlVg=",
+        "path": "/home/khushraj/Builds/nixpkgs",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/khushraj/Builds/nixpkgs",
+        "type": "path"
+      }
+    },
     "nixpkgs-stable": {
       "locked": {
         "lastModified": 1632418649,
@@ -83,6 +94,7 @@
         "cachix": "cachix",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2",
+        "nixpkgs-dev": "nixpkgs-dev",
         "nixpkgs-stable": "nixpkgs-stable"
       }
     }
