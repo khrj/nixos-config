@@ -129,6 +129,7 @@
 		gnome.seahorse             # Keychain viewer
 		gparted                    # Partition manager
 		hsetroot                   # Wallpaper setter
+		libsForQt5.okular          # PDF Editor
 		lm_sensors                 # Hardware sensors. Required for i3status-rust
 		pavucontrol                # Audio configuration helper
 		polkit_gnome               # Policy Kit Agent
