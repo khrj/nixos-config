@@ -1,4 +1,4 @@
-{ pkgs, stable, lib, config, ... }:
+{ pkgs, stable, lib, config, dev, ... }:
 
 {
 	programs.home-manager.enable = true;
@@ -41,7 +41,7 @@
 	home.packages = with pkgs; [
 		# Code
 		cargo-edit              # Rust: Cargo helper commands
-		dprint                  # Code formatter - Installed globally for one-off uses
+		dev.dprint              # Code formatter - Installed globally for one-off uses
 		gcc                     # Compiler
 		gh                      # GitHub client
 		gitkraken               # Git GUI client
