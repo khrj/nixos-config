@@ -79,6 +79,7 @@
 		libreoffice                # Office suite
 		stable.mysql-workbench     # Database query tool
 		obsidian                   # Document organiser
+		pick-colour-picker         # Colour picker
 		qbittorrent                # Torrent client
 		recapp                     # Screen Recorder
 		signal-desktop             # Communications app
