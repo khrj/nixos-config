@@ -41,7 +41,12 @@
 		'';
 	};
 
-	nixpkgs.config.allowUnfree = true;
+	nixpkgs.config = {
+		allowUnfree = true;
+		permittedInsecurePackages = [
+			"electron-9.4.4"
+		];
+	};
 
 	system.stateVersion = "21.05"; 	# State version, do not change with OS upgrade
 }
