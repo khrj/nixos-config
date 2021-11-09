@@ -45,6 +45,7 @@
 		gcc                     # Compiler
 		gh                      # GitHub client
 		gitkraken               # Git GUI client
+		git-lfs                 # Git Large File Storage
 		insomnia                # REST client
 		rustup                  # Rust toolchain installer
 		vim                     # Advanced text editor
