@@ -75,7 +75,6 @@
 		gimp                         # Image editor
 		google-chrome                # Browser
 		handbrake                    # Audio-video encoder
-		mailspring                   # Email client
 		libreoffice                  # Office suite
 		stable.mysql-workbench       # Database query tool
 		obsidian                     # Document organiser
