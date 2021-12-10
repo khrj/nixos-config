@@ -16,12 +16,13 @@
 		./components/time.nix
 
 		# Programs
+		./components/programs/dconf.nix         # Gnome configuration
 		./components/programs/gnome-keyring.nix # Keychain daemon
 		./components/programs/gpg.nix           # Encryption tool
 		./components/programs/mysql.nix         # Database server
 		./components/programs/postgres.nix      # Database server
+		./components/programs/tailscale.nix     # Private network
 		./components/programs/virtualbox.nix    # Hardware virtualizer
-		./components/programs/dconf.nix         # Gnome configuration
 
 		# Generated
 		./hardware-configuration.nix
