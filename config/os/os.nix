@@ -10,6 +10,7 @@
 		./components/display.nix
 		./components/file-system.nix
 		./components/gnome.nix
+		./components/hardware.nix
 		./components/network.nix
 		./components/printing.nix
 		./components/sound.nix
@@ -27,7 +28,7 @@
 		./components/programs/xrdp.nix          # Remote access
 
 		# Generated
-		./hardware-configuration.nix
+		./hardware-configuration.nix            # Generated hardware configuration
 	];
 
 	nix = {
