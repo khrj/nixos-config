@@ -121,7 +121,6 @@
 		zip                          # File zipper
 
 		# System
-		deja-dup                     # Backup tool
 		efibootmgr                   # EFI boot entry manager
 		gnome.cheese                 # Camera application
 		gnome.gedit                  # Text editor
@@ -139,6 +138,7 @@
 		polkit_gnome                 # Policy Kit Agent
 		shotwell                     # Image viewer
 		v4l-utils                    # Video input adjuster
+		vorta                        # Backup tool
 		yaru-theme                   # GTK Theme
 	];
 

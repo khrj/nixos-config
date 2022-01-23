@@ -18,6 +18,7 @@
 
 		# Programs
 		./components/programs/adb.nix           # Android development bridge
+		./components/programs/borg-backup.nix   # Backup daemon
 		./components/programs/dconf.nix         # Gnome configuration
 		./components/programs/gnome-keyring.nix # Keychain daemon
 		./components/programs/gpg.nix           # Encryption tool
