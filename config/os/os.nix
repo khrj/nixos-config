@@ -39,8 +39,6 @@
 		registry.nixpkgs.flake = nixpkgs-ref;
 		extraOptions = ''
 			experimental-features = nix-command flakes
-			keep-outputs = true
-			keep-derivations = true
 		'';
 		settings = {
 			trusted-users = [ "khushraj" ];
