@@ -33,8 +33,6 @@
 	];
 
 	nix = {
-		trustedUsers = [ "khushraj" ];
-		autoOptimiseStore = true;
 		package = pkgs.nixUnstable;
 		# Use system nixpkgs for vvvvvvv
 		#             "nix shell nixpkgs#<pkgname>"
@@ -44,6 +42,10 @@
 			keep-outputs = true
 			keep-derivations = true
 		'';
+		settings = {
+			trusted-users = [ "khushraj" ];
+			auto-optimise-store = true;
+		};
 	};
 
 	nixpkgs.config = {
