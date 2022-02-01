@@ -10,7 +10,6 @@
 			"--update-input" "nixpkgs-stable"
 			"--update-input" "nixpkgs-master"
 			"--update-input" "home-manager"
-			"--update-input" "cachix"
 		];
 	};
 }

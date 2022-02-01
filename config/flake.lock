@@ -1,20 +1,5 @@
 {
   "nodes": {
-    "cachix": {
-      "locked": {
-        "lastModified": 1625560633,
-        "narHash": "sha256-Uhg950dgJiytcaecOJ3KB2MWDOdtUEogVyon9m6J/3g=",
-        "owner": "jonascarpay",
-        "repo": "declarative-cachix",
-        "rev": "1986455ab3e55804458bf6e7d2a5f5b8a68defce",
-        "type": "github"
-      },
-      "original": {
-        "owner": "jonascarpay",
-        "repo": "declarative-cachix",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": "nixpkgs"
@@ -93,7 +78,6 @@
     },
     "root": {
       "inputs": {
-        "cachix": "cachix",
         "home-manager": "home-manager",
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-stable": "nixpkgs-stable",
