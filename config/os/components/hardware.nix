@@ -6,7 +6,7 @@
 		fsType = "btrfs";
 		options = [
 			"nofail"
-			"x-systemd.device-timeout=1"
+			"x-systemd.device-timeout=1ms"
 		];
 	};
 }
