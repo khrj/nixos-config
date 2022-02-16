@@ -6,9 +6,9 @@
 		dates = "15:00";
 		flake = "/home/khushraj/nixos-config/config";
 		flags = [
-			"--update-input" "nixpkgs-unstable"
-			"--update-input" "nixpkgs-stable"
-			"--update-input" "nixpkgs-master"
+			"--update-input" "nixos-unstable"
+			"--update-input" "nixos-unstable-small"
+			"--update-input" "nixos-stable"
 			"--update-input" "home-manager"
 		];
 	};

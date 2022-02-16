@@ -1,4 +1,4 @@
-{ pkgs, stable, nixpkgs-ref, config, lib, ... }:
+{ pkgs, stable, unstable-ref, config, lib, ... }:
 
 {	
 	imports = [
@@ -36,7 +36,7 @@
 		package = pkgs.nixUnstable;
 		# Use system nixpkgs for vvvvvvv
 		#             "nix shell nixpkgs#<pkgname>"
-		registry.nixpkgs.flake = nixpkgs-ref;
+		registry.nixpkgs.flake = unstable-ref;
 		extraOptions = ''
 			experimental-features = nix-command flakes
 		'';
@@ -50,6 +50,8 @@
 		allowUnfree = true;
 		permittedInsecurePackages = [
 			"electron-9.4.4"
+			"electron-12.2.3"
+			"electron-13.6.9"
 		];
 	};
 
