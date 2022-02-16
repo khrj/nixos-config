@@ -16,24 +16,19 @@
 		./programs/fish.nix          # Shell
 		./programs/git.nix           # Version control
 		./programs/go.nix            # Golang
-		./programs/i3status-rust.nix # Statusbar information
 		./programs/kitty.nix         # Terminal emulator
 		./programs/obs-studio.nix    # Advanced screen recorder
-		./programs/rofi.nix          # Application launcher
 		./programs/starship.nix      # Shell prompt
 		./programs/vscode.nix        # Code editor
 
 		# Services
-		./services/dunst.nix         # Notifications daemon
 		./services/flameshot.nix     # Screenshot tool
-		./services/picom.nix         # Display compositor
 		./services/polkit.nix        # Policy kit graphical agent
 		./services/rclone.nix        # Cloud sync daemon
 
 		# Other
 		./other/fonts.nix            # Fonts
 		./other/gtk.nix              # GTK Configuration
-		./other/i3.nix               # Window manager
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
 	];
 
