@@ -1,4 +1,4 @@
-{ pkgs, stable, lib, config, ... }:
+{ pkgs, unstable-small, stable, lib, config, ... }:
 
 {
 	programs.home-manager.enable = true;
@@ -62,7 +62,7 @@
 		betterdiscordctl             # Discord enhancer
 		bitwarden                    # Password manager
 		calibre                      # Ebook library
-		discord                      # Communications app
+		unstable-small.discord       # Communications app
 		electrum                     # Bitcoin wallet
 		element-desktop              # Matrix Chat Client
 		etcher                       # Disk image flasher

@@ -16,7 +16,10 @@
 				({ pkgs, ... }: {
 					_module.args.unstable-ref = nixos-unstable;
 					_module.args.stable = import nixos-stable { inherit (pkgs.stdenv.targetPlatform) system; };
-					_module.args.unstable-small = import nixos-unstable-small { inherit (pkgs.stdenv.targetPlatform) system; };
+					_module.args.unstable-small = import nixos-unstable-small { 
+						inherit (pkgs.stdenv.targetPlatform) system;
+						config.allowUnfree = true;
+					};
 					imports = [ ./os/os.nix ];
 				})
 				home-manager.nixosModules.home-manager {
@@ -24,7 +27,10 @@
 					home-manager.useUserPackages = true;
 					home-manager.users.khushraj = { pkgs, ... }: {
 						_module.args.stable = import nixos-stable { inherit (pkgs.stdenv.targetPlatform) system; };
-						_module.args.unstable-small = import nixos-unstable-small { inherit (pkgs.stdenv.targetPlatform) system; };
+						_module.args.unstable-small = import nixos-unstable-small { 
+							inherit (pkgs.stdenv.targetPlatform) system;
+							config.allowUnfree = true;
+						};
 						imports = [ ./home/home.nix ];
 					};
 				}
