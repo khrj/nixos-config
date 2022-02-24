@@ -2,27 +2,35 @@
 	description = "NixOS configuration";
 
 	inputs = {
-		nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
-		nixpkgs.url = "github:nixos/nixpkgs/nixos-21.05";
-		home-manager.url = "github:nix-community/home-manager/release-21.05";
-		cachix.url = "github:jonascarpay/declarative-cachix";
+		nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+		nixos-unstable-small.url = "github:nixos/nixpkgs/nixos-unstable-small";
+		nixos-stable.url = "github:nixos/nixpkgs/nixos-21.05";
+		home-manager.url = "github:nix-community/home-manager";
 	};
 
-	outputs = { nixpkgs, nixpkgs-unstable, home-manager, cachix, ... }: {
-		nixosConfigurations.khushrajs-desktop = nixpkgs.lib.nixosSystem {
+	outputs = { nixos-unstable, nixos-unstable-small, nixos-stable, home-manager, ... }: {
+		nixosConfigurations.khushrajs-desktop = nixos-unstable.lib.nixosSystem {
 			system = "x86_64-linux";
 			modules = 
 			[
-				cachix.nixosModules.declarative-cachix
 				({ pkgs, ... }: {
-					_module.args.unstable = import nixpkgs-unstable { inherit (pkgs.stdenv.targetPlatform) system; };
+					_module.args.unstable-ref = nixos-unstable;
+					_module.args.stable = import nixos-stable { inherit (pkgs.stdenv.targetPlatform) system; };
+					_module.args.unstable-small = import nixos-unstable-small { 
+						inherit (pkgs.stdenv.targetPlatform) system;
+						config.allowUnfree = true;
+					};
 					imports = [ ./os/os.nix ];
 				})
 				home-manager.nixosModules.home-manager {
 					home-manager.useGlobalPkgs = true;
 					home-manager.useUserPackages = true;
 					home-manager.users.khushraj = { pkgs, ... }: {
-						_module.args.unstable = import nixpkgs-unstable { inherit (pkgs.stdenv.targetPlatform) system; };
+						_module.args.stable = import nixos-stable { inherit (pkgs.stdenv.targetPlatform) system; };
+						_module.args.unstable-small = import nixos-unstable-small { 
+							inherit (pkgs.stdenv.targetPlatform) system;
+							config.allowUnfree = true;
+						};
 						imports = [ ./home/home.nix ];
 					};
 				}

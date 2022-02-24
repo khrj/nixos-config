@@ -21,18 +21,22 @@ in
 		mimeApps = {
 			enable = true;
 			defaultApplications = {
-				# Links
-				"x-scheme-handler/http" = "chromium-browser.desktop";
-				"x-scheme-handler/https" = "chromium-browser.desktop";
-				"x-scheme-handler/mailspring" = "Mailspring.desktop";
+				"x-scheme-handler/http" = "google-chrome.desktop";
+				"x-scheme-handler/https" = "google-chrome.desktop";
 
-				# Application
-				"application/pdf" = "chromium-browser.desktop";
+				"application/pdf" = "okularApplication_pdf.desktop";
+				"application/x-cd-image" = "gnome-disk-image-mounter.desktop";
 
-				# Text
 				"text/html" = "code.desktop";
 				"text/markdown" = "code.desktop";
-				"text/plain" = "code.desktop";
+				"text/plain" = "org.gnome.gedit.desktop";
+
+				"image/png" = "shotwell-viewer.desktop";
+				"image/jpeg" = "shotwell-viewer.desktop";
+				"image/tiff" = "shotwell-viewer.desktop";
+				"image/bmp" = "shotwell-viewer.desktop";
+
+				"video/mp4" = "vlc.desktop";
 			};
 		};
 	};

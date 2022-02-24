@@ -4,8 +4,9 @@
 	programs.vscode = {
 		enable = true;
 		extensions = with pkgs.vscode-extensions; [
-			bbenoist.Nix
+			bbenoist.nix
 			matklad.rust-analyzer
+			ms-vsliveshare.vsliveshare
 		];
 	};
 }

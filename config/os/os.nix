@@ -1,58 +1,59 @@
-{ pkgs, unstable, config, lib, ... }:
+{ pkgs, stable, unstable-ref, config, lib, ... }:
 
 {	
 	imports = [
 		# Components
 		./components/accounts.nix
+		./components/auto-upgrade.nix
 		./components/bluetooth.nix
 		./components/boot.nix
+		./components/display.nix
 		./components/file-system.nix
+		./components/gnome.nix
+		./components/hardware.nix
 		./components/network.nix
 		./components/printing.nix
 		./components/sound.nix
 		./components/time.nix
-		./components/xserver.nix
 
 		# Programs
-		./components/programs/disable.nix       # Disabled programs
+		./components/programs/adb.nix           # Android development bridge
+		./components/programs/borg-backup.nix   # Backup daemon
+		./components/programs/dconf.nix         # Gnome configuration
 		./components/programs/gnome-keyring.nix # Keychain daemon
 		./components/programs/gpg.nix           # Encryption tool
 		./components/programs/mysql.nix         # Database server
 		./components/programs/postgres.nix      # Database server
+		./components/programs/tailscale.nix     # Private network
 		./components/programs/virtualbox.nix    # Hardware virtualizer
-		./components/programs/dconf.nix         # Gnome configuration
+		./components/programs/xrdp.nix          # Remote access
 
 		# Generated
-		./hardware-configuration.nix
+		./hardware-configuration.nix            # Generated hardware configuration
 	];
 
 	nix = {
-		trustedUsers = [ "khushraj" ];
-		autoOptimiseStore = true;
 		package = pkgs.nixUnstable;
+		# Use system nixpkgs for vvvvvvv
+		#             "nix shell nixpkgs#<pkgname>"
+		registry.nixpkgs.flake = unstable-ref;
 		extraOptions = ''
 			experimental-features = nix-command flakes
 		'';
+		settings = {
+			trusted-users = [ "khushraj" ];
+			auto-optimise-store = true;
+		};
 	};
 
-	nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-		"android-studio-stable"
-		"authy"
-		"code"
-		"discord"
-		"firefox-devedition-bin" "firefox-devedition-bin-unwrapped"
-		"gitkraken"
-		"google-chrome"
-		"ngrok"
-		"obsidian"
-		"Oracle_VM_VirtualBox_Extension_Pack"
-		"slack"
-		"spotify" "spotify-unwrapped"
-		"teams"
-		"teamviewer"
-		"vscode"
-		"zoom"
-	];
+	nixpkgs.config = {
+		allowUnfree = true;
+		permittedInsecurePackages = [
+			"electron-9.4.4"
+			"electron-12.2.3"
+			"electron-13.6.9"
+		];
+	};
 
 	system.stateVersion = "21.05"; 	# State version, do not change with OS upgrade
 }

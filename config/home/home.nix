@@ -1,4 +1,4 @@
-{ pkgs, unstable, lib, config, ... }:
+{ pkgs, unstable-small, stable, lib, config, ... }:
 
 {
 	programs.home-manager.enable = true;
@@ -10,109 +10,133 @@
 	imports = [
 		# Programs
 		./programs/bat.nix           # File contents viewer
-		./programs/chromium.nix      # Web browser
+		./programs/direnv.nix        # Automatic flake loader
 		./programs/exa.nix           # File lister
 		./programs/firefox.nix       # Web browser
 		./programs/fish.nix          # Shell
 		./programs/git.nix           # Version control
-		./programs/i3status-rust.nix # Statusbar information
+		./programs/go.nix            # Golang
 		./programs/kitty.nix         # Terminal emulator
 		./programs/nix-index.nix     # command-not-found replacement
 		./programs/obs-studio.nix    # Advanced screen recorder
-		./programs/rofi.nix          # Application launcher
 		./programs/starship.nix      # Shell prompt
 		./programs/vscode.nix        # Code editor
 
 		# Services
-		./services/dunst.nix         # Notifications daemon
 		./services/flameshot.nix     # Screenshot tool
-		./services/picom.nix         # Display compositor
 		./services/polkit.nix        # Policy kit graphical agent
 		./services/rclone.nix        # Cloud sync daemon
 
 		# Other
 		./other/fonts.nix            # Fonts
 		./other/gtk.nix              # GTK Configuration
-		./other/x.nix                # Display protocol
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
 	];
 
-	# TODO
-	# - Fix: chromium-widevine
-	# - Add: android-sdk-platform-tools, bootstrap-studio, docker,
-	#   docker-compose, howdy, prisma-studio, run-js, notion
-	# - Make: grub-silent, possibly with plymouth (?)
+	# TODO Add: bootstrap-studio, prisma-studio, run-js, notion, howdy
 	home.packages = with pkgs; [
-		# Two-factor authentication app
-		(authy.overrideAttrs (oa: { meta = oa.meta // { priority = 6; }; }))
-		b3sum                   # BLAKE3 hashing tool 
-		bitwarden               # Password manager
-		bitwarden-cli           # Password manager CLI
-		bottom                  # Terminal-based task viewer
-		calibre                 # Ebook library
+		# Code
 		cargo-edit              # Rust: Cargo helper commands
-		discord                 # Communications app
-		dmg2img                 # Disk image converter
-		unstable.dprint         # Code formatter - Installed globally for one-off uses
-		du-dust                 # Terminal-based storage space viewer
-		efibootmgr              # EFI boot entry manager
-		electrum                # Bitcoin wallet
-		element-desktop         # Matrix Chat Client
-		etcher                  # Disk image flasher
-		fd                      # File finder
-		fritzing                # Hardware design tool
+		dprint                  # Code formatter - Installed globally for one-off uses
 		gcc                     # Compiler
 		gh                      # GitHub client
-		gimp                    # Image editor
 		gitkraken               # Git GUI client
-		gnome.cheese            # Camera application
-		gnome.gnome-font-viewer # Font viewer
-		gnome.nautilus          # File system explorer
-		gnome.seahorse          # Keychain viewer
-		google-chrome           # Browser
-		gparted                 # Partition manager
-		grex                    # Regex maker
-		handbrake               # Audio-video encoder
-		hsetroot                # Wallpaper setter
-		hyperfine               # Benchmarking tool
-		imagemagick             # Terminal-based photo modifier
+		git-lfs                 # Git Large File Storage
 		insomnia                # REST client
-		jdk8                    # Java Development Kit
-		libreoffice             # Office suite
-		lm_sensors              # Hardware sensors. Required for i3status-rust
-		mailspring              # Email client
-		mysql-workbench         # Database query tool
-		neofetch                # Terminal-based system-info viewer
-		ngrok                   # Localhost proxy-tunnel
-		obsidian                # Document organiser
-		p7zip                   # Compression tool
-		pavucontrol             # Audio configuration helper
-		polkit_gnome            # Policy Kit Agent
-		procs                   # Terminal job viewer
-		protonvpn-cli           # Virtual Private Network
-		qbittorrent             # Torrent client
-		rclone                  # Cloud sync tool
-		recapp                  # Screen Recorder
-		ripgrep                 # File-content searcher
-		rustup                  # Rust toolchain manager
-		sd                      # stdin filterer
-		signal-desktop          # Communications app
-		slack                   # Communications app
-		speedtest-cli           # Network speed measurer
-		spotify                 # Music app
-		tdesktop                # Communications app
-		tealdeer                # Manual summarizer
-		teams                   # Video call app
-		teamviewer              # Remote desktop app
-		unzip                   # File unzipper
-		v4l-utils               # Video input adjuster
+		rustup                  # Rust toolchain installer
 		vim                     # Advanced text editor
-		viu                     # Terminal image viewer
-		vlc                     # Audio/video player
-		wget                    # File downloader
-		yaru-theme              # GTK Theme
-		youtube-dl              # Multimedia scraper
-		zoom-us                 # Video call app
+
+		# Jetbrains
+		android-studio                 # Android
+		jetbrains.idea-ultimate        # Java
+		jetbrains.pycharm-professional # Python
+		jetbrains.clion                # Rust
+		jetbrains.goland               # Go
+		jetbrains.webstorm             # JS/TS + HTML/CSS
+		jetbrains.datagrip             # SQL
+		jetbrains.jdk                  # Java Development Kit
+
+		# Apps
+		(authy.overrideAttrs 
+			(oa: { meta = oa.meta // { priority = 6; }; })
+		)                            # Two-factor authentication app
+		betterdiscordctl             # Discord enhancer
+		bitwarden                    # Password manager
+		calibre                      # Ebook library
+		discord                      # Communications app
+		electrum                     # Bitcoin wallet
+		element-desktop              # Matrix Chat Client
+		etcher                       # Disk image flasher
+		fritzing                     # Hardware design tool
+		gimp                         # Image editor
+		google-chrome                # Browser
+		handbrake                    # Audio-video encoder
+		libreoffice                  # Office suite
+		stable.mysql-workbench       # Database query tool
+		obsidian                     # Document organiser
+		pick-colour-picker           # Colour picker
+		qbittorrent                  # Torrent client
+		realvnc-vnc-viewer           # Remote desktop app
+		recapp                       # Screen Recorder
+		signal-desktop               # Communications app
+		slack                        # Communications app
+		spotify                      # Music app
+		tdesktop                     # Communications app
+		teams                        # Video call app
+		teamviewer                   # Remote desktop app
+		vlc                          # Audio/video player
+		zoom-us                      # Video call app
+
+		# CLI Tools
+		b3sum                        # BLAKE3 hashing tool 
+		bitwarden-cli                # Password manager CLI
+		bottom                       # Terminal-based task viewer
+		dmg2img                      # Disk image converter
+		du-dust                      # Terminal-based storage space viewer
+		fd                           # File finder
+		ffmpeg                       # Multimedia handler
+		grex                         # Regex maker
+		hyperfine                    # Benchmarking tool
+		imagemagick                  # Terminal-based photo modifier
+		jq                           # JSON processor
+		neofetch                     # Terminal-based system-info viewer
+		ngrok                        # Localhost proxy-tunnel
+		openvpn                      # VPN Client
+		p7zip                        # Compression tool
+		procs                        # Terminal job viewer
+		protonvpn-cli                # Virtual Private Network
+		rclone                       # Cloud sync tool
+		ripgrep                      # File-content searcher
+		sd                           # stdin filterer
+		speedtest-cli                # Network speed measurer
+		tealdeer                     # Manual summarizer
+		unzip                        # File unzipper
+		viu                          # Terminal image viewer
+		websocat                     # WebSocket client
+		wget                         # File downloader
+		youtube-dl                   # Multimedia scraper
+		zip                          # File zipper
+
+		# System
+		efibootmgr                   # EFI boot entry manager
+		gnome.cheese                 # Camera application
+		gnome.gedit                  # Text editor
+		gnome.gnome-font-viewer      # Font viewer
+		gnome.gnome-system-monitor   # Process monitor
+		gnome.nautilus               # File system explorer
+		gnome.networkmanager-openvpn # Gnome integration for Network manager's OpenVPN plugin
+		gnome.seahorse               # Keychain viewer
+		gparted                      # Partition manager
+		hsetroot                     # Wallpaper setter
+		libsForQt5.okular            # PDF Editor
+		lm_sensors                   # Hardware sensors. Required for i3status-rust
+		networkmanager-openvpn       # Network manager plugin for OpenVPN
+		pavucontrol                  # Audio configuration helper
+		polkit_gnome                 # Policy Kit Agent
+		shotwell                     # Image viewer
+		v4l-utils                    # Video input adjuster
+		vorta                        # Backup tool
+		yaru-theme                   # GTK Theme
 	];
 
 	home.stateVersion = "21.05";

@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
 	services.openssh.enable = true;
@@ -6,5 +6,6 @@
 		useDHCP = false;
 		interfaces.enp4s0.useDHCP = true;
 		hostName = "khushrajs-desktop";
+		firewall.allowedUDPPorts = [ config.services.tailscale.port ];
 	};
 }
