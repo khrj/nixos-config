@@ -22,6 +22,10 @@
 					};
 					imports = [ ./os/os.nix ];
 				})
+				{
+					# Used to make nix-index work with flakes, sets nixPath to flake output rather than a nix-channel
+					nix.nixPath = [ "nixpkgs=${nixos-unstable}" ];
+				}
 				home-manager.nixosModules.home-manager {
 					home-manager.useGlobalPkgs = true;
 					home-manager.useUserPackages = true;
