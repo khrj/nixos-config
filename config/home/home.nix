@@ -17,6 +17,7 @@
 		./programs/git.nix           # Version control
 		./programs/go.nix            # Golang
 		./programs/kitty.nix         # Terminal emulator
+		./programs/nix-index.nix     # command-not-found replacement
 		./programs/obs-studio.nix    # Advanced screen recorder
 		./programs/starship.nix      # Shell prompt
 		./programs/vscode.nix        # Code editor
