@@ -1,9 +1,8 @@
-{ unstable-small, ... }: 
+{ ... }: 
 
 {
 	programs.kitty = {
 		enable = true;
-		package = unstable-small.kitty;
 		
 		font = {
 			name = "FiraCode Nerd Font Mono";

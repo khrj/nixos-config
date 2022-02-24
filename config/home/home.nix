@@ -62,7 +62,7 @@
 		betterdiscordctl             # Discord enhancer
 		bitwarden                    # Password manager
 		calibre                      # Ebook library
-		unstable-small.discord       # Communications app
+		discord                      # Communications app
 		electrum                     # Bitcoin wallet
 		element-desktop              # Matrix Chat Client
 		etcher                       # Disk image flasher
