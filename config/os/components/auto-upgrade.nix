@@ -2,7 +2,7 @@
 
 {
 	system.autoUpgrade = {
-		enable = false;
+		enable = true;
 		dates = "15:00";
 		flake = "/home/khushraj/nixos-config/config";
 		flags = [
