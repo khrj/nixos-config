@@ -76,6 +76,12 @@
 					sha256 = "1yf6v2vsgmq86ysb6vxzbg2gh6vz03fsz0d0rhpvpghayrjlk5az";
 				}
 				{
+					name = "intellij-idea-keybindings";
+					publisher = "k--kato";
+					version = "1.5.0";
+					sha256 = "1mian0zana132zjzndabvq61flsr4p5swqi2ywiccn5wg46j3k5v";
+				}
+				{
 					name = "markdown-formatter";
 					publisher = "mervin";
 					version = "0.9.7";
@@ -134,12 +140,6 @@
 					publisher = "usernamehw";
 					version = "3.4.2";
 					sha256 = "1ifz0iyc7zknb07qx2fixg3qw9i69pvr12rlg2yvg1s8paj8mnbx";
-				}
-				{
-					name = "vscode-lldb";
-					publisher = "vadimcn";
-					version = "1.6.10";
-					sha256 = "1q3d99l57spkln4cgwx28300d9711kc77mkyp4y968g3zyrmar88";
 				}
 				{
 					name = "vscodeintellicode";
