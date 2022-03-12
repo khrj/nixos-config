@@ -1,8 +1,5 @@
 { ... }:
 
 {
-	time = {
-		timeZone = "Asia/Kolkata";
-		hardwareClockInLocalTime = true;
-	};
+	time.timeZone = "Asia/Kolkata";
 }
