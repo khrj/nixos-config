@@ -33,7 +33,7 @@
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
 	];
 
-	# TODO Add: bootstrap-studio, prisma-studio, run-js, notion, howdy
+	# TODO Add: bootstrap-studio, howdy
 	home.packages = with pkgs; [
 		# Code
 		cargo-edit              # Rust: Cargo helper commands
@@ -119,13 +119,6 @@
 
 		# System
 		efibootmgr                   # EFI boot entry manager
-		gnome.cheese                 # Camera application
-		gnome.gedit                  # Text editor
-		gnome.gnome-font-viewer      # Font viewer
-		gnome.gnome-system-monitor   # Process monitor
-		gnome.nautilus               # File system explorer
-		gnome.networkmanager-openvpn # Gnome integration for Network manager's OpenVPN plugin
-		gnome.seahorse               # Keychain viewer
 		gparted                      # Partition manager
 		hsetroot                     # Wallpaper setter
 		libsForQt5.okular            # PDF Editor

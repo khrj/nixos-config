@@ -15,31 +15,32 @@
 	];
 
 	environment.gnome.excludePackages = with pkgs.gnome; [
-		baobab
-		cheese
+		# baobab                       # Disk space analyser
+		# cheese                       # Camera application
 		eog
 		epiphany
 		evince
 		geary
-		gedit
-		nautilus
+		# gedit                        # Text editor
+		# nautilus                     # File system explorer
 		simple-scan
 		totem
 		yelp
-		gnome-calculator
+		# gnome-calculator             # Calculator
 		gnome-calendar
 		gnome-characters
-		gnome-clocks
+		# gnome-clocks                 # Clock app (stopwatch + timer + alarm)
 		gnome-contacts
-		gnome-font-viewer
-		gnome-logs
+		# gnome-font-viewer            # Font viewer
+		# gnome-logs                   # systemd log viewer
 		gnome-maps
 		gnome-music
-		# gnome-screenshot
-		gnome-system-monitor
+		# gnome-screenshot             # Screenshot tool
+		# gnome-system-monitor         # Process monitor
 		gnome-terminal
 		gnome-weather
 		pkgs.gnome-photos
-		# pkgs.gnome-connections
+		# pkgs.gnome-connections       # Remote desktop client
+		# seahorse                     # Keychain viewer
 	];
 }
