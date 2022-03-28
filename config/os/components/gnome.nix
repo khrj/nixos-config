@@ -21,8 +21,8 @@
 		epiphany
 		evince
 		geary
-		# gedit                        # Text editor
 		# nautilus                     # File system explorer
+		# seahorse                     # Keychain viewer
 		simple-scan
 		totem
 		yelp
@@ -35,12 +35,11 @@
 		# gnome-logs                   # systemd log viewer
 		gnome-maps
 		gnome-music
-		# gnome-screenshot             # Screenshot tool
 		# gnome-system-monitor         # Process monitor
-		gnome-terminal
+		# gnome-text-editor            # Text editor
 		gnome-weather
 		pkgs.gnome-photos
+		pkgs.gnome-console
 		# pkgs.gnome-connections       # Remote desktop client
-		# seahorse                     # Keychain viewer
 	];
 }
