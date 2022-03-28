@@ -77,7 +77,6 @@
 		pick-colour-picker           # Colour picker
 		qbittorrent                  # Torrent client
 		realvnc-vnc-viewer           # Remote desktop app
-		recapp                       # Screen Recorder
 		signal-desktop               # Communications app
 		slack                        # Communications app
 		spotify                      # Music app
