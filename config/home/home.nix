@@ -91,6 +91,7 @@
 		b3sum                        # BLAKE3 hashing tool 
 		bitwarden-cli                # Password manager CLI
 		bottom                       # Terminal-based task viewer
+		comma                        # Run apps quickly without installing (nix-index + nix run)
 		dmg2img                      # Disk image converter
 		du-dust                      # Terminal-based storage space viewer
 		fd                           # File finder
