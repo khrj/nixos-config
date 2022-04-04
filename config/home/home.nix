@@ -101,7 +101,6 @@
 		jq                           # JSON processor
 		neofetch                     # Terminal-based system-info viewer
 		ngrok                        # Localhost proxy-tunnel
-		openvpn                      # VPN Client
 		p7zip                        # Compression tool
 		procs                        # Terminal job viewer
 		protonvpn-cli                # Virtual Private Network
@@ -123,7 +122,6 @@
 		hsetroot                     # Wallpaper setter
 		libsForQt5.okular            # PDF Editor
 		lm_sensors                   # Hardware sensors. Required for i3status-rust
-		networkmanager-openvpn       # Network manager plugin for OpenVPN
 		pavucontrol                  # Audio configuration helper
 		polkit_gnome                 # Policy Kit Agent
 		shotwell                     # Image viewer
