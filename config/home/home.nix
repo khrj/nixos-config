@@ -62,7 +62,7 @@
 		)                            # Two-factor authentication app
 		betterdiscordctl             # Discord enhancer
 		bitwarden                    # Password manager
-		calibre                      # Ebook library
+		stable.calibre               # Ebook library
 		discord                      # Communications app
 		electrum                     # Bitcoin wallet
 		element-desktop              # Matrix Chat Client
@@ -127,7 +127,7 @@
 		shotwell                     # Image viewer
 		v4l-utils                    # Video input adjuster
 		vorta                        # Backup tool
-		yaru-theme                   # GTK Theme
+		stable.yaru-theme            # GTK Theme
 	];
 
 	home.stateVersion = "21.05";
