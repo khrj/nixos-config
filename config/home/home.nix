@@ -127,7 +127,7 @@
 		shotwell                     # Image viewer
 		v4l-utils                    # Video input adjuster
 		vorta                        # Backup tool
-		stable.yaru-theme            # GTK Theme
+		yaru-theme                   # GTK Theme
 	];
 
 	home.stateVersion = "21.05";
