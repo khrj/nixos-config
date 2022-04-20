@@ -62,7 +62,7 @@
 		)                            # Two-factor authentication app
 		betterdiscordctl             # Discord enhancer
 		bitwarden                    # Password manager
-		stable.calibre               # Ebook library
+		unstable-small.calibre       # Ebook library
 		discord                      # Communications app
 		electrum                     # Bitcoin wallet
 		element-desktop              # Matrix Chat Client
