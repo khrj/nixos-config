@@ -61,7 +61,6 @@
 			(oa: { meta = oa.meta // { priority = 6; }; })
 		)                            # Two-factor authentication app
 		betterdiscordctl             # Discord enhancer
-		bitwarden                    # Password manager
 		calibre                      # Ebook library
 		discord                      # Communications app
 		electrum                     # Bitcoin wallet
@@ -79,7 +78,6 @@
 		realvnc-vnc-viewer           # Remote desktop app
 		signal-desktop               # Communications app
 		slack                        # Communications app
-		spotify                      # Music app
 		tdesktop                     # Communications app
 		teams                        # Video call app
 		teamviewer                   # Remote desktop app
