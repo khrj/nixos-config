@@ -57,9 +57,6 @@
 		jetbrains.jdk                  # Java Development Kit
 
 		# Apps
-		(authy.overrideAttrs 
-			(oa: { meta = oa.meta // { priority = 6; }; })
-		)                            # Two-factor authentication app
 		betterdiscordctl             # Discord enhancer
 		calibre                      # Ebook library
 		discord                      # Communications app
