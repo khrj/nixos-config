@@ -79,7 +79,6 @@
 		signal-desktop               # Communications app
 		slack                        # Communications app
 		tdesktop                     # Communications app
-		teams                        # Video call app
 		teamviewer                   # Remote desktop app
 		vlc                          # Audio/video player
 		zoom-us                      # Video call app
