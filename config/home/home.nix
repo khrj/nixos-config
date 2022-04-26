@@ -33,7 +33,7 @@
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
 	];
 
-	# TODO Add: bootstrap-studio, howdy
+	# TODO Add: bootstrap-studio
 	home.packages = with pkgs; [
 		# Code
 		cargo-edit              # Rust: Cargo helper commands
