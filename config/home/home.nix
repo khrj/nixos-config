@@ -50,7 +50,7 @@
 		android-studio                 # Android
 		jetbrains.idea-ultimate        # Java
 		jetbrains.pycharm-professional # Python
-		# jetbrains.clion                # Rust
+		jetbrains.clion                # Rust
 		jetbrains.goland               # Go
 		jetbrains.webstorm             # JS/TS + HTML/CSS
 		jetbrains.datagrip             # SQL
