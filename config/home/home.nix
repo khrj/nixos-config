@@ -18,7 +18,6 @@
 		./programs/go.nix            # Golang
 		./programs/kitty.nix         # Terminal emulator
 		./programs/nix-index.nix     # command-not-found replacement
-		./programs/obs-studio.nix    # Advanced screen recorder
 		./programs/starship.nix      # Shell prompt
 		./programs/vscode.nix        # Code editor
 
@@ -61,7 +60,6 @@
 		calibre                      # Ebook library
 		discord                      # Communications app
 		electrum                     # Bitcoin wallet
-		element-desktop              # Matrix Chat Client
 		etcher                       # Disk image flasher
 		fritzing                     # Hardware design tool
 		gimp                         # Image editor
@@ -74,7 +72,6 @@
 		qbittorrent                  # Torrent client
 		realvnc-vnc-viewer           # Remote desktop app
 		signal-desktop               # Communications app
-		slack                        # Communications app
 		tdesktop                     # Communications app
 		teamviewer                   # Remote desktop app
 		vlc                          # Audio/video player
