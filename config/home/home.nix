@@ -27,7 +27,6 @@
 		./services/rclone.nix        # Cloud sync daemon
 
 		# Other
-		./other/fonts.nix            # Fonts
 		./other/gtk.nix              # GTK Configuration
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
 	];

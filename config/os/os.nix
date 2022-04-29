@@ -9,6 +9,7 @@
 		./components/boot.nix
 		./components/display.nix
 		./components/file-system.nix
+		./components/fonts.nix
 		./components/gnome.nix
 		./components/hardware.nix
 		./components/network.nix
