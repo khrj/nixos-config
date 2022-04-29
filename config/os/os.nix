@@ -21,6 +21,7 @@
 		./components/programs/borg-backup.nix   # Backup daemon
 		./components/programs/disable.nix       # Disabled defaults
 		./components/programs/dconf.nix         # Gnome configuration
+		./components/programs/git.nix           # VCS	
 		./components/programs/gnome-keyring.nix # Keychain daemon
 		./components/programs/gpg.nix           # Encryption tool
 		./components/programs/mysql.nix         # Database server
