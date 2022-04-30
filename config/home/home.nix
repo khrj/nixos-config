@@ -57,6 +57,7 @@
 		# Apps
 		betterdiscordctl             # Discord enhancer
 		calibre                      # Ebook library
+		dbeaver                      # Database client
 		discord                      # Communications app
 		electrum                     # Bitcoin wallet
 		etcher                       # Disk image flasher
