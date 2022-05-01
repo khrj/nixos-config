@@ -66,7 +66,6 @@
 		google-chrome                # Browser
 		handbrake                    # Audio-video encoder
 		libreoffice                  # Office suite
-		stable.mysql-workbench       # Database query tool
 		obsidian                     # Document organiser
 		pick-colour-picker           # Colour picker
 		qbittorrent                  # Torrent client
