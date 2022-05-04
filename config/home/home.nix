@@ -51,7 +51,6 @@
 		jetbrains.clion                # Rust
 		jetbrains.goland               # Go
 		jetbrains.webstorm             # JS/TS + HTML/CSS
-		jetbrains.datagrip             # SQL
 		jetbrains.jdk                  # Java Development Kit
 
 		# Apps
