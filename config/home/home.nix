@@ -104,7 +104,7 @@
 		viu                          # Terminal image viewer
 		websocat                     # WebSocket client
 		wget                         # File downloader
-		youtube-dl                   # Multimedia scraper
+		yt-dlp                       # Multimedia scraper
 		zip                          # File zipper
 
 		# System
