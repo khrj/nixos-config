@@ -1,6 +1,4 @@
 {
-	description = "NixOS configuration";
-
 	inputs = {
 		nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 		nixos-unstable-small.url = "github:nixos/nixpkgs/nixos-unstable-small";
