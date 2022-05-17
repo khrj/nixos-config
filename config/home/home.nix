@@ -76,6 +76,7 @@
 		zoom-us                      # Video call app
 
 		# CLI Tools
+		appimage-run                 # Run appimages without derivations
 		b3sum                        # BLAKE3 hashing tool 
 		bitwarden-cli                # Password manager CLI
 		bottom                       # Terminal-based task viewer
