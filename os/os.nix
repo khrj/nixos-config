@@ -1,4 +1,4 @@
-{ pkgs, stable, unstable-ref, config, lib, ... }:
+{ pkgs, stable, inputs, config, lib, ... }:
 
 {	
 	imports = [
@@ -38,7 +38,7 @@
 		package = pkgs.nixUnstable;
 		# Use system nixpkgs for vvvvvvv
 		#             "nix shell nixpkgs#<pkgname>"
-		registry.nixpkgs.flake = unstable-ref;
+		registry.nixpkgs.flake = inputs.nixos-unstable;
 		extraOptions = ''
 			experimental-features = nix-command flakes
 		'';
@@ -50,9 +50,7 @@
 
 	nixpkgs.config = {
 		allowUnfree = true;
-		permittedInsecurePackages = [
-			"electron-12.2.3"
-		];
+		permittedInsecurePackages = [ "electron-12.2.3" ];
 	};
 
 	system.stateVersion = "21.05"; 	# State version, do not change with OS upgrade
