@@ -22,9 +22,10 @@
 		./programs/vscode.nix        # Code editor
 
 		# Services
-		./services/flameshot.nix     # Screenshot tool
-		./services/polkit.nix        # Policy kit graphical agent
-		./services/rclone.nix        # Cloud sync daemon
+		./services/configure-camera.nix # Configures camera on startup
+		./services/flameshot.nix        # Screenshot tool
+		./services/polkit.nix           # Policy kit graphical agent
+		./services/rclone.nix           # Cloud sync daemon
 
 		# Other
 		./other/gtk.nix              # GTK Configuration
