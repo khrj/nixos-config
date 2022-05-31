@@ -68,12 +68,25 @@
         "type": "github"
       }
     },
+    "nixpkgs-dev": {
+      "locked": {
+        "lastModified": 1652806518,
+        "narHash": "sha256-NTZlWs0Y4oFgTLfL5TuuNrroaTo0z3u413+DpEnhJt4=",
+        "path": "/home/khushraj/Builds/nixpkgs",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/khushraj/Builds/nixpkgs",
+        "type": "path"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nixos-stable": "nixos-stable",
         "nixos-unstable": "nixos-unstable",
-        "nixos-unstable-small": "nixos-unstable-small"
+        "nixos-unstable-small": "nixos-unstable-small",
+        "nixpkgs-dev": "nixpkgs-dev"
       }
     }
   },

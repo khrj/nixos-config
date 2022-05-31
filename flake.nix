@@ -3,13 +3,14 @@
 		nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 		nixos-unstable-small.url = "github:nixos/nixpkgs/nixos-unstable-small";
 		nixos-stable.url = "github:nixos/nixpkgs/nixos-21.05";
+		nixpkgs-dev.url = "path:/home/khushraj/Builds/nixpkgs";
 		home-manager = {
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixos-unstable";
 		};
 	};
 
-	outputs = { nixos-unstable, nixos-unstable-small, nixos-stable, home-manager, ... }@inputs: {
+	outputs = { nixos-unstable, nixos-unstable-small, nixos-stable, nixpkgs-dev, home-manager, ... }@inputs: {
 		nixosConfigurations.khushrajs-desktop = nixos-unstable.lib.nixosSystem {
 			system = "x86_64-linux";
 			modules = 
@@ -18,6 +19,7 @@
 					_module.args = {
 						stable = import nixos-stable { inherit (pkgs.stdenv.targetPlatform) system; };
 						unstable-small = import nixos-unstable-small { inherit (pkgs.stdenv.targetPlatform) system; config.allowUnfree = true; };
+                        dev = import nixpkgs-dev { inherit (pkgs.stdenv.targetPlatform) system; };
 						inputs = inputs;
 					};
 					imports = [ ./os/os.nix ];
@@ -34,6 +36,7 @@
 						_module.args = { 
 							stable = import nixos-stable { inherit (pkgs.stdenv.targetPlatform) system; };
 							unstable-small = import nixos-unstable-small { inherit (pkgs.stdenv.targetPlatform) system; config.allowUnfree = true; };
+                            dev = import nixpkgs-dev { inherit (pkgs.stdenv.targetPlatform) system; config.allowUnfree = true; };
 							inputs = inputs;
 						};
 						imports = [ ./home/home.nix ];
