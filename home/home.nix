@@ -32,7 +32,6 @@
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
 	];
 
-	# TODO Add: bootstrap-studio
 	home.packages = with pkgs; [
 		# Code
 		cargo-edit              # Rust: Cargo helper commands
@@ -55,6 +54,7 @@
 		jetbrains.jdk                  # Java Development Kit
 
 		# Apps
+		bootstrap-studio             # Drag-and-drop bootstrap designer
 		betterdiscordctl             # Discord enhancer
 		calibre                      # Ebook library
 		dbeaver                      # Database client
@@ -68,6 +68,7 @@
 		libreoffice                  # Office suite
 		obsidian                     # Document organiser
 		pick-colour-picker           # Colour picker
+		protonvpn-gui                # Virtual Private Network
 		qbittorrent                  # Torrent client
 		realvnc-vnc-viewer           # Remote desktop app
 		signal-desktop               # Communications app
@@ -78,6 +79,7 @@
 
 		# CLI Tools
 		appimage-run                 # Run appimages without derivations
+		aria2                        # Parallel downloader
 		b3sum                        # BLAKE3 hashing tool 
 		bitwarden-cli                # Password manager CLI
 		bottom                       # Terminal-based task viewer
@@ -95,7 +97,6 @@
 		ngrok                        # Localhost proxy-tunnel
 		p7zip                        # Compression tool
 		procs                        # Terminal job viewer
-		protonvpn-cli                # Virtual Private Network
 		rclone                       # Cloud sync tool
 		ripgrep                      # File-content searcher
 		sd                           # stdin filterer
