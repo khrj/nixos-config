@@ -1,4 +1,4 @@
-{ pkgs, stable, inputs, config, lib, ... }:
+{ pkgs, stable, inputs, config, lib, userDetails, ... }:
 
 {	
 	imports = [
@@ -43,14 +43,9 @@
 			experimental-features = nix-command flakes
 		'';
 		settings = {
-			trusted-users = [ "khushraj" ];
+			trusted-users = [ userDetails.username ];
 			auto-optimise-store = true;
 		};
-	};
-
-	nixpkgs.config = {
-		allowUnfree = true;
-		permittedInsecurePackages = [ "electron-12.2.3" ];
 	};
 
 	system.stateVersion = "21.05"; 	# State version, do not change with OS upgrade

@@ -1,10 +1,10 @@
-{ ... }:
+{ userDetails, ... }:
 
 {
 	system.autoUpgrade = {
 		enable = true;
 		dates = "15:00";
-		flake = "/home/khushraj/nixos-config/config";
+		flake = "/home/${userDetails.username}/nixos-config/config";
 		flags = [
 			"--update-input" "nixos-unstable"
 			"--update-input" "nixos-unstable-small"

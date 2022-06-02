@@ -1,19 +1,19 @@
-{ ... }:
+{ userDetails, ... }:
 
 {
 	services.borgbackup.jobs.homeBackup = {
 		doInit = true;
 		repo = "/mnt/backup/Borg";
 		startAt = "hourly";
-		user = "khushraj";
+		user = userDetails.username;
 		encryption.mode = "none";
 		environment.BORG_UNKNOWN_UNENCRYPTED_REPO_ACCESS_IS_OK = "yes";
-		paths = "/home/khushraj";
+		paths = "/home/${userDetails.username}";
 		exclude = [ 
-			"/home/khushraj/.*"
-			"/home/khushraj/Google-Drive"
-			"/home/khushraj/Builds"
-			"/home/khushraj/go"
+			"/home/${userDetails.username}/.*"
+			"/home/${userDetails.username}/Google-Drive"
+			"/home/${userDetails.username}/Builds"
+			"/home/${userDetails.username}/go"
 		];
 	};
 }

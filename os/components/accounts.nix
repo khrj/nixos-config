@@ -1,12 +1,12 @@
-{ ... }:
+{ userDetails, ... }:
 
 {
 	security.sudo.wheelNeedsPassword = false;
 	users = {
-		users.khushraj = {
+		users.${userDetails.username} = {
 			isNormalUser = true;
-			home = "/home/khushraj";
-			description = "Khushraj Rathod";
+			home = "/home/${userDetails.username}";
+			description = userDetails.name;
 			extraGroups = [ "wheel" ];
 		};	
 	};

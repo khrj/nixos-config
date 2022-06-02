@@ -1,7 +1,7 @@
-{ ... }:
+{ userDetails, ... }:
 
 let
-	disable = "/home/khushraj"; # Setting directories to the home directory disables them
+	disable = "/home/${userDetails.username}"; # Setting directories to the home directory disables them
 in
 {
 	xdg = {
@@ -11,7 +11,7 @@ in
 			createDirectories = true;
 			desktop     = disable;
 			documents   = disable;
-			download    = "/home/khushraj/Downloads";
+			download    = "/home/${userDetails.username}/Downloads";
 			music       = disable;
 			pictures    = disable;
 			publicShare = disable;

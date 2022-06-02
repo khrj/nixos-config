@@ -1,11 +1,7 @@
-{ pkgs, unstable-small, stable, lib, config, ... }:
+{ pkgs, lib, inputs, stable, unstable-small, ... }:
 
 {
 	programs.home-manager.enable = true;
-	home = {
-		username = "khushraj";
-		homeDirectory = "/home/khushraj";
-	};
 
 	imports = [
 		# Programs
@@ -38,6 +34,7 @@
 		dprint                  # Code formatter - Installed globally for one-off uses
 		gcc                     # Compiler
 		gh                      # GitHub client
+		git                     # Version Control System
 		gitkraken               # Git GUI client
 		git-lfs                 # Git Large File Storage
 		insomnia                # REST client
@@ -122,6 +119,4 @@
 		vorta                        # Backup tool
 		yaru-theme                   # GTK Theme
 	];
-
-	home.stateVersion = "21.05";
 }

@@ -1,6 +1,6 @@
-{ ... }:
+{ userDetails, ... }:
 
 {
 	programs.adb.enable = true;
-	users.users.khushraj.extraGroups = ["adbusers"];
+	users.users.${userDetails.username}.extraGroups = ["adbusers"];
 }

@@ -1,10 +1,10 @@
-{ ... }:
+{ userDetails, ... }:
 
 {
 	programs.git = {
 		enable = true;
-		userEmail = "khushraj.rathod@gmail.com";
-		userName = "Khushraj Rathod";
+		userEmail = userDetails.email;
+		userName = userDetails.name;
 		ignores = [ ".idea" ".direnv" ];
 		signing = {
 			signByDefault = true;

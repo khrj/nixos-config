@@ -9,37 +9,46 @@
 		};
 	};
 
-	outputs = { nixos-unstable, nixos-unstable-small, nixos-stable, home-manager, ... }@inputs: {
-		nixosConfigurations.khushrajs-desktop = nixos-unstable.lib.nixosSystem {
+	outputs = { nixos-unstable, nixos-unstable-small, nixos-stable, home-manager, ... }@inputs:
+		let
+			config = {
+				allowUnfree = true;
+				permittedInsecurePackages = [ "electron-12.2.3" ];
+			};
+
 			system = "x86_64-linux";
-			modules = 
-			[
-				({ pkgs, ... }: {
-					_module.args = {
-						stable = import nixos-stable { inherit (pkgs.stdenv.targetPlatform) system; };
-						unstable-small = import nixos-unstable-small { inherit (pkgs.stdenv.targetPlatform) system; config.allowUnfree = true; };
-						inputs = inputs;
-					};
-					imports = [ ./os/os.nix ];
-				})
-				{
-					# Used to make nix-index work with flakes, sets nixPath to flake output rather than a nix-channel
-					nix.nixPath = [ "nixpkgs=${nixos-unstable}" ];
-				}
-				home-manager.nixosModules.home-manager
-				{
-					home-manager.useGlobalPkgs = true;
-					home-manager.useUserPackages = true;
-					home-manager.users.khushraj = { pkgs, ... }: {
-						_module.args = { 
-							stable = import nixos-stable { inherit (pkgs.stdenv.targetPlatform) system; };
-							unstable-small = import nixos-unstable-small { inherit (pkgs.stdenv.targetPlatform) system; config.allowUnfree = true; };
-							inputs = inputs;
-						};
-						imports = [ ./home/home.nix ];
-					};
-				}
-			];
+
+			userDetails = {
+				username = "khushraj";
+				name = "Khushraj Rathod";
+				email = "khushraj.rathod@gmail.com";
+			};
+
+			username = userDetails.username;
+			
+			pkgs = import nixos-unstable { inherit system config; };
+			stable = import nixos-stable { inherit system config; };
+			unstable-small = import nixos-unstable-small { inherit system config; };
+		in {
+			nixosConfigurations."${username}s-desktop" = nixos-unstable.lib.nixosSystem {
+				inherit system pkgs;
+				specialArgs = { inherit inputs stable unstable-small userDetails; };
+				modules = [
+					./os/os.nix
+					{
+						# Used to make nix-index work with flakes, sets nixPath to flake output rather than a nix-channel
+						nix.nixPath = [ "nixpkgs=${nixos-unstable}" ];
+					}
+				];
+			};
+			homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
+				inherit system pkgs username;
+
+				configuration = import ./home/home.nix;
+				homeDirectory = "/home/${username}";
+				stateVersion = "22.05";
+
+				extraSpecialArgs = { inherit inputs stable unstable-small userDetails; };
+			};
 		};
-	};
 }
