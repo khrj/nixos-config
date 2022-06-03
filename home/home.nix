@@ -45,9 +45,6 @@
 		android-studio                 # Android
 		jetbrains.idea-ultimate        # Java
 		jetbrains.pycharm-professional # Python
-		jetbrains.clion                # Rust
-		jetbrains.goland               # Go
-		jetbrains.webstorm             # JS/TS + HTML/CSS
 		jetbrains.jdk                  # Java Development Kit
 
 		# Apps
@@ -59,7 +56,6 @@
 		electrum                     # Bitcoin wallet
 		etcher                       # Disk image flasher
 		fritzing                     # Hardware design tool
-		gimp                         # Image editor
 		google-chrome                # Browser
 		handbrake                    # Audio-video encoder
 		libreoffice                  # Office suite
@@ -68,7 +64,6 @@
 		protonvpn-gui                # Virtual Private Network
 		qbittorrent                  # Torrent client
 		realvnc-vnc-viewer           # Remote desktop app
-		signal-desktop               # Communications app
 		tdesktop                     # Communications app
 		teamviewer                   # Remote desktop app
 		vlc                          # Audio/video player
