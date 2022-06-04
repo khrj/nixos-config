@@ -9,7 +9,6 @@
 #			ls       = "echo FATAL: Use exa";   # https://github.com/ogham/exa
 			find     = "echo FATAL: Use fd";    # https://github.com/sharkdp/fd
 			sed      = "echo FATAL: Use sd";    # https://github.com/chmln/sd
-			du       = "echo FATAL: Use dust";  # https://github.com/bootandy/dust
 			grep     = "echo FATAL: Use rg";    # https://github.com/BurntSushi/ripgrep
 			ps       = "echo FATAL: Use procs"; # https://github.com/dalance/procs
 			top      = "echo FATAL: Use btm";   # https://github.com/ClementTsang/bottom
@@ -23,6 +22,7 @@
 			# - bandwhich                                        @ https://github.com/imsnif/bandwhich
 			# - nushell                                          @ https://github.com/nushell/nushell
 			# - starship                                         @ https://github.com/starship/starship
+			# - dust                                             @ https://github.com/bootandy/dust
 
 			## Other
 			ls       = "exa --icons";
