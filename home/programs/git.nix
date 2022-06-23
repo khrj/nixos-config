@@ -3,6 +3,7 @@
 {
 	programs.git = {
 		enable = true;
+		lfs.enable = true;
 		userEmail = userDetails.email;
 		userName = userDetails.name;
 		ignores = [ ".idea" ".direnv" ];
