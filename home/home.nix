@@ -77,6 +77,7 @@
 		bottom                       # Terminal-based task viewer
 		chntpw                       # Windows registry editor
 		comma                        # Run apps quickly without installing (nix-index + nix run)
+		curl                         # Http client
 		dmg2img                      # Disk image converter
 		du-dust                      # Terminal-based storage space viewer
 		fd                           # File finder
