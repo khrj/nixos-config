@@ -42,11 +42,17 @@
 				];
 			};
 			homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
-				inherit system pkgs username;
-
-				configuration = import ./home/home.nix;
-				homeDirectory = "/home/${username}";
-				stateVersion = "22.05";
+				inherit pkgs;
+				modules = [
+					./home/home.nix
+					{
+						home = {
+							inherit username;
+							homeDirectory = "/home/${username}";
+							stateVersion = "22.05";
+						};
+					}
+				];
 
 				extraSpecialArgs = { inherit inputs stable unstable-small userDetails; };
 			};
