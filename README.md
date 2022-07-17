@@ -27,5 +27,5 @@ home-manager switch --flake <path-to-git-repo>
 ### One liner (update inputs and switch home and system)
 
 ```
-pushd <path-to-git-repo> && nix flake update && nixos-rebuild switch --use-remote-sudo --flake . && home-manager switch --flake . && popd
+pushd <path-to-git-repo> && nix flake update && nixos-rebuild switch --use-remote-sudo --flake .; home-manager switch --flake . && popd
 ```
