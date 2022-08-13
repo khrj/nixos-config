@@ -38,6 +38,8 @@
 		gitkraken               # Git GUI client
 		git-lfs                 # Git Large File Storage
 		insomnia                # REST client
+		pipenv                  # Python Package Manager
+		python3Full             # Programming language
 		rustup                  # Rust toolchain installer
 		vim                     # Advanced text editor
 
@@ -104,6 +106,7 @@
 
 		# System
 		efibootmgr                   # EFI boot entry manager
+		gnome.nautilus-python        # Nautilus extension API
 		gparted                      # Partition manager
 		hsetroot                     # Wallpaper setter
 		libsForQt5.okular            # PDF Editor
