@@ -38,7 +38,7 @@
 		gitkraken               # Git GUI client
 		git-lfs                 # Git Large File Storage
 		insomnia                # REST client
-		pipenv                  # Python Package Manager
+		poetry                  # Python Package Manager
 		python3Full             # Programming language
 		rustup                  # Rust toolchain installer
 		vim                     # Advanced text editor
@@ -50,6 +50,7 @@
 		jetbrains.jdk                  # Java Development Kit
 
 		# Apps
+		anki                         # Flashcards
 		bootstrap-studio             # Drag-and-drop bootstrap designer
 		betterdiscordctl             # Discord enhancer
 		calibre                      # Ebook library
