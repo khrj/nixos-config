@@ -1,4 +1,4 @@
-{ pkgs, lib, inputs, stable, unstable-small, ... }:
+{ pkgs, lib, inputs, stable, unstable-small, lagging, ... }:
 
 {
 	programs.home-manager.enable = true;
@@ -46,7 +46,7 @@
 		# Jetbrains
 		android-studio                 # Android
 		jetbrains.idea-ultimate        # Java
-		stable.jetbrains.pycharm-professional # Python
+		lagging.jetbrains.pycharm-professional # Python
 		jetbrains.jdk                  # Java Development Kit
 
 		# Apps
