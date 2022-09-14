@@ -30,6 +30,7 @@
 
 	home.packages = with pkgs; [
 		# Code
+		apktool                 # Android Package Decompiler
 		cargo-edit              # Rust: Cargo helper commands
 		dprint                  # Code formatter - Installed globally for one-off uses
 		gcc                     # Compiler
@@ -89,6 +90,7 @@
 		hyperfine                    # Benchmarking tool
 		imagemagick                  # Terminal-based photo modifier
 		jq                           # JSON processor
+		lsyncd                       # Cross-server file synchronization
 		neofetch                     # Terminal-based system-info viewer
 		ngrok                        # Localhost proxy-tunnel
 		p7zip                        # Compression tool
