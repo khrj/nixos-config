@@ -47,7 +47,7 @@
 		# Jetbrains
 		android-studio                 # Android
 		jetbrains.idea-ultimate        # Java
-		lagging.jetbrains.pycharm-professional # Python
+		jetbrains.pycharm-professional # Python
 		jetbrains.jdk                  # Java Development Kit
 
 		# Apps

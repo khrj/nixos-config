@@ -1,13 +1,15 @@
-{ userDetails, ... }:
+{ pkgs, userDetails, ... }:
 
 {
 	security.sudo.wheelNeedsPassword = false;
+	environment.shells = with pkgs; [ fish ];
 	users = {
 		users.${userDetails.username} = {
 			isNormalUser = true;
 			home = "/home/${userDetails.username}";
 			description = userDetails.name;
 			extraGroups = [ "wheel" ];
+			shell = pkgs.fish;
 		};	
 	};
 }
