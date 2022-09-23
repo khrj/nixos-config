@@ -22,6 +22,7 @@
 		./services/flameshot.nix        # Screenshot tool
 		./services/polkit.nix           # Policy kit graphical agent
 		./services/rclone.nix           # Cloud sync daemon
+		./services/syncthing.nix        # Cross-device file synchronization
 
 		# Other
 		./other/gtk.nix              # GTK Configuration
