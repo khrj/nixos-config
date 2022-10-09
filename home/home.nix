@@ -31,25 +31,24 @@
 
 	home.packages = with pkgs; [
 		# Code
-		apktool                 # Android Package Decompiler
+		apktool                 # Android package decompiler
 		cargo-edit              # Rust: Cargo helper commands
-		dprint                  # Code formatter - Installed globally for one-off uses
+		dprint                  # Code formatter
 		gcc                     # Compiler
 		gh                      # GitHub client
-		git                     # Version Control System
+		git                     # Version control system
 		gitkraken               # Git GUI client
-		git-lfs                 # Git Large File Storage
+		git-lfs                 # Git large file storage
 		insomnia                # REST client
-		poetry                  # Python Package Manager
+		poetry                  # Python package manager
 		python3Full             # Programming language
 		rustup                  # Rust toolchain installer
-		vim                     # Advanced text editor
 
 		# Jetbrains
 		android-studio                 # Android
 		jetbrains.idea-ultimate        # Java
 		jetbrains.pycharm-professional # Python
-		jetbrains.jdk                  # Java Development Kit
+		jetbrains.jdk                  # Java development kit
 
 		# Apps
 		anki                         # Flashcards
@@ -64,9 +63,10 @@
 		google-chrome                # Browser
 		handbrake                    # Audio-video encoder
 		libreoffice                  # Office suite
-		obsidian                     # Document organiser
+		musescore                    # Music notation software
+		obsidian                     # Note taking app
 		pick-colour-picker           # Colour picker
-		protonvpn-gui                # Virtual Private Network
+		protonvpn-gui                # Virtual private Network
 		qbittorrent                  # Torrent client
 		realvnc-vnc-viewer           # Remote desktop app
 		tdesktop                     # Communications app
@@ -113,13 +113,12 @@
 		gnome.nautilus-python        # Nautilus extension API
 		gparted                      # Partition manager
 		hsetroot                     # Wallpaper setter
-		libsForQt5.okular            # PDF Editor
-		lm_sensors                   # Hardware sensors. Required for i3status-rust
+		libsForQt5.okular            # PDF editor
 		pavucontrol                  # Audio configuration helper
-		polkit_gnome                 # Policy Kit Agent
+		polkit_gnome                 # Policy kit agent
 		shotwell                     # Image viewer
 		v4l-utils                    # Video input adjuster
 		vorta                        # Backup tool
-		yaru-theme                   # GTK Theme
+		yaru-theme                   # GTK theme
 	];
 }
