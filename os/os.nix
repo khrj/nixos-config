@@ -17,21 +17,22 @@
 		./components/time.nix
 
 		# Programs
-		./components/programs/adb.nix           # Android development bridge
-		./components/programs/borg-backup.nix   # Backup daemon
-		./components/programs/disable.nix       # Disabled defaults
-		./components/programs/dconf.nix         # Gnome configuration
-		./components/programs/git.nix           # VCS	
-		./components/programs/gnome-keyring.nix # Keychain daemon
-		./components/programs/gpg.nix           # Encryption tool
-		./components/programs/mysql.nix         # Database server
-		./components/programs/postgresql.nix    # Database server
-		./components/programs/tailscale.nix     # Private network
-		./components/programs/virtualbox.nix    # Hardware virtualizer
-		./components/programs/xrdp.nix          # Remote access
+		./components/programs/adb.nix               # Android development bridge
+		./components/programs/borg-backup.nix       # Backup daemon
+		./components/programs/chromium-policies.nix # Browser policies
+		./components/programs/disable.nix           # Disabled defaults
+		./components/programs/dconf.nix             # Gnome configuration
+		./components/programs/git.nix               # VCS	
+		./components/programs/gnome-keyring.nix     # Keychain daemon
+		./components/programs/gpg.nix               # Encryption tool
+		./components/programs/mysql.nix             # Database server
+		./components/programs/postgresql.nix        # Database server
+		./components/programs/tailscale.nix         # Private network
+		./components/programs/virtualbox.nix        # Hardware virtualizer
+		./components/programs/xrdp.nix              # Remote access
 
 		# Generated
-		./hardware-configuration.nix            # Generated hardware configuration
+		./hardware-configuration.nix                # Generated hardware configuration
 	];
 
 	nix = {
