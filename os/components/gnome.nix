@@ -3,16 +3,10 @@
 {
 	services.xserver = {
 		desktopManager.gnome.enable = true;
-		displayManager.gdm = {
-			enable = true;
-			wayland = false;
-		};
+		displayManager.gdm.enable = true;
 	};
 
-	environment.systemPackages = with pkgs.gnomeExtensions; [
-		blur-my-shell
-		transparent-top-bar-adjustable-transparency
-	];
+	environment.systemPackages = with pkgs.gnomeExtensions; [ blur-my-shell ];
 
 	environment.gnome.excludePackages = with pkgs.gnome; [
 		# baobab                       # Disk space analyser
