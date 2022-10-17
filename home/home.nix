@@ -51,7 +51,7 @@
 
 		# Apps
 		bootstrap-studio             # Drag-and-drop bootstrap designer
-		# calibre                      # Ebook library
+		calibre                      # Ebook library
 		dbeaver                      # Database client
 		electrum                     # Bitcoin wallet
 		etcher                       # Disk image flasher
@@ -64,6 +64,7 @@
 		pick-colour-picker           # Colour picker
 		protonvpn-gui                # Virtual private Network
 		qbittorrent                  # Torrent client
+		songrec                      # Shazam client, music recognition app
 		tdesktop                     # Communications app
 		vlc                          # Audio/video player
 		zoom-us                      # Video call app
