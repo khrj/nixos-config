@@ -35,7 +35,6 @@
 		cargo-edit              # Rust: Cargo helper commands
 		dprint                  # Code formatter
 		gcc                     # Compiler
-		gh                      # GitHub client
 		git                     # Version control system
 		gitkraken               # Git GUI client
 		git-lfs                 # Git large file storage
@@ -51,12 +50,9 @@
 		jetbrains.jdk                  # Java development kit
 
 		# Apps
-		anki                         # Flashcards
 		bootstrap-studio             # Drag-and-drop bootstrap designer
-		betterdiscordctl             # Discord enhancer
-		calibre                      # Ebook library
+		# calibre                      # Ebook library
 		dbeaver                      # Database client
-		discord                      # Communications app
 		electrum                     # Bitcoin wallet
 		etcher                       # Disk image flasher
 		fritzing                     # Hardware design tool
@@ -68,20 +64,16 @@
 		pick-colour-picker           # Colour picker
 		protonvpn-gui                # Virtual private Network
 		qbittorrent                  # Torrent client
-		realvnc-vnc-viewer           # Remote desktop app
 		tdesktop                     # Communications app
-		teamviewer                   # Remote desktop app
 		vlc                          # Audio/video player
 		zoom-us                      # Video call app
 
 		# CLI Tools
-		appimage-run                 # Run appimages without derivations
 		aria2                        # Parallel downloader
 		b3sum                        # BLAKE3 hashing tool 
 		bitwarden-cli                # Password manager CLI
 		bottom                       # Terminal-based task viewer
 		chntpw                       # Windows registry editor
-		comma                        # Run apps quickly without installing (nix-index + nix run)
 		curl                         # Http client
 		dmg2img                      # Disk image converter
 		du-dust                      # Terminal-based storage space viewer
@@ -93,7 +85,6 @@
 		jq                           # JSON processor
 		lsyncd                       # Cross-server file synchronization
 		neofetch                     # Terminal-based system-info viewer
-		ngrok                        # Localhost proxy-tunnel
 		p7zip                        # Compression tool
 		procs                        # Terminal job viewer
 		rclone                       # Cloud sync tool
@@ -120,5 +111,11 @@
 		v4l-utils                    # Video input adjuster
 		vorta                        # Backup tool
 		yaru-theme                   # GTK theme
+
+		# Nix specific
+		appimage-run                 # Run appimages without derivations
+		comma                        # Run apps quickly without installing (nix-index + nix run)
+		hydra-check                  # Check hydra for build statuses
+		steam-run                    # Run binaries without derivations
 	];
 }
