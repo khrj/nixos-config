@@ -25,7 +25,6 @@
 		./services/syncthing.nix        # Cross-device file synchronization
 
 		# Other
-		./other/gtk.nix              # GTK Configuration
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
 	];
 
