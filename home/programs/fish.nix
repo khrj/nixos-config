@@ -28,6 +28,7 @@
 			ls       = "exa --icons";
 			sl       = "exa --icons";
 			open     = "xdg-open";
+			ssh      = "kitty +kitten ssh";
 		};
 
 		shellInit = ''

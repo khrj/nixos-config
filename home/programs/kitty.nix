@@ -22,6 +22,7 @@
 		 
 			# Window
 			window_padding_width = 5;
+			wayland_titlebar_color = "background";
 
 			# Tab bar
 			tab_bar_edge = "top";
