@@ -18,7 +18,6 @@
 
 		# Programs
 		./components/programs/adb.nix               # Android development bridge
-		./components/programs/borg-backup.nix       # Backup daemon
 		./components/programs/chromium-policies.nix # Browser policies
 		./components/programs/disable.nix           # Disabled defaults
 		./components/programs/dconf.nix             # Gnome configuration

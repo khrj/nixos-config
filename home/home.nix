@@ -110,7 +110,6 @@
 		polkit_gnome                 # Policy kit agent
 		shotwell                     # Image viewer
 		v4l-utils                    # Video input adjuster
-		vorta                        # Backup tool
 		yaru-theme                   # GTK theme
 
 		# Nix specific
