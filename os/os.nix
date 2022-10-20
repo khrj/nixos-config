@@ -27,6 +27,7 @@
 		./components/programs/gpg.nix               # Encryption tool
 		./components/programs/mysql.nix             # Database server
 		./components/programs/postgresql.nix        # Database server
+		./components/programs/restic.nix            # Backup daemon
 		./components/programs/tailscale.nix         # Private network
 		./components/programs/virtualbox.nix        # Hardware virtualizer
 		./components/programs/xrdp.nix              # Remote access

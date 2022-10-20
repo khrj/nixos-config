@@ -88,6 +88,7 @@
 		p7zip                        # Compression tool
 		procs                        # Terminal job viewer
 		rclone                       # Cloud sync tool
+		restic                       # Backups
 		ripgrep                      # File-content searcher
 		sd                           # stdin filterer
 		speedtest-cli                # Network speed measurer
