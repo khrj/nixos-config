@@ -93,6 +93,7 @@
 		restic                       # Backups
 		ripgrep                      # File-content searcher
 		sd                           # stdin filterer
+		nodePackages.serve           # Static HTTP file server
 		speedtest-cli                # Network speed measurer
 		tealdeer                     # Manual summarizer
 		unzip                        # File unzipper
