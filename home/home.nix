@@ -80,6 +80,7 @@
 		du-dust                      # Terminal-based storage space viewer
 		fd                           # File finder
 		ffmpeg                       # Multimedia handler
+		frp                          # Reverse proxy
 		grex                         # Regex maker
 		hyperfine                    # Benchmarking tool
 		imagemagick                  # Terminal-based photo modifier
