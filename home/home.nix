@@ -56,6 +56,7 @@
 		etcher                       # Disk image flasher
 		fritzing                     # Hardware design tool
 		google-chrome                # Browser
+		graphwar                     # Math-based shooter game
 		handbrake                    # Audio-video encoder
 		libreoffice                  # Office suite
 		musescore                    # Music notation software
