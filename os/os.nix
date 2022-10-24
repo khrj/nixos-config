@@ -8,6 +8,7 @@
 		./components/bluetooth.nix
 		./components/boot.nix
 		./components/display.nix
+		./components/environment.nix
 		./components/file-system.nix
 		./components/fonts.nix
 		./components/gnome.nix
