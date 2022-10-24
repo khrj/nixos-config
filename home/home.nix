@@ -20,7 +20,6 @@
 		# Services
 		./services/configure-camera.nix # Configures camera on startup
 		./services/flameshot.nix        # Screenshot tool
-		./services/polkit.nix           # Policy kit graphical agent
 		./services/rclone.nix           # Cloud sync daemon
 		./services/syncthing.nix        # Cross-device file synchronization
 
@@ -110,7 +109,6 @@
 		hsetroot                     # Wallpaper setter
 		libsForQt5.okular            # PDF editor
 		pavucontrol                  # Audio configuration helper
-		polkit_gnome                 # Policy kit agent
 		shotwell                     # Image viewer
 		v4l-utils                    # Video input adjuster
 		yaru-theme                   # GTK theme
