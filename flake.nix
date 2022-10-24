@@ -2,14 +2,14 @@
 	inputs = {
 		nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 		nixos-unstable-small.url = "github:nixos/nixpkgs/nixos-unstable-small";
-		nixos-unstable-lagging.url = "github:nixos/nixpkgs/301aada7a64812853f2e2634a530ef5d34505048";
+		dev.url = "path:/home/khushraj/Builds/nixpkgs";
 		home-manager = {
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixos-unstable";
 		};
 	};
 
-	outputs = { nixos-unstable, nixos-unstable-lagging, nixos-unstable-small, home-manager, ... }@inputs:
+	outputs = { nixos-unstable, nixos-unstable-lagging, nixos-unstable-small, dev, home-manager, ... }@inputs:
 		let
 			config = {
 				allowUnfree = true;
@@ -29,10 +29,11 @@
 			pkgs = import nixos-unstable { inherit system config; };
 			unstable-small = import nixos-unstable-small { inherit system config; };
 			lagging = import nixos-unstable-lagging { inherit system config; };
+			dev = import dev { inherit system config; };
 		in {
 			nixosConfigurations."${username}s-desktop" = nixos-unstable.lib.nixosSystem {
 				inherit system pkgs;
-				specialArgs = { inherit inputs unstable-small lagging userDetails; };
+				specialArgs = { inherit inputs unstable-small lagging dev userDetails; };
 				modules = [
 					./os/os.nix
 					{
@@ -54,7 +55,7 @@
 					}
 				];
 
-				extraSpecialArgs = { inherit inputs unstable-small lagging userDetails; };
+				extraSpecialArgs = { inherit inputs unstable-small lagging dev userDetails; };
 			};
 		};
 }
