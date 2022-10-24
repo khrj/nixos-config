@@ -2,7 +2,7 @@
 	inputs = {
 		nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 		nixos-unstable-small.url = "github:nixos/nixpkgs/nixos-unstable-small";
-		nixos-unstable-lagging.url = "github:nixos/nixpkgs/a07dae92cbc280080ac17ece325e2a56bb91b654";
+		nixos-unstable-lagging.url = "github:nixos/nixpkgs/301aada7a64812853f2e2634a530ef5d34505048";
 		home-manager = {
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixos-unstable";
