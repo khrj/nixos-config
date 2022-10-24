@@ -19,7 +19,6 @@
 
 		# Services
 		./services/configure-camera.nix # Configures camera on startup
-		./services/flameshot.nix        # Screenshot tool
 		./services/rclone.nix           # Cloud sync daemon
 		./services/syncthing.nix        # Cross-device file synchronization
 
@@ -53,6 +52,7 @@
 		dbeaver                      # Database client
 		electrum                     # Bitcoin wallet
 		etcher                       # Disk image flasher
+		flameshot                    # Screenshot tool
 		fritzing                     # Hardware design tool
 		google-chrome                # Browser
 		graphwar                     # Math-based shooter game
