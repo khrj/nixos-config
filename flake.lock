@@ -1,5 +1,17 @@
 {
   "nodes": {
+    "dev": {
+      "locked": {
+        "lastModified": 1666606043,
+        "narHash": "sha256-osa11QguPd+qkPCtNaTcWYemSoTqzVAHet0mJSaeYBI=",
+        "path": "/home/khushraj/Builds/nixpkgs",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/khushraj/Builds/nixpkgs",
+        "type": "path"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -71,6 +83,7 @@
     },
     "root": {
       "inputs": {
+        "dev": "dev",
         "home-manager": "home-manager",
         "nixos-unstable": "nixos-unstable",
         "nixos-unstable-lagging": "nixos-unstable-lagging",
