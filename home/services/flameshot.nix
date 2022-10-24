@@ -1,5 +1,12 @@
 { ... }:
 
 {
-	services.flameshot.enable = true;
+	services.flameshot = {
+		enable = true;
+		settings = {
+			General = {
+				disabledTrayIcon = true;
+			};
+		};
+	};
 }
