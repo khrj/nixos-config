@@ -14,6 +14,7 @@
 		./programs/go.nix            # Golang
 		./programs/kitty.nix         # Terminal emulator
 		./programs/nix-index.nix     # command-not-found replacement
+		./programs/ssh.nix           # Remote shell access
 		./programs/starship.nix      # Shell prompt
 		./programs/vscode.nix        # Code editor
 
