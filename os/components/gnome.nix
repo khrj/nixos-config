@@ -4,6 +4,7 @@
 	services.xserver = {
 		desktopManager.gnome.enable = true;
 		displayManager.gdm.enable = true;
+		excludePackages = with pkgs; [ xterm ];
 	};
 
 	environment.systemPackages = with pkgs.gnomeExtensions; [ blur-my-shell ];
@@ -32,8 +33,10 @@
 		# gnome-system-monitor         # Process monitor
 		# gnome-text-editor            # Text editor
 		gnome-weather
-		pkgs.gnome-photos
-		pkgs.gnome-console
 		# pkgs.gnome-connections       # Remote desktop client
+		pkgs.gnome-console
+		pkgs.gnome-photos
+		pkgs.gnome-tour
+		pkgs.gnome-user-docs
 	];
 }
