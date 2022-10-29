@@ -33,7 +33,7 @@
 		# gnome-system-monitor         # Process monitor
 		# gnome-text-editor            # Text editor
 		gnome-weather
-		# pkgs.gnome-connections       # Remote desktop client
+		pkgs.gnome-connections
 		pkgs.gnome-console
 		pkgs.gnome-photos
 		pkgs.gnome-tour

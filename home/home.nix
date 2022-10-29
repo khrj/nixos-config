@@ -64,6 +64,7 @@
 		pick-colour-picker           # Colour picker
 		protonvpn-gui                # Virtual private Network
 		qbittorrent                  # Torrent client
+		realvnc-vnc-viewer           # Remote desktop client
 		songrec                      # Shazam client, music recognition app
 		tdesktop                     # Communications app
 		vlc                          # Audio/video player
