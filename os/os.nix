@@ -21,6 +21,7 @@
 		./components/programs/adb.nix               # Android development bridge
 		./components/programs/chromium-policies.nix # Browser policies
 		./components/programs/disable.nix           # Disabled defaults
+		./components/programs/docker.nix            # Containerizer
 		./components/programs/dconf.nix             # Gnome configuration
 		./components/programs/git.nix               # VCS	
 		./components/programs/gnome-keyring.nix     # Keychain daemon
