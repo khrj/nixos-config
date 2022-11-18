@@ -31,6 +31,7 @@
 		# Code
 		apktool                 # Android package decompiler
 		cargo-edit              # Rust: Cargo helper commands
+		deno                    # Programming language
 		dprint                  # Code formatter
 		gcc                     # Compiler
 		git                     # Version control system
@@ -88,6 +89,7 @@
 		jq                           # JSON processor
 		lsyncd                       # Cross-server file synchronization
 		neofetch                     # Terminal-based system-info viewer
+		oath-toolkit                 # 2FA code generator
 		p7zip                        # Compression tool
 		procs                        # Terminal job viewer
 		rclone                       # Cloud sync tool
