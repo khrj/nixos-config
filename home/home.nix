@@ -107,6 +107,7 @@
 		wget                         # File downloader
 		yt-dlp                       # Multimedia scraper
 		zip                          # File zipper
+		nodePackages.zx	             # JavaScript based shell scripts
 
 		# System
 		efibootmgr                   # EFI boot entry manager
