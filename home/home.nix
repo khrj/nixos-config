@@ -74,6 +74,7 @@
 
 		# CLI Tools
 		aria2                        # Parallel downloader
+		asciinema                    # CLI recording tool
 		b3sum                        # BLAKE3 hashing tool 
 		bitwarden-cli                # Password manager CLI
 		bottom                       # Terminal-based task viewer
