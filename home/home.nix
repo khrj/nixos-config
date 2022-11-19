@@ -5,6 +5,7 @@
 
 	imports = [
 		# Programs
+		./programs/atuin.nix         # Shell history management tool
 		./programs/bat.nix           # File contents viewer
 		./programs/direnv.nix        # Automatic flake loader
 		./programs/exa.nix           # File lister

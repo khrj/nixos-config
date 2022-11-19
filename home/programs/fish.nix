@@ -33,7 +33,5 @@
 		shellInit = ''
 			set -x DIRENV_LOG_FORMAT ""
 		'';
-
-		# TODO: EDITOR, PAGER, tcode function
 	};
 }
