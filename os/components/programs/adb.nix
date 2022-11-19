@@ -1,11 +1,6 @@
-{ userDetails, lagging, ... }:
+{ userDetails, ... }:
 
 {
-	# programs.adb.enable = true;
-
-    services.udev.packages = [ lagging.android-udev-rules ];
-    environment.systemPackages = [ lagging.android-tools ];
-    users.groups.adbusers = {};
-
+	programs.adb.enable = true;
 	users.users.${userDetails.username}.extraGroups = ["adbusers"];
 }
