@@ -30,8 +30,11 @@
 			open     = "xdg-open";
 		};
 
-		shellInit = ''
-			set -x DIRENV_LOG_FORMAT ""
+		interactiveShellInit = ''
+			set --export DIRENV_LOG_FORMAT ""
+			
+			set --export ATUIN_NOBIND "true"
+			bind \cr _atuin_search
 		'';
 	};
 }
