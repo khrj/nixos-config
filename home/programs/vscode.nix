@@ -7,6 +7,7 @@
 			bbenoist.nix
 			matklad.rust-analyzer
 			ms-vsliveshare.vsliveshare
+			vadimcn.vscode-lldb
 		];
 	};
 }
