@@ -23,6 +23,7 @@
 		./services/configure-camera.nix # Configures camera on startup
 		./services/rclone.nix           # Cloud sync daemon
 		./services/syncthing.nix        # Cross-device file synchronization
+		./services/unison.nix           # Bi-directional file synchronization
 
 		# Other
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs

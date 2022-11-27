@@ -3,19 +3,14 @@
 {
 	systemd.user = {
 		services.rclone = {
+			Unit.Description = "Backup and sync daemon";
 			Install.WantedBy = [ "default.target" ];
-			Service.ExecStart = "${pkgs.rclone}/bin/rclone bisync Google-Drive/ google-drive: --drive-skip-gdocs --check-access --verbose";
-			Unit = {
-				Description = "Backup and sync daemon";
-				Wants = "rclone.timer";
-			};
-		};
-		timers.rclone = {
-			Timer.OnCalendar = "*-*-* *:*:00";
-			Install.WantedBy = [ "timers.target" ];
-			Unit = {
-				Description = "Backup and sync timer";
-				Requires = "rclone.service";
+			Service = {
+				Type = "simple";
+				ExecStart = "${pkgs.rclone}/bin/rclone mount google-drive: /home/${userDetails.username}/.google-drive-mount/ --drive-skip-gdocs --vfs-cache-mode full";
+				Environment = "PATH=/run/wrappers/bin/:$PATH";
+				Restart = "always";
+				RestartSec = 1;
 			};
 		};
 	};
