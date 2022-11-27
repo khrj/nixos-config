@@ -6,7 +6,6 @@ let
 		**/node_modules/
 		${h}/Android/Sdk
 		${h}/Builds
-		${h}/Google-Drive
 		${h}/go
 		${h}/.cache
 		${h}/.rustup
