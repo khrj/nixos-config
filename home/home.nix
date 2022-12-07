@@ -81,6 +81,7 @@
 		bottom                       # Terminal-based task viewer
 		chntpw                       # Windows registry editor
 		curl                         # Http client
+		dig                          # DNS query tool
 		dmg2img                      # Disk image converter
 		du-dust                      # Terminal-based storage space viewer
 		fd                           # File finder
