@@ -34,13 +34,13 @@
 		apktool                 # Android package decompiler
 		cargo-edit              # Rust: Cargo helper commands
 		deno                    # Programming language
-		dprint                  # Code formatter
 		gcc                     # Compiler
 		git                     # Version control system
 		gitkraken               # Git GUI client
 		git-lfs                 # Git large file storage
 		insomnia                # REST client
 		poetry                  # Python package manager
+		nodePackages.prettier   # Code formatter
 		python3Full             # Programming language
 		rustup                  # Rust toolchain installer
 
