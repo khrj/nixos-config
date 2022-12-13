@@ -24,6 +24,7 @@
 		./services/rclone.nix           # Cloud sync daemon
 		./services/syncthing.nix        # Cross-device file synchronization
 		./services/unison.nix           # Bi-directional file synchronization
+		./services/nextcloud-client.nix # Self-hosted cloud
 
 		# Other
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
