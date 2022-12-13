@@ -34,6 +34,7 @@
 		# Code
 		apktool                 # Android package decompiler
 		cargo-edit              # Rust: Cargo helper commands
+		dbeaver                 # Database client
 		deno                    # Programming language
 		gcc                     # Compiler
 		git                     # Version control system
@@ -44,6 +45,8 @@
 		nodePackages.prettier   # Code formatter
 		python3Full             # Programming language
 		rustup                  # Rust toolchain installer
+		wasmtime                # WebAssembly runtime
+		nodePackages.zx	        # JavaScript based shell scripts
 
 		# Jetbrains
 		android-studio                 # Android
@@ -54,7 +57,6 @@
 		# Apps
 		bootstrap-studio             # Drag-and-drop bootstrap designer
 		calibre                      # Ebook library
-		dbeaver                      # Database client
 		electrum                     # Bitcoin wallet
 		etcher                       # Disk image flasher
 		flameshot                    # Screenshot tool
@@ -110,7 +112,6 @@
 		wget                         # File downloader
 		yt-dlp                       # Multimedia scraper
 		zip                          # File zipper
-		nodePackages.zx	             # JavaScript based shell scripts
 
 		# System
 		efibootmgr                   # EFI boot entry manager
