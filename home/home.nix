@@ -110,6 +110,7 @@
 		viu                          # Terminal image viewer
 		websocat                     # WebSocket client
 		wget                         # File downloader
+		wl-clipboard                 # Wayland-based clipboard management utilities
 		yt-dlp                       # Multimedia scraper
 		zip                          # File zipper
 
