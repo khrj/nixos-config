@@ -39,17 +39,17 @@
     },
     "nixos-unstable-lagging": {
       "locked": {
-        "lastModified": 1666377499,
-        "narHash": "sha256-dZZCGvWcxc7oGnUgFVf0UeNHsJ4VhkTM0v5JRe8EwR8=",
+        "lastModified": 1671993979,
+        "narHash": "sha256-ICH463p4xuLzXZeA2zPt+28YTKYpjhYhqPDBXE9gDBA=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "301aada7a64812853f2e2634a530ef5d34505048",
+        "rev": "750c9abe9f4ee48dee72508db8bb19d53e358132",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "301aada7a64812853f2e2634a530ef5d34505048",
+        "rev": "750c9abe9f4ee48dee72508db8bb19d53e358132",
         "type": "github"
       }
     },
