@@ -2,7 +2,7 @@
 	inputs = {
 		nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 		nixos-unstable-small.url = "github:nixos/nixpkgs/nixos-unstable-small";
-		nixos-unstable-lagging.url = "github:nixos/nixpkgs/301aada7a64812853f2e2634a530ef5d34505048";
+		nixos-unstable-lagging.url = "github:nixos/nixpkgs/750c9abe9f4ee48dee72508db8bb19d53e358132";
 		home-manager = {
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixos-unstable";
@@ -13,7 +13,7 @@
 		let
 			config = {
 				allowUnfree = true;
-				permittedInsecurePackages = [ "electron-12.2.3" ];
+				permittedInsecurePackages = [ "electron-12.2.3" "xrdp-0.9.9" ];
 			};
 
 			system = "x86_64-linux";
