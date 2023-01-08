@@ -42,6 +42,7 @@
 		lagging.gitkraken       # Git GUI client
 		git-lfs                 # Git large file storage
 		insomnia                # REST client
+		pico-sdk                # SDK for raspberry pi pico
 		poetry                  # Python package manager
 		nodePackages.prettier   # Code formatter
 		python3Full             # Programming language
