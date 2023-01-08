@@ -53,6 +53,22 @@
         "type": "github"
       }
     },
+    "nixos-unstable-leading": {
+      "locked": {
+        "lastModified": 1673084702,
+        "narHash": "sha256-wHwswyE/8QEFjwZcwF6BC2/QGM/Est4TBaTa9sQ4WSY=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "06f085e2bace1675c9f448a491c3773113f2b865",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "06f085e2bace1675c9f448a491c3773113f2b865",
+        "type": "github"
+      }
+    },
     "nixos-unstable-small": {
       "locked": {
         "lastModified": 1673039641,
@@ -74,6 +90,7 @@
         "home-manager": "home-manager",
         "nixos-unstable": "nixos-unstable",
         "nixos-unstable-lagging": "nixos-unstable-lagging",
+        "nixos-unstable-leading": "nixos-unstable-leading",
         "nixos-unstable-small": "nixos-unstable-small"
       }
     },
