@@ -33,6 +33,7 @@
 	home.packages = with pkgs; [
 		# Code
 		apktool                 # Android package decompiler
+		arduino                 # Arduino CLI
 		cargo-edit              # Rust: Cargo helper commands
 		dbeaver                 # Database client
 		deno                    # Programming language
