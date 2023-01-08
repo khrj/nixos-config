@@ -8,7 +8,7 @@
 			isNormalUser = true;
 			home = "/home/${userDetails.username}";
 			description = userDetails.name;
-			extraGroups = [ "wheel" ];
+			extraGroups = [ "wheel" "dialout" ];
 			shell = pkgs.fish;
 		};	
 	};
