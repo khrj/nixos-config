@@ -47,6 +47,7 @@
 		nodePackages.prettier   # Code formatter
 		python3Full             # Programming language
 		rustup                  # Rust toolchain installer
+		tio                     # Serial IO for raspberry pi pico
 		wasmtime                # WebAssembly runtime
 		nodePackages.zx	        # JavaScript based shell scripts
 
