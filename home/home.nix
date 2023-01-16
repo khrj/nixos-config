@@ -1,4 +1,4 @@
-{ pkgs, lib, inputs, stable, unstable-small, lagging, ... }:
+{ pkgs, lib, inputs, stable, unstable-small, lagging, leading, ... }:
 
 {
 	programs.home-manager.enable = true;
@@ -39,7 +39,7 @@
 		deno                    # Programming language
 		gcc                     # Compiler
 		git                     # Version control system
-		lagging.gitkraken       # Git GUI client
+		leading.gitkraken       # Git GUI client
 		git-lfs                 # Git large file storage
 		insomnia                # REST client
 		pico-sdk                # SDK for raspberry pi pico
