@@ -10,6 +10,8 @@
 			description = userDetails.name;
 			extraGroups = [ "wheel" "dialout" ];
 			shell = pkgs.fish;
-		};	
+		};
 	};
+	
+	programs.fish.enable = true;
 }

@@ -3,7 +3,7 @@
 {
 	services.mysql = {
 		enable = true;
-		package = pkgs.mysql80;
+		package = pkgs.mariadb;
 	};
 
 	# Don't start MySQL on boot

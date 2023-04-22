@@ -7,6 +7,6 @@
 		useDHCP = false;
 		interfaces.enp4s0.useDHCP = true;
 		hostName = "${userDetails.username}s-desktop";
-		firewall.allowedTCPPorts = [ 22 ];
+		firewall.allowedTCPPorts = [ 22 19000 8081 ];
 	};
 }
