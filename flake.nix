@@ -8,9 +8,13 @@
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixos-unstable";
 		};
+		android-nixpkgs = {
+			url = "github:tadfisher/android-nixpkgs";
+			inputs.nixpkgs.follows = "nixos-unstable";
+		};
 	};
 
-	outputs = { nixos-unstable, nixos-unstable-lagging, nixos-unstable-leading, nixos-unstable-small, home-manager, ... }@inputs:
+	outputs = { nixos-unstable, nixos-unstable-lagging, nixos-unstable-leading, nixos-unstable-small, home-manager, android-nixpkgs, ... }@inputs:
 		let
 			config = {
 				allowUnfree = true;
@@ -56,7 +60,7 @@
 					}
 				];
 
-				extraSpecialArgs = { inherit inputs unstable-small lagging leading userDetails; };
+				extraSpecialArgs = { inherit inputs unstable-small lagging leading userDetails android-nixpkgs; };
 			};
 		};
 }

@@ -28,6 +28,7 @@
 
 		# Other
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
+		./other/android.nix          # Android SDK
 	];
 
 	home.packages = with pkgs; [
