@@ -39,7 +39,7 @@
 		deno                    # Programming language
 		gcc                     # Compiler
 		git                     # Version control system
-		leading.gitkraken       # Git GUI client
+		gitkraken               # Git GUI client
 		git-lfs                 # Git large file storage
 		insomnia                # REST client
 		pico-sdk                # SDK for raspberry pi pico
