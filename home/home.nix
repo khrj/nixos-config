@@ -134,5 +134,6 @@
 		comma                        # Run apps quickly without installing (nix-index + nix run)
 		hydra-check                  # Check hydra for build statuses
 		steam-run                    # Run binaries without derivations
+		nix-du                       # Check nix store space distribution
 	];
 }
