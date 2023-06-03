@@ -9,11 +9,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1683145311,
-        "narHash": "sha256-ONDCjwNU9UfgbOd2b+BUeKSbwkQlhzsd++Rhu/ZhFlM=",
+        "lastModified": 1685737231,
+        "narHash": "sha256-B0rp/s+W8GdKZ1MehhVImlcvNax6h2gSdTrjGMYArxM=",
         "owner": "tadfisher",
         "repo": "android-nixpkgs",
-        "rev": "296dbd694d0a5e77a8572f6309b4122f44becc04",
+        "rev": "93ba7c141b2ee343ceb39cac4f864ee1e51fb880",
         "type": "github"
       },
       "original": {
@@ -24,21 +24,18 @@
     },
     "devshell": {
       "inputs": {
-        "flake-utils": [
-          "android-nixpkgs",
-          "nixpkgs"
-        ],
         "nixpkgs": [
           "android-nixpkgs",
           "nixpkgs"
-        ]
+        ],
+        "systems": "systems"
       },
       "locked": {
-        "lastModified": 1682700442,
-        "narHash": "sha256-qjaAAcCYgp1pBBG7mY9z95ODUBZMtUpf0Qp3Gt/Wha0=",
+        "lastModified": 1683635384,
+        "narHash": "sha256-9goJTd05yOyD/McaMqZ4BUB8JW+mZMnZQJZ7VQ6C/Lw=",
         "owner": "numtide",
         "repo": "devshell",
-        "rev": "fb6673fe9fe4409e3f43ca86968261e970918a83",
+        "rev": "5143ea68647c4cf5227e4ad2100db6671fc4c369",
         "type": "github"
       },
       "original": {
@@ -49,14 +46,14 @@
     },
     "flake-utils": {
       "inputs": {
-        "systems": "systems"
+        "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1681202837,
-        "narHash": "sha256-H+Rh19JDwRtpVPAWp64F+rlEtxUWBAQW28eAi3SRSzg=",
+        "lastModified": 1685518550,
+        "narHash": "sha256-o2d0KcvaXzTrPRIo0kOLV0/QXHhDQ5DTi+OxcjO8xqY=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "cfacdce06f30d2b68473a46042957675eebb3401",
+        "rev": "a1720a10a6cfe8234c0e93907ffe81be440f4cef",
         "type": "github"
       },
       "original": {
@@ -72,11 +69,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1683196088,
-        "narHash": "sha256-MO4i1ceO2WqwyEn/iggDyMOWMVUb0oIicRpfY4MgNko=",
+        "lastModified": 1685721552,
+        "narHash": "sha256-ifvq/zlO7lck8q+YkC5uom/h8/MVdMcQEldOL3cDQW0=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "6abb775e75a7f25451781dc704cfe03f27ad7496",
+        "rev": "29519461834c08395b35f840811faf8c23e3b61c",
         "type": "github"
       },
       "original": {
@@ -87,11 +84,11 @@
     },
     "nixos-unstable": {
       "locked": {
-        "lastModified": 1683014792,
-        "narHash": "sha256-6Va9iVtmmsw4raBc3QKvQT2KT/NGRWlvUlJj46zN8B8=",
+        "lastModified": 1685655444,
+        "narHash": "sha256-6EujQNAeaUkWvpEZZcVF8qSfQrNVWFNNGbUJxv/A5a8=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "1a411f23ba299db155a5b45d5e145b85a7aafc42",
+        "rev": "e635192892f5abbc2289eaac3a73cdb249abaefd",
         "type": "github"
       },
       "original": {
@@ -135,11 +132,11 @@
     },
     "nixos-unstable-small": {
       "locked": {
-        "lastModified": 1683185507,
-        "narHash": "sha256-Wcj09pigMFgj+0borXeoJvVMwH2Rc4gkSq4BwNq3k7s=",
+        "lastModified": 1685780302,
+        "narHash": "sha256-NckUaSu5MxNGC9bctaiZEwjSxbJm9jVj3qHq/zwamvA=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "63464b8c2837ec56e1d610f5bd2a9b8e1f532c07",
+        "rev": "15fded2696f08d5550b00de4661b352d41e2374a",
         "type": "github"
       },
       "original": {
@@ -160,6 +157,21 @@
       }
     },
     "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_2": {
       "locked": {
         "lastModified": 1681028828,
         "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
