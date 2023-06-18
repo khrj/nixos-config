@@ -10,8 +10,6 @@
 	boot.kernelModules = [ "kvm-intel" ];
 	boot.extraModulePackages = [ ];
 
-	# Core mounts
-
 	fileSystems."/" = {
 		device = "none";
 		fsType = "tmpfs";
@@ -45,12 +43,10 @@
 		{ device = "/dev/disk/by-uuid/35b29226-5565-4b3f-9307-4aef991c98f8"; }
 	];
 
-	# Config mounts
-	fileSystems."/etc/machine-id" = { device = "/nix/persist/etc/machine-id"; fsType = "none"; options = [ "bind" ]; };
-	fileSystems."/etc/passwd" = { device = "/nix/persist/etc/passwd"; fsType = "none"; options = [ "bind" ]; };
-	fileSystems."/etc/shadow" = { device = "/nix/persist/etc/shadow"; fsType = "none"; options = [ "bind" ]; };
-	fileSystems."/etc/sudoers" = { device = "/nix/persist/etc/sudoers"; fsType = "none"; options = [ "bind" ]; };
 	fileSystems."/var/log" = { device = "/nix/persist/var/log"; fsType = "none"; options = [ "bind" ]; };
+	environment.etc."machine-id".source = "/nix/persist/etc/machine-id";
+	environment.etc."passwd".source = "/nix/persist/etc/passwd";
+	environment.etc."shadow".source = "/nix/persist/etc/shadow";
 
 	powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
 }
