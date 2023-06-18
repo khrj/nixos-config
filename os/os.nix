@@ -26,7 +26,6 @@
 		./components/programs/git.nix               # VCS	
 		./components/programs/gnome-keyring.nix     # Keychain daemon
 		./components/programs/gpg.nix               # Encryption tool
-		./components/programs/mysql.nix             # Database server
 		./components/programs/postgresql.nix        # Database server
 		./components/programs/restic.nix            # Backup daemon
 		./components/programs/virtualbox.nix        # Hardware virtualizer
