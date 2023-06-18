@@ -106,6 +106,7 @@
 		rclone                       # Cloud sync tool
 		restic                       # Backups
 		ripgrep                      # File-content searcher
+		scrcpy                       # Android screen mirroring
 		sd                           # stdin filterer
 		nodePackages.serve           # Static HTTP file server
 		speedtest-cli                # Network speed measurer
