@@ -59,7 +59,7 @@
 		jetbrains.jdk                  # Java development kit
 
 		# Apps
-		anki-bin                     # Memorization tool
+		anki                         # Memorization tool
 		bootstrap-studio             # Drag-and-drop bootstrap designer
 		calibre                      # Ebook library
 		electrum                     # Bitcoin wallet
