@@ -77,7 +77,6 @@
 		qbittorrent                  # Torrent client
 		realvnc-vnc-viewer           # Remote desktop client
 		songrec                      # Shazam client, music recognition app
-		spotify                      # Music service
 		tdesktop                     # Communications app
 		vlc                          # Audio/video player
 		zoom-us                      # Video call app
