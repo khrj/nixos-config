@@ -14,6 +14,7 @@
 		./components/gnome.nix
 		./components/hardware.nix
 		./components/network.nix
+		./components/discovery.nix
 		./components/sound.nix
 		./components/time.nix
 
