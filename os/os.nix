@@ -47,6 +47,7 @@
 		settings = {
 			trusted-users = [ userDetails.username ];
 			auto-optimise-store = true;
+			cores = 4;
 		};
 	};
 

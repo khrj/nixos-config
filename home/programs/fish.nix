@@ -6,7 +6,7 @@
 		shellAliases = {
 			## Rust rewrites
 			cat      = "echo FATAL: Use bat";   # https://github.com/sharkdp/bat
-#			ls       = "echo FATAL: Use exa";   # https://github.com/ogham/exa
+#			ls       = "echo FATAL: Use eza";   # https://github.com/eza-community/eza
 			find     = "echo FATAL: Use fd";    # https://github.com/sharkdp/fd
 			sed      = "echo FATAL: Use sd";    # https://github.com/chmln/sd
 			grep     = "echo FATAL: Use rg";    # https://github.com/BurntSushi/ripgrep
@@ -25,8 +25,8 @@
 			# - dust                                             @ https://github.com/bootandy/dust
 
 			## Other
-			ls       = "exa --icons";
-			sl       = "exa --icons";
+			ls       = "eza --icons";
+			sl       = "eza --icons";
 			open     = "xdg-open";
 		};
 

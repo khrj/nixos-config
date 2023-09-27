@@ -18,7 +18,7 @@
 		let
 			config = {
 				allowUnfree = true;
-				permittedInsecurePackages = [ "electron-12.2.3" "xrdp-0.9.9" ];
+				permittedInsecurePackages = [ "electron-19.1.9" "xrdp-0.9.9" ];
 			};
 
 			system = "x86_64-linux";

@@ -1,5 +1,0 @@
-{ ... }:
-
-{
-	programs.exa.enable = true;
-}
