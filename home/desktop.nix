@@ -1,6 +1,7 @@
 { pkgs, lib, inputs, stable, unstable-small, lagging, leading, ... }:
 
 {
+	home.stateVersion = "22.05";
 	programs.home-manager.enable = true;
 
 	imports = [
@@ -136,6 +137,7 @@
 		comma                        # Run apps quickly without installing (nix-index + nix run)
 		hydra-check                  # Check hydra for build statuses
 		steam-run                    # Run binaries without derivations
+		nil                          # Nix language server
 		nix-du                       # Check nix store space distribution
 	];
 }

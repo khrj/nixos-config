@@ -1,14 +1,14 @@
-{ android-nixpkgs, ... }:
+{ inputs, ... }:
 
 # Stored in "~/.local/share/android".
 {
 	imports = [
-        android-nixpkgs.hmModule    
-    ];
+		inputs.android-nixpkgs.hmModule    
+	];
 
-	nixpkgs.overlays = [ android-nixpkgs.overlays.default ];
-
-    android-sdk.enable = true;
+	nixpkgs.overlays = [ inputs.android-nixpkgs.overlays.default ];
+	android-sdk.enable = true;
+	
 	android-sdk.packages = sdk: with sdk; [
 		build-tools-34-0-0-rc3
 		build-tools-33-0-0

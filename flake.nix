@@ -21,46 +21,55 @@
 				permittedInsecurePackages = [ "electron-19.1.9" "xrdp-0.9.9" ];
 			};
 
-			system = "x86_64-linux";
-
-			userDetails = {
+			userDetails = rec {
 				username = "khushraj";
 				name = "Khushraj Rathod";
 				email = "khushraj.rathod@gmail.com";
+				homeDirectory = "/home/${username}";
+				desktopHostname = "${username}s-desktop";
 			};
 
-			username = userDetails.username;
-			
-			pkgs = import nixos-unstable { inherit system config; };
-			unstable-small = import nixos-unstable-small { inherit system config; };
-			lagging = import nixos-unstable-lagging { inherit system config; };
-			leading = import nixos-unstable-leading { inherit system config; };
+			mkConfig = type: machineModule: system:
+				let
+					sources = {
+						pkgs = import nixos-unstable { inherit system config; };
+						unstable-small = import nixos-unstable-small { inherit system config; };
+						lagging = import nixos-unstable-lagging { inherit system config; };
+						leading = import nixos-unstable-leading { inherit system config; };
+					};
+				in
+					if type == "system" then mkSystemConfig machineModule system sources
+					else mkHomeConfig machineModule sources;
+
+			mkSystemConfig = machineModule: system: sources:
+				nixos-unstable.lib.nixosSystem {
+					specialArgs = { inherit inputs userDetails; } // builtins.removeAttrs sources ["pkgs"];
+					modules = [
+						machineModule
+						{
+							# Used to make nix-index work with flakes, sets nixPath to flake output rather than a nix-channel
+							nix.nixPath = [ "nixpkgs=${nixos-unstable}" ];
+							nixpkgs.hostPlatform = system;
+						}
+					];
+				};
+
+			mkHomeConfig = machineModule: sources: 
+				home-manager.lib.homeManagerConfiguration {
+					inherit (sources) pkgs;
+					modules = [
+						machineModule
+						{
+							home = {
+								inherit (userDetails) username homeDirectory;
+							};
+						}	
+					];
+
+					extraSpecialArgs = { inherit inputs userDetails; } // builtins.removeAttrs sources ["pkgs"];
+				};
 		in {
-			nixosConfigurations."${username}s-desktop" = nixos-unstable.lib.nixosSystem {
-				inherit system pkgs;
-				specialArgs = { inherit inputs unstable-small lagging leading userDetails; };
-				modules = [
-					./os/os.nix
-					{
-						# Used to make nix-index work with flakes, sets nixPath to flake output rather than a nix-channel
-						nix.nixPath = [ "nixpkgs=${nixos-unstable}" ];
-					}
-				];
-			};
-			homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
-				inherit pkgs;
-				modules = [
-					./home/home.nix
-					{
-						home = {
-							inherit username;
-							homeDirectory = "/home/${username}";
-							stateVersion = "22.05";
-						};
-					}
-				];
-
-				extraSpecialArgs = { inherit inputs unstable-small lagging leading userDetails android-nixpkgs; };
-			};
+			nixosConfigurations."${userDetails.desktopHostname}" = mkConfig "system" ./os/os.nix "x86_64-linux";
+			homeConfigurations."${userDetails.username}@${userDetails.desktopHostname}" = mkConfig "home" ./home/desktop.nix "x86_64-linux";
 		};
 }

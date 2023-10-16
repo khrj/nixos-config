@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ ... }:
 
 {
 	services.avahi.enable = true;
