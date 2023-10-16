@@ -71,5 +71,6 @@
 		in {
 			nixosConfigurations."${userDetails.desktopHostname}" = mkConfig "system" ./os/os.nix "x86_64-linux";
 			homeConfigurations."${userDetails.username}@${userDetails.desktopHostname}" = mkConfig "home" ./home/desktop.nix "x86_64-linux";
+			homeConfigurations."${userDetails.username}@eternity" = mkConfig "home" ./home/eternity.nix "aarch64-linux";
 		};
 }
