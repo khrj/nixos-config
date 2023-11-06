@@ -19,7 +19,6 @@
 		cmake-3-22-1
 
 		emulator
-		patcher-v4
 
 		cmdline-tools-latest
 		platform-tools
