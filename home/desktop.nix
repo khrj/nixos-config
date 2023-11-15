@@ -23,9 +23,7 @@
 		# Services
 		./services/configure-camera.nix # Configures camera on startup
 		./services/rclone.nix           # Cloud sync daemon
-		./services/syncthing.nix        # Cross-device file synchronization
 		./services/unison.nix           # Bi-directional file synchronization
-		./services/nextcloud-client.nix # Self-hosted cloud
 
 		# Other
 		./other/xdg.nix              # Cross-desktop group (freedesktop) - controls XDG config such as nautilus sidebar dirs
@@ -41,7 +39,7 @@
 		deno                    # Programming language
 		gcc                     # Compiler
 		git                     # Version control system
-		gitkraken               # Git GUI client
+		lagging.gitkraken       # Git GUI client
 		git-lfs                 # Git large file storage
 		insomnia                # REST client
 		pico-sdk                # SDK for raspberry pi pico
@@ -113,6 +111,7 @@
 		nodePackages.serve           # Static HTTP file server
 		speedtest-cli                # Network speed measurer
 		tealdeer                     # Manual summarizer
+		trashy                       # Trash CLI
 		unzip                        # File unzipper
 		viu                          # Terminal image viewer
 		websocat                     # WebSocket client
