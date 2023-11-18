@@ -19,7 +19,7 @@
 		let
 			config = {
 				allowUnfree = true;
-				permittedInsecurePackages = [ "electron-19.1.9" "xrdp-0.9.9" ];
+				permittedInsecurePackages = [ "electron-19.1.9" ];
 			};
 
 			userDetails = rec {

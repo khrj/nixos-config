@@ -1,11 +1,11 @@
-{ lib, modulesPath, userDetails, ... }:
+{ config, lib, modulesPath, ... }:
 
 {
 	imports = [
 		(modulesPath + "/installer/scan/not-detected.nix")
 	];
 
-	boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "usbhid" "uas" "sd_mod" "sr_mod" ];
+	boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" "sr_mod" ];
 	boot.initrd.kernelModules = [ ];
 	boot.kernelModules = [ "kvm-intel" ];
 	boot.extraModulePackages = [ ];
@@ -17,40 +17,31 @@
 	};
 
 	fileSystems."/boot" = { 
-		device = "/dev/disk/by-uuid/3062-F123";
+		device = "/dev/disk/by-uuid/4118-CC3F";
 		fsType = "vfat";
 	};
 
 	fileSystems."/nix" = {
-		device = "/dev/disk/by-uuid/5bf75184-4297-4ee9-ab62-90fff6ad81ff";
+		device = "/dev/disk/by-uuid/9b7f881e-ac90-46e9-b980-fd944060cd10";
 		fsType = "btrfs";
 		options = [ "subvol=@nix" ];
 	};
 
-	fileSystems."/nix/store" = {
-		device = "/nix/store";
-		fsType = "none";
-		options = [ "bind" ];
-	};
-
-	fileSystems."/home/${userDetails.username}" = {
-		device = "/dev/disk/by-uuid/5bf75184-4297-4ee9-ab62-90fff6ad81ff";
+	fileSystems."/home" = {
+		device = "/dev/disk/by-uuid/9b7f881e-ac90-46e9-b980-fd944060cd10";
 		fsType = "btrfs";
 		options = [ "subvol=@home" ];
 	};
 
-	swapDevices = [
-		{ device = "/dev/disk/by-uuid/35b29226-5565-4b3f-9307-4aef991c98f8"; }
-	];
+	swapDevices = [];
 
 	fileSystems."/var/log" = { device = "/nix/persist/var/log"; fsType = "none"; options = [ "bind" ]; };
-	fileSystems."/var/lib" = { device = "/nix/persist/var/lib"; fsType = "none"; options = [ "bind" ]; };
 	fileSystems."/etc/ssh" = { device = "/nix/persist/etc/ssh"; fsType = "none"; options = [ "bind" ]; };
-	fileSystems."/etc/xrdp" = { device = "/nix/persist/etc/xrdp"; fsType = "none"; options = [ "bind" ]; };
 	fileSystems."/etc/docker" = { device = "/nix/persist/etc/docker"; fsType = "none"; options = [ "bind" ]; };
 	environment.etc."machine-id".source = "/nix/persist/etc/machine-id";
 	environment.etc."passwd".source = "/nix/persist/etc/passwd";
 	environment.etc."shadow".source = "/nix/persist/etc/shadow";
 
 	powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+	hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }

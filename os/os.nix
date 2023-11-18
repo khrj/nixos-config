@@ -27,10 +27,10 @@
 		./components/programs/git.nix               # VCS	
 		./components/programs/gnome-keyring.nix     # Keychain daemon
 		./components/programs/gpg.nix               # Encryption tool
+		./components/programs/home-manager.nix      # Home manager
 		./components/programs/postgresql.nix        # Database server
 		./components/programs/restic.nix            # Backup daemon
 		./components/programs/virtualbox.nix        # Hardware virtualizer
-		./components/programs/xrdp.nix              # Remote access
 
 		# Generated
 		./hardware-configuration.nix                # Generated hardware configuration
