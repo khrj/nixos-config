@@ -14,6 +14,7 @@
 		./programs/git.nix           # Version control
 		./programs/go.nix            # Golang
 		./programs/kitty.nix         # Terminal emulator
+		./programs/micro.nix         # Text editor
 		./programs/nix-index.nix     # command-not-found replacement
 		./programs/ssh.nix           # Remote shell access
 		./programs/starship.nix      # Shell prompt
@@ -98,7 +99,6 @@
 		imagemagick                  # Terminal-based photo modifier
 		jq                           # JSON processor
 		lsyncd                       # Cross-server file synchronization
-		micro                        # Text editor
 		neofetch                     # Terminal-based system-info viewer
 		oath-toolkit                 # 2FA code generator
 		p7zip                        # Compression tool
