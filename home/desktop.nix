@@ -98,6 +98,7 @@
 		imagemagick                  # Terminal-based photo modifier
 		jq                           # JSON processor
 		lsyncd                       # Cross-server file synchronization
+		micro                        # Text editor
 		neofetch                     # Terminal-based system-info viewer
 		oath-toolkit                 # 2FA code generator
 		p7zip                        # Compression tool

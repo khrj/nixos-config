@@ -27,6 +27,7 @@
 			## Other
 			ls       = "eza --icons";
 			sl       = "eza --icons";
+			nano     = "micro";
 			open     = "xdg-open";
 		};
 
