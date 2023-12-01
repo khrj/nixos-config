@@ -35,7 +35,7 @@
 			set --export DIRENV_LOG_FORMAT ""
 			set --export ATUIN_NOBIND "true"
 			bind \cr _atuin_search
-			set --export MICRO_TRUECOLOR=1
+			set --export MICRO_TRUECOLOR 1
 		'';
 	};
 }
