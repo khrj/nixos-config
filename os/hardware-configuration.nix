@@ -33,15 +33,6 @@
 		options = [ "subvol=@home" ];
 	};
 
-	swapDevices = [];
-
-	fileSystems."/var/log" = { device = "/nix/persist/var/log"; fsType = "none"; options = [ "bind" ]; };
-	fileSystems."/etc/ssh" = { device = "/nix/persist/etc/ssh"; fsType = "none"; options = [ "bind" ]; };
-	fileSystems."/etc/docker" = { device = "/nix/persist/etc/docker"; fsType = "none"; options = [ "bind" ]; };
-	environment.etc."machine-id".source = "/nix/persist/etc/machine-id";
-	environment.etc."passwd".source = "/nix/persist/etc/passwd";
-	environment.etc."shadow".source = "/nix/persist/etc/shadow";
-
 	powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
 	hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }

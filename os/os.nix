@@ -7,6 +7,7 @@
 		./components/auto-upgrade.nix
 		./components/bluetooth.nix
 		./components/boot.nix
+		./components/discovery.nix
 		./components/display.nix
 		./components/environment.nix
 		./components/file-system.nix
@@ -14,7 +15,7 @@
 		./components/gnome.nix
 		./components/hardware.nix
 		./components/network.nix
-		./components/discovery.nix
+		./components/persistence.nix
 		./components/sound.nix
 		./components/time.nix
 

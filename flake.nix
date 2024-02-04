@@ -5,6 +5,8 @@
 		nixos-unstable-lagging.url = "github:nixos/nixpkgs/3a5f01cf1a0d7374395bfb2f67d021362cc71373";
 		nixos-unstable-leading.url = "github:nixos/nixpkgs/35e24243c386a31c6693b51b55a9767f08e9c205";
 		nixos-system.url = "github:nixos/nixpkgs/6500b4580c2a1f3d0f980d32d285739d8e156d92";
+		impermanence.url = "github:nix-community/impermanence";
+		
 		home-manager = {
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixos-unstable";
@@ -48,6 +50,7 @@
 				inputs.nixos-system.lib.nixosSystem {
 					specialArgs = { inherit inputs userDetails; } // builtins.removeAttrs sources ["pkgs"];
 					modules = [
+						inputs.impermanence.nixosModules.impermanence
 						machineModule
 						{
 							# Used to make nix-index work with flakes, sets nixPath to flake output rather than a nix-channel
