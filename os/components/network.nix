@@ -6,7 +6,7 @@
 	networking = {
 		useDHCP = false;
 		interfaces.enp4s0.useDHCP = true;
-		hostName = "${userDetails.username}s-desktop";
+		hostName = userDetails.desktopHostname;
 		firewall.allowedTCPPorts = [ 22 19000 8081 ];
 	};
 }

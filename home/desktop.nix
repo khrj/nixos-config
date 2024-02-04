@@ -97,6 +97,7 @@
 		grex                         # Regex maker
 		hyperfine                    # Benchmarking tool
 		imagemagick                  # Terminal-based photo modifier
+		img2pdf                      # Image to PDF converter
 		jq                           # JSON processor
 		lsyncd                       # Cross-server file synchronization
 		neofetch                     # Terminal-based system-info viewer
