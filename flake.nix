@@ -9,17 +9,18 @@
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixos-unstable";
 		};
+		
 		android-nixpkgs = {
 			url = "github:tadfisher/android-nixpkgs";
 			inputs.nixpkgs.follows = "nixos-unstable";
 		};
 	};
 
-	outputs = { nixos-unstable, nixos-unstable-lagging, nixos-unstable-leading, nixos-system, nixos-unstable-small, home-manager, android-nixpkgs, ... }@inputs:
+	outputs = inputs:
 		let
 			config = {
 				allowUnfree = true;
-				permittedInsecurePackages = [ "electron-19.1.9" ];
+				permittedInsecurePackages = [ "electron-19.1.9" "electron-25.9.0" ];
 			};
 
 			userDetails = rec {
@@ -33,31 +34,31 @@
 			mkConfig = type: machineModule: system:
 				let
 					sources = {
-						pkgs = import nixos-unstable { inherit system config; };
-						system = import nixos-system { inherit system config; };
-						unstable-small = import nixos-unstable-small { inherit system config; };
-						lagging = import nixos-unstable-lagging { inherit system config; };
-						leading = import nixos-unstable-leading { inherit system config; };
+						pkgs = import inputs.nixos-unstable { inherit system config; };
+						system = import inputs.nixos-system { inherit system config; };
+						unstable-small = import inputs.nixos-unstable-small { inherit system config; };
+						lagging = import inputs.nixos-unstable-lagging { inherit system config; };
+						leading = import inputs.nixos-unstable-leading { inherit system config; };
 					};
 				in
 					if type == "system" then mkSystemConfig machineModule system sources
 					else mkHomeConfig machineModule sources;
 
 			mkSystemConfig = machineModule: system: sources:
-				nixos-system.lib.nixosSystem {
+				inputs.nixos-system.lib.nixosSystem {
 					specialArgs = { inherit inputs userDetails; } // builtins.removeAttrs sources ["pkgs"];
 					modules = [
 						machineModule
 						{
 							# Used to make nix-index work with flakes, sets nixPath to flake output rather than a nix-channel
-							nix.nixPath = [ "nixpkgs=${nixos-unstable}" ];
+							nix.nixPath = [ "nixpkgs=${inputs.nixos-unstable}" ];
 							nixpkgs.hostPlatform = system;
 						}
 					];
 				};
 
 			mkHomeConfig = machineModule: sources: 
-				home-manager.lib.homeManagerConfiguration {
+				inputs.home-manager.lib.homeManagerConfiguration {
 					inherit (sources) pkgs;
 					modules = [
 						machineModule
