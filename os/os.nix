@@ -21,7 +21,6 @@
 
 		# Programs
 		./components/programs/adb.nix               # Android development bridge
-		./components/programs/chromium-policies.nix # Browser policies
 		./components/programs/disable.nix           # Disabled defaults
 		./components/programs/docker.nix            # Containerizer
 		./components/programs/dconf.nix             # Gnome configuration
@@ -29,7 +28,6 @@
 		./components/programs/gnome-keyring.nix     # Keychain daemon
 		./components/programs/gpg.nix               # Encryption tool
 		./components/programs/home-manager.nix      # Home manager
-		./components/programs/postgresql.nix        # Database server
 		./components/programs/restic.nix            # Backup daemon
 		./components/programs/virtualbox.nix        # Hardware virtualizer
 
