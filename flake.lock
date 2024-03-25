@@ -115,6 +115,26 @@
         "type": "github"
       }
     },
+    "nix-index-database": {
+      "inputs": {
+        "nixpkgs": [
+          "nixos-unstable"
+        ]
+      },
+      "locked": {
+        "lastModified": 1711249705,
+        "narHash": "sha256-h/NQECj6mIzF4XR6AQoSpkCnwqAM+ol4+qOdYi2ykmQ=",
+        "owner": "nix-community",
+        "repo": "nix-index-database",
+        "rev": "34519f3bb678a5abbddf7b200ac5347263ee781b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nix-index-database",
+        "type": "github"
+      }
+    },
     "nixos-system": {
       "locked": {
         "lastModified": 1695644571,
@@ -181,11 +201,11 @@
     },
     "nixos-unstable-small": {
       "locked": {
-        "lastModified": 1711239364,
-        "narHash": "sha256-Xvgr5bleQGudX6ouzv5zyemQ3BlV/FNY+StpfnLOK24=",
+        "lastModified": 1711333969,
+        "narHash": "sha256-5PiWGn10DQjMZee5NXzeA6ccsv60iLu+Xtw+mfvkUAs=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "8aa81f34981add12aecada6c702ddbbd0375ca36",
+        "rev": "57e6b3a9e4ebec5aa121188301f04a6b8c354c9b",
         "type": "github"
       },
       "original": {
@@ -200,6 +220,7 @@
         "android-nixpkgs": "android-nixpkgs",
         "home-manager": "home-manager",
         "impermanence": "impermanence",
+        "nix-index-database": "nix-index-database",
         "nixos-system": "nixos-system",
         "nixos-unstable": "nixos-unstable",
         "nixos-unstable-lagging": "nixos-unstable-lagging",
