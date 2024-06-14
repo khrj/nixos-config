@@ -12,9 +12,6 @@
 			"/etc/docker"
 			"/var/lib/docker"
 		];
-		files = [
-			"/etc/machine-id"
-		];
 		users."${userDetails.username}" = {
 			directories = [
 				"Data"

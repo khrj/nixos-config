@@ -32,6 +32,7 @@
 
 	home.packages = with pkgs; [
 		# Code
+		android-tools           # Android platform tools
 		apktool                 # Android package decompiler
 		arduino                 # Arduino CLI
 		cargo-edit              # Rust: Cargo helper commands

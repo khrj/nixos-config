@@ -21,7 +21,6 @@
 		emulator
 
 		cmdline-tools-latest
-		platform-tools
 		tools
 	];
 }
