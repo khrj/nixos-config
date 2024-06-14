@@ -10,6 +10,7 @@
 			"/var/log"
 			"/etc/ssh"
 			"/etc/docker"
+			"/var/lib/docker"
 		];
 		files = [
 			"/etc/machine-id"

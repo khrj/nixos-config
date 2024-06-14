@@ -36,7 +36,7 @@
 	];
 
 	nix = {
-		package = pkgs.nixUnstable;
+		package = pkgs.nixVersions.latest;
 		# Use system nixpkgs for vvvvvvv
 		#             "nix shell nixpkgs#<pkgname>"
 		registry.nixpkgs.flake = inputs.nixos-unstable;

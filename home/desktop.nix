@@ -35,7 +35,7 @@
 		apktool                 # Android package decompiler
 		arduino                 # Arduino CLI
 		cargo-edit              # Rust: Cargo helper commands
-		dbeaver                 # Database client
+		dbeaver-bin             # Database client
 		deno                    # Programming language
 		gcc                     # Compiler
 		git                     # Version control system
@@ -62,19 +62,16 @@
 		bootstrap-studio             # Drag-and-drop bootstrap designer
 		calibre                      # Ebook library
 		electrum                     # Bitcoin wallet
-		etcher                       # Disk image flasher
 		flameshot                    # Screenshot tool
 		fritzing                     # Hardware design tool
 		google-chrome                # Browser
 		graphwar                     # Math-based shooter game
 		lagging.handbrake            # Audio-video encoder
 		libreoffice                  # Office suite
-		musescore                    # Music notation software
 		obsidian                     # Note taking app
 		pick-colour-picker           # Colour picker
 		protonvpn-gui                # Virtual private Network
 		qbittorrent                  # Torrent client
-		realvnc-vnc-viewer           # Remote desktop client
 		songrec                      # Shazam client, music recognition app
 		tdesktop                     # Communications app
 		vlc                          # Audio/video player

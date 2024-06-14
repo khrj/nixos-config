@@ -5,7 +5,7 @@
 		enable = true;
 		extensions = with pkgs.vscode-extensions; [
 			bbenoist.nix
-			matklad.rust-analyzer
+			rust-lang.rust-analyzer
 			ms-vsliveshare.vsliveshare
 			vadimcn.vscode-lldb
 		];

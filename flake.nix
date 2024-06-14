@@ -4,8 +4,13 @@
 		nixos-unstable-small.url = "github:nixos/nixpkgs/nixos-unstable-small";
 		nixos-unstable-lagging.url = "github:nixos/nixpkgs/3a5f01cf1a0d7374395bfb2f67d021362cc71373";
 		nixos-unstable-leading.url = "github:nixos/nixpkgs/35e24243c386a31c6693b51b55a9767f08e9c205";
-		nixos-system.url = "github:nixos/nixpkgs/6500b4580c2a1f3d0f980d32d285739d8e156d92";
+		nixos-system.url = "github:nixos/nixpkgs/nixos-unstable";
 		impermanence.url = "github:nix-community/impermanence";
+
+		nix-index-database = {
+			url = "github:nix-community/nix-index-database";
+			inputs.nixpkgs.follows = "nixos-unstable";
+		};
 		
 		home-manager = {
 			url = "github:nix-community/home-manager";
@@ -64,6 +69,7 @@
 				inputs.home-manager.lib.homeManagerConfiguration {
 					inherit (sources) pkgs;
 					modules = [
+						inputs.nix-index-database.hmModules.nix-index
 						machineModule
 						{
 							home = {
