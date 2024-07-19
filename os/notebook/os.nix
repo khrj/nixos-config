@@ -15,7 +15,6 @@
 		../components/gnome.nix
 		../components/hardware.nix
 		../components/network.nix
-		../components/persistence.nix
 		../components/sound.nix
 		../components/time.nix
 

@@ -22,18 +22,6 @@
 		options = [ "fmask=0022" "dmask=0022" ];
 	};
 
-	fileSystems."/nix" = {
-		device = "/dev/disk/by-uuid/d027652c-4d84-46ff-ae58-4f554c94dd69";
-		fsType = "btrfs";
-		options = [ "subvol=@nix" ];
-	};
-
-	fileSystems."/home" = {
-		device = "/dev/disk/by-uuid/d027652c-4d84-46ff-ae58-4f554c94dd69";
-		fsType = "btrfs";
-		options = [ "subvol=@home" ];
-	};
-
 	networking.useDHCP = lib.mkDefault true;
 
 	nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
