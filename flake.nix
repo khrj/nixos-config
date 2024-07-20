@@ -82,7 +82,7 @@
 				};
 		in {
 			nixosConfigurations."${userDetails.desktopHostname}" = mkConfig "system" ./os/${userDetails.desktopHostname}/os.nix "x86_64-linux";
-			nixosConfigurations."notebook" = mkConfig "system" ./notebook/os.nix "x86_64-linux";
+			nixosConfigurations."notebook" = mkConfig "system" ./os/notebook/os.nix "x86_64-linux";
 			homeConfigurations."${userDetails.username}@${userDetails.desktopHostname}" = mkConfig "home" ./home/desktop.nix "x86_64-linux";
 			homeConfigurations."${userDetails.username}@notebook" = mkConfig "home" ./home/desktop.nix "x86_64-linux";
 			homeConfigurations."${userDetails.username}@eternity" = mkConfig "home" ./home/eternity.nix "aarch64-linux";
