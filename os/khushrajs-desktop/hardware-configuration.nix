@@ -1,4 +1,4 @@
-{ config, lib, modulesPath, ... }:
+{ config, lib, userDetails, modulesPath, ... }:
 
 {
 	imports = [
@@ -31,6 +31,11 @@
 		device = "/dev/disk/by-uuid/9b7f881e-ac90-46e9-b980-fd944060cd10";
 		fsType = "btrfs";
 		options = [ "subvol=@home" ];
+	};
+
+	networking = {
+		hostName = userDetails.desktopHostname;
+		interfaces.enp4s0.useDHCP = true;
 	};
 
 	powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";

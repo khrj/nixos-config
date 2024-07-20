@@ -26,9 +26,9 @@
 
 	swapDevices = [ ];
 
-	networking.interfaces = {
-		wlp2s0.useDHCP = true;
-		enp4s0.useDHCP = false;
+	networking = {
+		hostName = "notebook";
+		interfaces.wlp2s0.useDHCP = true;
 	};
 
 	nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
