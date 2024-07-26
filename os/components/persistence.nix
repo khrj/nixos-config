@@ -14,9 +14,7 @@
 		];
 		users."${userDetails.username}" = {
 			directories = [
-				"Data"
 				"nixos-config"
-				"Downloads"
 				
 				".vscode"
 				".cache"
