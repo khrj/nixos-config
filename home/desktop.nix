@@ -43,6 +43,7 @@
 		lagging.gitkraken       # Git GUI client
 		git-lfs                 # Git large file storage
 		insomnia                # REST client
+		llvm_19                 # C Compiler
 		pico-sdk                # SDK for raspberry pi pico
 		poetry                  # Python package manager
 		nodePackages.prettier   # Code formatter
@@ -98,6 +99,7 @@
 		img2pdf                      # Image to PDF converter
 		jq                           # JSON processor
 		lsyncd                       # Cross-server file synchronization
+		ncdc                         # Direct-connect client
 		neofetch                     # Terminal-based system-info viewer
 		oath-toolkit                 # 2FA code generator
 		p7zip                        # Compression tool

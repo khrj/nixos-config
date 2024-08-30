@@ -10,5 +10,8 @@
 			allowedUDPPorts = [ config.services.tailscale.port ];
 			checkReversePath = "loose";
 		};
+		hosts = {
+			"10.1.0.10" = [ "campnet.bits-goa.ac.in" ];
+		};
 	};
 }
