@@ -12,6 +12,7 @@
 		};
 		hosts = {
 			"10.1.0.10" = [ "campnet.bits-goa.ac.in" ];
+			"103.65.199.163" = [ "quanta.bits-goa.ac.in" ];
 		};
 	};
 }
