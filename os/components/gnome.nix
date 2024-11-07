@@ -23,16 +23,16 @@
 		yelp
 		# gnome-calculator             # Calculator
 		gnome-calendar
-		gnome.gnome-characters
+		gnome-characters
 		# gnome-clocks                 # Clock app (stopwatch + timer + alarm)
-		gnome.gnome-contacts
+		gnome-contacts
 		# gnome-font-viewer            # Font viewer
 		# gnome-logs                   # systemd log viewer
-		gnome.gnome-maps
-		gnome.gnome-music
+		gnome-maps
+		gnome-music
 		# gnome-system-monitor         # Process monitor
 		# gnome-text-editor            # Text editor
-		gnome.gnome-weather
+		gnome-weather
 		gnome-connections
 		gnome-console
 		gnome-photos

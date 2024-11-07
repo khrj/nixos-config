@@ -123,7 +123,7 @@
 
 		# System
 		efibootmgr                   # EFI boot entry manager
-		gnome.nautilus-python        # Nautilus extension API
+		nautilus-python              # Nautilus extension API
 		gparted                      # Partition manager
 		hsetroot                     # Wallpaper setter
 		libsForQt5.okular            # PDF editor
