@@ -15,7 +15,7 @@
 		build-tools-30-0-3
 
 		platforms-android-33
-		ndk-23-1-7779620
+		# ndk-23-1-7779620
 		cmake-3-22-1
 
 		emulator
