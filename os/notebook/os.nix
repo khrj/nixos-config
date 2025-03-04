@@ -20,6 +20,7 @@
 
 		# Programs
 		../components/programs/adb.nix               # Android development bridge
+		../components/programs/chrome.nix            # Browser config
 		../components/programs/disable.nix           # Disabled defaults
 		../components/programs/docker.nix            # Containerizer
 		../components/programs/dconf.nix             # Gnome configuration
