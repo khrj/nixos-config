@@ -9,7 +9,7 @@
 			noto-fonts-extra
 			noto-fonts-emoji
 			font-awesome
-			(nerdfonts.override { fonts = [ "FiraCode" ]; })
+			nerd-fonts.fira-code
 		];
 	};
 }

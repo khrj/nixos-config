@@ -112,6 +112,7 @@
 		nodePackages.serve           # Static HTTP file server
 		speedtest-cli                # Network speed measurer
 		tealdeer                     # Manual summarizer
+		teleport_17                  # SSH client (custom protocol)
 		trashy                       # Trash CLI
 		unzip                        # File unzipper
 		viu                          # Terminal image viewer
