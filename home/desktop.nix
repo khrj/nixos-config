@@ -19,6 +19,7 @@
 		./programs/ssh.nix           # Remote shell access
 		./programs/starship.nix      # Shell prompt
 		./programs/vscode.nix        # Code editor
+		./programs/zellij.nix        # Terminal multiplexer
 
 		# Services
 		./services/configure-camera.nix # Configures camera on startup
@@ -54,9 +55,9 @@
 		nodePackages.zx	        # JavaScript based shell scripts
 
 		# Jetbrains
-		android-studio                 # Android
-		jetbrains.idea-ultimate        # Java
-		jetbrains.pycharm-professional # Python
+		# android-studio                 # Android
+		# jetbrains.idea-ultimate        # Java
+		# jetbrains.pycharm-professional # Python
 		jetbrains.jdk                  # Java development kit
 
 		# Apps
