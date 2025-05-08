@@ -5,6 +5,7 @@
 
 	imports = [
 		# Programs
+		./programs/alacritty.nix     # Terminal emulator
 		./programs/atuin.nix         # Shell history management tool
 		./programs/bat.nix           # File contents viewer
 		./programs/direnv.nix        # Automatic flake loader
@@ -13,7 +14,6 @@
 		./programs/fish.nix          # Shell
 		./programs/git.nix           # Version control
 		./programs/go.nix            # Golang
-		./programs/kitty.nix         # Terminal emulator
 		./programs/micro.nix         # Text editor
 		./programs/nix-index.nix     # command-not-found replacement
 		./programs/ssh.nix           # Remote shell access

@@ -1,4 +1,4 @@
-{ ... }: 
+{ pkgs, ... }: 
 
 {
 	programs.fish = {
@@ -36,6 +36,10 @@
 			set --export ATUIN_NOBIND "true"
 			bind \cr _atuin_search
 			set --export MICRO_TRUECOLOR 1
+
+			if test "$TERM_PROGRAM" != "vscode"
+				eval (${pkgs.zellij}/bin/zellij setup --generate-auto-start fish | string collect)
+			end
 		'';
 	};
 }
