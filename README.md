@@ -16,7 +16,7 @@ nix flake update --commit-lock-file
 ### Switch system
 
 ```sh
-nixos-rebuild switch --use-remote-sudo --flake <path-to-git-repo>
+nixos-rebuild switch --sudo --flake <path-to-git-repo>
 ```
 
 ### Switch home
@@ -28,7 +28,7 @@ home-manager switch --flake <path-to-git-repo>
 ### One liner (update inputs and switch home and system)
 
 ```
-pushd <path-to-git-repo> && nix flake update --commit-lock-file && nixos-rebuild switch --use-remote-sudo --flake .; home-manager switch --flake . && popd
+pushd <path-to-git-repo> && nix flake update --commit-lock-file && nixos-rebuild switch --sudo --flake .; home-manager switch --flake . && popd
 ```
 
 ## Inputs

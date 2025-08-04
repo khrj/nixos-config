@@ -69,7 +69,7 @@
 				inputs.home-manager.lib.homeManagerConfiguration {
 					inherit (sources) pkgs;
 					modules = [
-						inputs.nix-index-database.hmModules.nix-index
+						inputs.nix-index-database.homeModules.nix-index
 						machineModule
 						{
 							home = {

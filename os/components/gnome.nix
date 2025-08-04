@@ -1,10 +1,10 @@
 { pkgs, ... }:
 
 {
-	services.xserver = {
+	services = {
 		desktopManager.gnome.enable = true;
 		displayManager.gdm.enable = true;
-		excludePackages = with pkgs; [ xterm ];
+		xserver.excludePackages = with pkgs; [ xterm ];
 	};
 
 	environment.systemPackages = with pkgs.gnomeExtensions; [ blur-my-shell ];
