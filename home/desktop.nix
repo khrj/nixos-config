@@ -56,9 +56,9 @@
 
 		# Jetbrains
 		# android-studio                 # Android
-		# jetbrains.idea-ultimate        # Java
+		jetbrains.idea-community         # Java
 		# jetbrains.pycharm-professional # Python
-		jetbrains.jdk                  # Java development kit
+		jetbrains.jdk                    # Java development kit
 
 		# Apps
 		anki                         # Memorization tool
@@ -71,6 +71,7 @@
 		graphwar                     # Math-based shooter game
 		lagging.handbrake            # Audio-video encoder
 		libreoffice                  # Office suite
+		logisim                      # Digital logic simulator
 		obsidian                     # Note taking app
 		pick-colour-picker           # Colour picker
 		protonvpn-gui                # Virtual private Network
