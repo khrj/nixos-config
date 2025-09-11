@@ -27,7 +27,7 @@
 		let
 			config = {
 				allowUnfree = true;
-				permittedInsecurePackages = [ "electron-19.1.9" "electron-25.9.0" ];
+				permittedInsecurePackages = [ "electron-19.1.9" "electron-25.9.0" "libxml2-2.13.8" ];
 			};
 
 			userDetails = rec {

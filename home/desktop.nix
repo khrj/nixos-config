@@ -54,6 +54,10 @@
 		wasmtime                # WebAssembly runtime
 		nodePackages.zx	        # JavaScript based shell scripts
 
+		# Academics
+		iverilog                # Verilog simulator
+		gtkwave                 # Verilog waveform viewer
+
 		# Jetbrains
 		# android-studio                 # Android
 		jetbrains.idea-community         # Java
@@ -64,6 +68,7 @@
 		anki                         # Memorization tool
 		bootstrap-studio             # Drag-and-drop bootstrap designer
 		calibre                      # Ebook library
+		ciscoPacketTracer8           # Network simulator
 		electrum                     # Bitcoin wallet
 		flameshot                    # Screenshot tool
 		fritzing                     # Hardware design tool
@@ -92,6 +97,7 @@
 		dig                          # DNS query tool
 		dmg2img                      # Disk image converter
 		du-dust                      # Terminal-based storage space viewer
+		fastfetch                    # Terminal-based system-info viewer
 		fd                           # File finder
 		ffmpeg                       # Multimedia handler
 		frp                          # Reverse proxy
@@ -102,7 +108,6 @@
 		jq                           # JSON processor
 		lsyncd                       # Cross-server file synchronization
 		ncdc                         # Direct-connect client
-		neofetch                     # Terminal-based system-info viewer
 		oath-toolkit                 # 2FA code generator
 		p7zip                        # Compression tool
 		procs                        # Terminal job viewer
