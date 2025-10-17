@@ -20,7 +20,7 @@
 		git                     # Version control system
 		git-lfs                 # Git large file storage
 		poetry                  # Python package manager
-		python3Full             # Programming language
+		python3                 # Programming language
 
 		# CLI Tools
 		curl                         # Http client

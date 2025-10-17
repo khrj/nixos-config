@@ -48,7 +48,7 @@
 		pico-sdk                # SDK for raspberry pi pico
 		poetry                  # Python package manager
 		nodePackages.prettier   # Code formatter
-		python3Full             # Programming language
+		python3                 # Programming language
 		rustup                  # Rust toolchain installer
 		tio                     # Serial IO for raspberry pi pico
 		wasmtime                # WebAssembly runtime
