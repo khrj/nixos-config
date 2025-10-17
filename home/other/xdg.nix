@@ -24,7 +24,7 @@ in
 				"x-scheme-handler/http" = "google-chrome.desktop";
 				"x-scheme-handler/https" = "google-chrome.desktop";
 
-				"application/pdf" = "okularApplication_pdf.desktop";
+				"application/pdf" = "org.gnome.Papers.desktop";
 				"application/x-cd-image" = "gnome-disk-image-mounter.desktop";
 
 				"text/html" = "code.desktop";

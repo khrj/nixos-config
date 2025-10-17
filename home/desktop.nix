@@ -134,7 +134,7 @@
 		nautilus-python              # Nautilus extension API
 		gparted                      # Partition manager
 		hsetroot                     # Wallpaper setter
-		libsForQt5.okular            # PDF editor
+		papers                       # PDF viewer
 		pavucontrol                  # Audio configuration helper
 		shotwell                     # Image viewer
 		v4l-utils                    # Video input adjuster
