@@ -24,7 +24,7 @@
 
 		# CLI Tools
 		curl                         # Http client
-		du-dust                      # Terminal-based storage space viewer
+		dust                         # Terminal-based storage space viewer
 		frp                          # Reverse proxy
 		neofetch                     # Terminal-based system-info viewer
 		tealdeer                     # Manual summarizer

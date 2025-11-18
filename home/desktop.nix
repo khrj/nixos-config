@@ -34,6 +34,7 @@
 	home.packages = with pkgs; [
 		# Code
 		android-tools           # Android platform tools
+		ansible                 # IT automation tool
 		apktool                 # Android package decompiler
 		arduino                 # Arduino CLI
 		cargo-edit              # Rust: Cargo helper commands
@@ -41,7 +42,6 @@
 		deno                    # Programming language
 		gcc                     # Compiler
 		git                     # Version control system
-		lagging.gitkraken       # Git GUI client
 		git-lfs                 # Git large file storage
 		insomnia                # REST client
 		llvm_19                 # C Compiler
@@ -50,8 +50,10 @@
 		nodePackages.prettier   # Code formatter
 		python3                 # Programming language
 		rustup                  # Rust toolchain installer
+		sublime-merge           # Git GUI client
 		tio                     # Serial IO for raspberry pi pico
 		wasmtime                # WebAssembly runtime
+		wireguard-tools         # VPN tools
 		nodePackages.zx	        # JavaScript based shell scripts
 
 		# Academics
@@ -69,20 +71,19 @@
 		bootstrap-studio             # Drag-and-drop bootstrap designer
 		calibre                      # Ebook library
 		ciscoPacketTracer8           # Network simulator
-		electrum                     # Bitcoin wallet
 		flameshot                    # Screenshot tool
 		fritzing                     # Hardware design tool
 		google-chrome                # Browser
 		graphwar                     # Math-based shooter game
-		lagging.handbrake            # Audio-video encoder
+		handbrake                    # Audio-video encoder
 		libreoffice                  # Office suite
 		logisim                      # Digital logic simulator
 		obsidian                     # Note taking app
 		pick-colour-picker           # Colour picker
-		protonvpn-gui                # Virtual private Network
+		protonvpn-gui                # VPN client
 		qbittorrent                  # Torrent client
 		songrec                      # Shazam client, music recognition app
-		tdesktop                     # Communications app
+		telegram-desktop             # Communications app
 		vlc                          # Audio/video player
 		zoom-us                      # Video call app
 
@@ -96,7 +97,7 @@
 		curl                         # Http client
 		dig                          # DNS query tool
 		dmg2img                      # Disk image converter
-		du-dust                      # Terminal-based storage space viewer
+		dust                         # Terminal-based storage space viewer
 		fastfetch                    # Terminal-based system-info viewer
 		fd                           # File finder
 		ffmpeg                       # Multimedia handler
@@ -107,6 +108,7 @@
 		img2pdf                      # Image to PDF converter
 		jq                           # JSON processor
 		lsyncd                       # Cross-server file synchronization
+		net-tools                    # Network diagnostic tools
 		ncdc                         # Direct-connect client
 		oath-toolkit                 # 2FA code generator
 		p7zip                        # Compression tool

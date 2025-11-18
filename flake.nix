@@ -27,7 +27,7 @@
 		let
 			config = {
 				allowUnfree = true;
-				permittedInsecurePackages = [ "electron-19.1.9" "electron-25.9.0" "libxml2-2.13.8" ];
+				permittedInsecurePackages = [ "electron-19.1.9" "electron-25.9.0" "libxml2-2.13.8" "python3.13-ecdsa-0.19.1" "ciscoPacketTracer8-8.2.2" ];
 			};
 
 			userDetails = rec {
