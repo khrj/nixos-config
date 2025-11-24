@@ -35,6 +35,7 @@
 		# Code
 		android-tools           # Android platform tools
 		ansible                 # IT automation tool
+		antigravity             # AI IDE
 		apktool                 # Android package decompiler
 		arduino                 # Arduino CLI
 		cargo-edit              # Rust: Cargo helper commands
