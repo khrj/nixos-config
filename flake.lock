@@ -9,11 +9,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1769977580,
-        "narHash": "sha256-F3+PrJWfHlpbdmt21qvDMufd7DWZzAJtVU28g/UOm6o=",
+        "lastModified": 1781385347,
+        "narHash": "sha256-eTx9C5fi1xGGD2ZM6IRmBI9DRS9BoI4JMNiRE1Qo8oc=",
         "owner": "tadfisher",
         "repo": "android-nixpkgs",
-        "rev": "d5ff70726a4245890864c9e946bda5cf6a8cfcd3",
+        "rev": "be31e2f0d43959e50ed59379c617f3a456a52dd9",
         "type": "github"
       },
       "original": {
@@ -68,11 +68,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1769978395,
-        "narHash": "sha256-gj1yP3spUb1vGtaF5qPhshd2j0cg4xf51pklDsIm19Q=",
+        "lastModified": 1781365335,
+        "narHash": "sha256-zqDBhXMzfbdlO7F2bGHe7MOtB3xngd/+4ieMHDC+ZXo=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "984708c34d3495a518e6ab6b8633469bbca2f77a",
+        "rev": "5b6f5733726a1b2ccafb5dec6ac4ca7299fad66c",
         "type": "github"
       },
       "original": {
@@ -128,11 +128,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765267181,
-        "narHash": "sha256-d3NBA9zEtBu2JFMnTBqWj7Tmi7R5OikoU2ycrdhQEws=",
+        "lastModified": 1781422160,
+        "narHash": "sha256-W7S8O86bVrw2gaomEwkHStOzmPpnFIHQ6lS4Q2HffJ0=",
         "owner": "nix-community",
         "repo": "nix-index-database",
-        "rev": "82befcf7dc77c909b0f2a09f5da910ec95c5b78f",
+        "rev": "854d04e2368fb2e9c328a36b3c0a04cd713bfae1",
         "type": "github"
       },
       "original": {
@@ -141,13 +141,29 @@
         "type": "github"
       }
     },
-    "nixos-system": {
+    "nixos-stable": {
       "locked": {
-        "lastModified": 1769789167,
-        "narHash": "sha256-kKB3bqYJU5nzYeIROI82Ef9VtTbu4uA3YydSk/Bioa8=",
+        "lastModified": 1781216227,
+        "narHash": "sha256-9mUW6gNwoN2SWc/l0fW4svPNOulXLl8ijqKyeSOGgJE=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "62c8382960464ceb98ea593cb8321a2cf8f9e3e5",
+        "rev": "a0374025a863d007d98e3297f6aa46cc3141c2f0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-26.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixos-system": {
+      "locked": {
+        "lastModified": 1781074563,
+        "narHash": "sha256-md8WlXOlfnIeHeOScMTTHFyf2d6iaTwPl2apR5EQ3P4=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
         "type": "github"
       },
       "original": {
@@ -159,11 +175,11 @@
     },
     "nixos-unstable": {
       "locked": {
-        "lastModified": 1769789167,
-        "narHash": "sha256-kKB3bqYJU5nzYeIROI82Ef9VtTbu4uA3YydSk/Bioa8=",
+        "lastModified": 1781074563,
+        "narHash": "sha256-md8WlXOlfnIeHeOScMTTHFyf2d6iaTwPl2apR5EQ3P4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "62c8382960464ceb98ea593cb8321a2cf8f9e3e5",
+        "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
         "type": "github"
       },
       "original": {
@@ -175,43 +191,43 @@
     },
     "nixos-unstable-lagging": {
       "locked": {
-        "lastModified": 1698128643,
-        "narHash": "sha256-BcPG63T88avg0jIx+BAtYxnYhLXLi3gLMIeU8XRUPVU=",
+        "lastModified": 1781074563,
+        "narHash": "sha256-md8WlXOlfnIeHeOScMTTHFyf2d6iaTwPl2apR5EQ3P4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "3a5f01cf1a0d7374395bfb2f67d021362cc71373",
+        "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
-        "rev": "3a5f01cf1a0d7374395bfb2f67d021362cc71373",
         "type": "github"
       }
     },
     "nixos-unstable-leading": {
       "locked": {
-        "lastModified": 1769958836,
-        "narHash": "sha256-QtVQIm9TDvyYIeD7+FC9QWf4L2HCILgBg+wsJq5oV4Q=",
+        "lastModified": 1781074563,
+        "narHash": "sha256-md8WlXOlfnIeHeOScMTTHFyf2d6iaTwPl2apR5EQ3P4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "7fed5716a2ba3a3794a0c0e6ad1202619dd6e458",
+        "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
-        "rev": "7fed5716a2ba3a3794a0c0e6ad1202619dd6e458",
         "type": "github"
       }
     },
     "nixos-unstable-small": {
       "locked": {
-        "lastModified": 1769944092,
-        "narHash": "sha256-yX+M8Bv4uu7I43tTx9Po/5MTgGZ9l3i+juPEY+oeYSE=",
+        "lastModified": 1781421111,
+        "narHash": "sha256-2xSTHlKBF5h/tgAeHyQPR/g48qk9ACz7dED3jc3pGKA=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "8e883f431f048f270b4c62dcea2e751b124210d7",
+        "rev": "7fe8f446d9475534dc54591ccb5c87c1ce6eaf8b",
         "type": "github"
       },
       "original": {
@@ -243,6 +259,7 @@
         "home-manager": "home-manager",
         "impermanence": "impermanence",
         "nix-index-database": "nix-index-database",
+        "nixos-stable": "nixos-stable",
         "nixos-system": "nixos-system",
         "nixos-unstable": "nixos-unstable",
         "nixos-unstable-lagging": "nixos-unstable-lagging",
