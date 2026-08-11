@@ -1,9 +1,10 @@
 {	
 	inputs = {
 		nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+		nixos-stable.url = "github:nixos/nixpkgs/nixos-26.05";
 		nixos-unstable-small.url = "github:nixos/nixpkgs/nixos-unstable-small";
-		nixos-unstable-lagging.url = "github:nixos/nixpkgs/3a5f01cf1a0d7374395bfb2f67d021362cc71373";
-		nixos-unstable-leading.url = "github:nixos/nixpkgs/35e24243c386a31c6693b51b55a9767f08e9c205";
+		nixos-unstable-lagging.url = "github:nixos/nixpkgs/nixos-unstable"; # "github:nixos/nixpkgs/3a5f01cf1a0d7374395bfb2f67d021362cc71373";
+		nixos-unstable-leading.url = "github:nixos/nixpkgs/nixos-unstable"; # "github:nixos/nixpkgs/7fed5716a2ba3a3794a0c0e6ad1202619dd6e458";
 		nixos-system.url = "github:nixos/nixpkgs/nixos-unstable";
 		impermanence.url = "github:nix-community/impermanence";
 
@@ -27,7 +28,7 @@
 		let
 			config = {
 				allowUnfree = true;
-				permittedInsecurePackages = [ "electron-19.1.9" "electron-25.9.0" "libxml2-2.13.8" "python3.13-ecdsa-0.19.1" "ciscoPacketTracer8-8.2.2" ];
+				permittedInsecurePackages = [ "electron-19.1.9" "electron-25.9.0" "libxml2-2.13.8" "python3.13-ecdsa-0.19.1" ];
 			};
 
 			userDetails = rec {
@@ -44,6 +45,7 @@
 						pkgs = import inputs.nixos-unstable { inherit system config; };
 						system = import inputs.nixos-system { inherit system config; };
 						unstable-small = import inputs.nixos-unstable-small { inherit system config; };
+						stable = import inputs.nixos-stable { inherit system config; };
 						lagging = import inputs.nixos-unstable-lagging { inherit system config; };
 						leading = import inputs.nixos-unstable-leading { inherit system config; };
 					};

@@ -8,6 +8,7 @@ in
 		configFile."mimeapps.list".force = true; # Overwrite mimeapps.list without prompting
 		userDirs = {
 			enable = true;
+			setSessionVariables = false;
 			createDirectories = true;
 			desktop     = disable;
 			documents   = disable;

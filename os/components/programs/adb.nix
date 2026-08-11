@@ -1,6 +1,6 @@
-{ userDetails, ... }:
+{ userDetails, pkgs, ... }:
 
 {
-	programs.adb.enable = true;
+	environment.systemPackages = with pkgs; [ android-tools ];
 	users.users.${userDetails.username}.extraGroups = ["adbusers"];
 }

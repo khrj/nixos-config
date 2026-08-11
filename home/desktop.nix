@@ -33,9 +33,8 @@
 
 	home.packages = with pkgs; [
 		# Code
-		android-tools           # Android platform tools
 		ansible                 # IT automation tool
-		antigravity             # AI IDE
+		antigravity-ide         # AI IDE
 		apktool                 # Android package decompiler
 		arduino                 # Arduino CLI
 		cargo-edit              # Rust: Cargo helper commands
@@ -48,14 +47,14 @@
 		llvm_19                 # C Compiler
 		pico-sdk                # SDK for raspberry pi pico
 		poetry                  # Python package manager
-		nodePackages.prettier   # Code formatter
+		prettier                # Code formatter
 		python3                 # Programming language
 		rustup                  # Rust toolchain installer
 		sublime-merge           # Git GUI client
 		tio                     # Serial IO for raspberry pi pico
 		wasmtime                # WebAssembly runtime
 		wireguard-tools         # VPN tools
-		nodePackages.zx	        # JavaScript based shell scripts
+		zx                      # JavaScript based shell scripts
 
 		# Academics
 		iverilog                # Verilog simulator
@@ -63,15 +62,16 @@
 
 		# Jetbrains
 		# android-studio                 # Android
-		jetbrains.idea-community         # Java
+		# jetbrains.idea-community       # Java
 		# jetbrains.pycharm-professional # Python
+		# jetbrains.clion 				 # C++
 		jetbrains.jdk                    # Java development kit
 
 		# Apps
 		anki                         # Memorization tool
 		bootstrap-studio             # Drag-and-drop bootstrap designer
 		calibre                      # Ebook library
-		ciscoPacketTracer8           # Network simulator
+		#cisco-packet-tracer_9        # Network simulator
 		flameshot                    # Screenshot tool
 		fritzing                     # Hardware design tool
 		google-chrome                # Browser
@@ -81,7 +81,7 @@
 		logisim                      # Digital logic simulator
 		obsidian                     # Note taking app
 		pick-colour-picker           # Colour picker
-		protonvpn-gui                # VPN client
+		proton-vpn                   # VPN client
 		qbittorrent                  # Torrent client
 		songrec                      # Shazam client, music recognition app
 		telegram-desktop             # Communications app
@@ -119,7 +119,6 @@
 		ripgrep                      # File-content searcher
 		scrcpy                       # Android screen mirroring
 		sd                           # stdin filterer
-		nodePackages.serve           # Static HTTP file server
 		speedtest-cli                # Network speed measurer
 		tealdeer                     # Manual summarizer
 		teleport_17                  # SSH client (custom protocol)
@@ -141,7 +140,7 @@
 		pavucontrol                  # Audio configuration helper
 		shotwell                     # Image viewer
 		v4l-utils                    # Video input adjuster
-		yaru-theme                   # GTK theme
+		#yaru-theme                   # GTK theme
 
 		# Nix specific
 		appimage-run                 # Run appimages without derivations
