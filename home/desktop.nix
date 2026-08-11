@@ -140,13 +140,13 @@
 		pavucontrol                  # Audio configuration helper
 		shotwell                     # Image viewer
 		v4l-utils                    # Video input adjuster
-		#yaru-theme                   # GTK theme
+		adw-gtk3                     # GTK theme
 
 		# Nix specific
 		appimage-run                 # Run appimages without derivations
 		comma                        # Run apps quickly without installing (nix-index + nix run)
 		hydra-check                  # Check hydra for build statuses
-		steam-run                    # Run binaries without derivations
+		#steam-run                    # Run binaries without derivations
 		nil                          # Nix language server
 		nix-du                       # Check nix store space distribution
 	];
